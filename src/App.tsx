@@ -39,6 +39,7 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/books" element={<Index />} />
             <Route path="/login" element={<Login />} />
             <Route path="/books/:slug" element={<BookPage />} />
             <Route path="/books/:slug/:chapterSlug" element={<ChapterPage />} />
