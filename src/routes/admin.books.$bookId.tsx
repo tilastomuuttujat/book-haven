@@ -201,7 +201,7 @@ function SectionEditor({ section, chapterId }: { section: { id: string; title: s
   const save = useMutation({
     mutationFn: async () => {
       const { error } = await supabase.from("sections").update({
-        title: title || null, content: content as object,
+        title: title || null, content: content as never,
       }).eq("id", section.id);
       if (error) throw error;
     },
