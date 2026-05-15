@@ -57,5 +57,3 @@ export default function App() {
     </AuthProvider>
   );
 }
-
-void Navigate;
