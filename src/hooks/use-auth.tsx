@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { Session, User } from "@supabase/supabase-js";
 import { useQueryClient } from "@tanstack/react-query";
-import { useRouter } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
 
 type AuthCtx = {
@@ -19,7 +18,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [session, setSession] = useState<Session | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [loading, setLoading] = useState(true);
-  const router = useRouter();
   const qc = useQueryClient();
 
   useEffect(() => {
@@ -38,7 +36,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       } else {
         setIsAdmin(false);
       }
-      router.invalidate();
       qc.invalidateQueries();
     });
 
@@ -57,7 +54,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     });
 
     return () => subscription.unsubscribe();
-  }, [router, qc]);
+  }, [qc]);
 
   const signIn = async (email: string, password: string) => {
     const { error } = await supabase.auth.signInWithPassword({ email, password });

@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -9,16 +9,12 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { Plus, Pencil } from "lucide-react";
 
-export const Route = createFileRoute("/admin/")({
-  component: AdminIndex,
-});
-
 function slugify(s: string) {
   return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
-function AdminIndex() {
+export default function AdminIndex() {
   const qc = useQueryClient();
   const { data: books } = useQuery({
     queryKey: ["admin-books"],
@@ -58,7 +54,7 @@ function AdminIndex() {
         <h2 className="text-2xl">Kirjat</h2>
         <div className="mt-4 space-y-2">
           {books?.map((b) => (
-            <Link key={b.id} to="/admin/books/$bookId" params={{ bookId: b.id }}
+            <Link key={b.id} to={`/admin/books/${b.id}`}
               className="flex items-center justify-between rounded border bg-card p-4 hover:border-accent">
               <div>
                 <div className="font-serif text-lg">{b.title}</div>

@@ -1,17 +1,13 @@
-import { createFileRoute, Outlet, useNavigate } from "@tanstack/react-router";
+import { Outlet, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useAuth } from "@/hooks/use-auth";
 
-export const Route = createFileRoute("/admin")({
-  component: AdminLayout,
-});
-
-function AdminLayout() {
+export default function AdminLayout() {
   const { user, isAdmin, loading } = useAuth();
   const nav = useNavigate();
 
   useEffect(() => {
-    if (!loading && !user) nav({ to: "/login" });
+    if (!loading && !user) nav("/login");
   }, [loading, user, nav]);
 
   if (loading) return <div className="p-10 text-muted-foreground">Ladataan…</div>;

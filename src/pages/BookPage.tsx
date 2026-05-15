@@ -1,20 +1,16 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 
-export const Route = createFileRoute("/books/$slug")({
-  component: BookPage,
-});
-
-function BookPage() {
-  const { slug } = Route.useParams();
-  const { data, isLoading } = useQuery({
+export default function BookPage() {
+  const { slug = "" } = useParams();
+  const { data, isLoading, error } = useQuery({
     queryKey: ["book", slug],
     queryFn: async () => {
       const { data: book, error } = await supabase
         .from("books").select("*").eq("slug", slug).maybeSingle();
       if (error) throw error;
-      if (!book) throw notFound();
+      if (!book) throw new Error("not_found");
       const { data: chapters } = await supabase
         .from("chapters").select("*").eq("book_id", book.id).order("position");
       return { book, chapters: chapters ?? [] };
@@ -22,7 +18,7 @@ function BookPage() {
   });
 
   if (isLoading) return <div className="mx-auto max-w-3xl px-6 py-16 text-muted-foreground">Ladataan…</div>;
-  if (!data) return null;
+  if (error || !data) return <div className="mx-auto max-w-3xl px-6 py-16">Kirjaa ei löytynyt.</div>;
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
@@ -36,8 +32,7 @@ function BookPage() {
         {data.chapters.map((c, i) => (
           <li key={c.id}>
             <Link
-              to="/books/$slug/$chapterSlug"
-              params={{ slug, chapterSlug: c.slug }}
+              to={`/books/${slug}/${c.slug}`}
               className="flex items-baseline gap-3 rounded px-2 py-2 hover:bg-secondary"
             >
               <span className="font-mono text-sm text-muted-foreground">{String(i + 1).padStart(2, "0")}</span>

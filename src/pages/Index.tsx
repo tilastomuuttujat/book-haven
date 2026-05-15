@@ -1,12 +1,8 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-function Index() {
+export default function Index() {
   const { data: books, isLoading } = useQuery({
     queryKey: ["books"],
     queryFn: async () => {
@@ -34,8 +30,7 @@ function Index() {
         {books?.map((b) => (
           <Link
             key={b.id}
-            to="/books/$slug"
-            params={{ slug: b.slug }}
+            to={`/books/${b.slug}`}
             className="group rounded-lg border bg-card p-6 transition hover:border-accent hover:shadow-sm"
           >
             <h2 className="text-2xl group-hover:text-accent-foreground">{b.title}</h2>

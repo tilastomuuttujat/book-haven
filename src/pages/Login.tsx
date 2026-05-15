@@ -1,16 +1,12 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/use-auth";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 
-export const Route = createFileRoute("/login")({
-  component: Login,
-});
-
-function Login() {
+export default function Login() {
   const { signIn } = useAuth();
   const nav = useNavigate();
   const [email, setEmail] = useState("");
@@ -26,7 +22,7 @@ function Login() {
       toast.error(error.message);
     } else {
       toast.success("Kirjautuminen onnistui");
-      nav({ to: "/admin" });
+      nav("/admin");
     }
   };
 

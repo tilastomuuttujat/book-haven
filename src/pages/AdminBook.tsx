@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link, useParams } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -10,17 +10,13 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { Plus, Trash2, Save, ChevronUp, ChevronDown } from "lucide-react";
 
-export const Route = createFileRoute("/admin/books/$bookId")({
-  component: EditBook,
-});
-
 function slugify(s: string) {
   return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
-function EditBook() {
-  const { bookId } = Route.useParams();
+export default function AdminBook() {
+  const { bookId = "" } = useParams();
   const qc = useQueryClient();
 
   const { data: book } = useQuery({
@@ -62,7 +58,7 @@ function EditBook() {
       const { error } = await supabase.from("books").delete().eq("id", bookId);
       if (error) throw error;
     },
-    onSuccess: () => { toast.success("Kirja poistettu"); window.location.href = "/admin"; },
+    onSuccess: () => { toast.success("Kirja poistettu"); window.location.hash = "#/admin"; },
     onError: (e: Error) => toast.error(e.message),
   });
 
@@ -91,8 +87,8 @@ function EditBook() {
           <div className="space-y-2"><Label>Kuvaus</Label><Textarea value={meta.description} onChange={(e) => setMeta({ ...meta, description: e.target.value })} /></div>
           <div className="flex justify-between">
             <Button onClick={() => saveBook.mutate()}><Save className="mr-1 h-4 w-4" /> Tallenna</Button>
-            <Button variant="destructive" onClick={() => { if (confirm("Poistetaanko kirja?")) deleteBook.mutate(); }}>
-              <Trash2 className="mr-1 h-4 w-4" /> Poista kirja
+            <Button variant="destructive" onClick={() => { if (confirm("Poistetaanko kirja kaikkine sisältöineen?")) deleteBook.mutate(); }}>
+              <Trash2 className="mr-1 h-4 w-4" /> Poista
             </Button>
           </div>
         </div>
