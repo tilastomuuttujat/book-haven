@@ -5,8 +5,16 @@ import type { Database } from './types';
 function createSupabaseClient() {
   // Use import.meta.env for client-side (Vite build-time replacement)
   // Fall back to process.env for SSR (server-side rendering)
-  const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL;
-  const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || process.env.SUPABASE_PUBLISHABLE_KEY;
+  // Public Supabase URL + anon key — safe to ship in client bundle.
+  // Hardcoded as fallback so GitHub Pages builds work without env vars set.
+  const SUPABASE_URL =
+    import.meta.env.VITE_SUPABASE_URL ||
+    (typeof process !== 'undefined' ? process.env?.SUPABASE_URL : undefined) ||
+    'https://etbjymyxiekkkvqwcygp.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY =
+    import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY ||
+    (typeof process !== 'undefined' ? process.env?.SUPABASE_PUBLISHABLE_KEY : undefined) ||
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV0Ymp5bXl4aWVra2t2cXdjeWdwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg4NTY2OTIsImV4cCI6MjA5NDQzMjY5Mn0.3rBdjPi3lqKW1erTPm_URxDpqrjMbelqidaP69uUowM';
 
   if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) {
     const missing = [
