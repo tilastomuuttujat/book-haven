@@ -314,29 +314,30 @@
         }
         return out;
       }
+      function jsonFileName(currentBook) {
+        const source = currentBook?.title || currentBook?.slug || "kirja";
+        const safe = source.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "") || "kirja";
+        return `${safe}.json`;
+      }
       async function publishBookJson(currentBook, chapters, btn) {
         const original = btn.textContent;
         btn.disabled = true;
-        btn.textContent = "Julkaistaan…";
+        btn.textContent = "Ladataan…";
         try {
           const payload = await buildBookJson(currentBook, chapters);
-          const token = session?.access_token;
-          if (!token) throw new Error("Ei istuntoa");
-          const res = await fetch(`${SUPABASE_URL}/functions/v1/commit-book-json`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              apikey: SUPABASE_KEY,
-              Authorization: `Bearer ${token}`,
-            },
-            body: JSON.stringify({ slug: currentBook.slug, content: payload }),
-          });
-          const data = await res.json().catch(() => ({}));
-          if (!res.ok) throw new Error(data?.error || `HTTP ${res.status}`);
-          btn.textContent = "Julkaistu ✓";
+          const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json;charset=utf-8" });
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement("a");
+          link.href = url;
+          link.download = jsonFileName(currentBook);
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+          URL.revokeObjectURL(url);
+          btn.textContent = "Ladattu ✓";
         } catch (e) {
-          btn.textContent = e.message?.includes("GitHub-tokenilla") ? "Token-oikeus puuttuu" : "Virhe – katso konsoli";
-          alert(e.message || "JSON-julkaisu epäonnistui");
+          btn.textContent = "Virhe – katso konsoli";
+          alert(e.message || "JSON-lataus epäonnistui");
           console.error("publishBookJson", e);
         } finally {
           setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 2200);
@@ -363,7 +364,7 @@
         const currentBook = books[0];
         if (!currentBook) return setError("Kirjaa ei löytynyt.");
         const chapters = await cachedSelect("chapters", `?select=*&book_id=${eq(currentBook.id)}&order=position.asc`);
-        const adminBtns = isAdmin && chapters.length ? `<button class="secondary" id="publishJsonBtn" type="button" title="Tallenna kirjan JSON GitHubiin">📦 Luo JSON</button>` : "";
+        const adminBtns = isAdmin && chapters.length ? `<button class="secondary" id="publishJsonBtn" type="button" title="Lataa kirjan JSON-tiedosto laitteelle">📦 Lataa JSON</button>` : "";
         const copyButton = chapters.length ? `<button class="secondary" id="copyBookBtn" type="button" title="Kopioi koko kirja leikepöydälle">📋 Kopioi kirja</button>` : "";
         paint(`<a class="back" href="#/">← Kirjat</a><div class="row" style="justify-content:space-between;align-items:flex-start;gap:18px"><div><h1 class="book-title">${esc(currentBook.title)}</h1><p class="muted">${esc(currentBook.author)}</p></div><div class="row" style="gap:8px;flex-wrap:wrap">${copyButton}${adminBtns}</div></div>${currentBook.description ? `<p class="reader">${esc(currentBook.description)}</p>` : ""}<h2 style="margin-top:48px;font-size:32px">Sisällysluettelo</h2><ol class="toc">${chapters.map((c, i) => `<li><a href="#/books/${esc(slug)}/${esc(c.slug)}"><span class="num">${String(i + 1).padStart(2, "0")}</span><span style="font-family:Instrument Serif,Georgia,serif;font-size:22px">${esc(c.title)}</span></a></li>`).join("") || `<li class="muted">Ei vielä lukuja.</li>`}</ol>`);
         const copyBtn = document.getElementById("copyBookBtn");
