@@ -384,7 +384,7 @@
         if (!currentBook) return setError("Kirjaa ei löytynyt.");
         const chapters = await cachedSelect("chapters", `?select=*&book_id=${eq(currentBook.id)}&order=position.asc`);
         const adminBtns = isAdmin && chapters.length ? `<button class="secondary" id="publishJsonBtn" type="button" title="Lataa kirjan JSON-tiedosto laitteelle">📦 Lataa JSON</button>` : "";
-        const copyButton = chapters.length ? `<button class="secondary" id="copyBookBtn" type="button" title="Kopioi koko kirja leikepöydälle">📋 Kopioi kirja</button>` : "";
+        const copyButton = isAdmin && chapters.length ? `<button class="secondary" id="copyBookBtn" type="button" title="Kopioi koko kirja leikepöydälle">📋 Kopioi kirja</button>` : "";
         paint(`<a class="back" href="#/">← Kirjat</a><div class="row" style="justify-content:space-between;align-items:flex-start;gap:18px"><div><h1 class="book-title">${esc(currentBook.title)}</h1><p class="muted">${esc(currentBook.author)}</p></div><div class="row" style="gap:8px;flex-wrap:wrap">${copyButton}${adminBtns}</div></div>${currentBook.description ? `<p class="reader">${esc(currentBook.description)}</p>` : ""}<h2 style="margin-top:48px;font-size:32px">Sisällysluettelo</h2><ol class="toc">${chapters.map((c, i) => `<li><a href="#/books/${esc(slug)}/${esc(c.slug)}"><span class="num">${String(i + 1).padStart(2, "0")}</span><span style="font-family:Instrument Serif,Georgia,serif;font-size:22px">${esc(c.title)}</span></a></li>`).join("") || `<li class="muted">Ei vielä lukuja.</li>`}</ol>`);
         const copyBtn = document.getElementById("copyBookBtn");
         if (copyBtn) copyBtn.onclick = () => copyBookToClipboard(currentBook, chapters, copyBtn);
