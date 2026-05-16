@@ -395,7 +395,7 @@
             await update("sections", `?id=${eq(c.id)}`, { position: a.position });
             clearDataCache(); route();
           } catch (error) { flash(error.message, false); }
-        };
+        });
         setupFormatBar();
       }
 
