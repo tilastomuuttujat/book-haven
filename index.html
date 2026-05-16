@@ -109,6 +109,13 @@
       };
       const setStatus = (text) => { app.innerHTML = `<p class="status">${esc(text)}</p>`; };
       const setError = (text) => { app.innerHTML = `<p class="error">${esc(text)}</p>`; };
+      function withTimeout(promise, ms = 8000) {
+        let timer;
+        const timeout = new Promise((_, reject) => {
+          timer = setTimeout(() => reject(new Error("Yhteys aikakatkaistiin. Päivitä sivu.")), ms);
+        });
+        return Promise.race([promise, timeout]).finally(() => clearTimeout(timer));
+      }
 
       function renderInline(nodes = []) {
         return nodes.map((n) => {
@@ -147,11 +154,11 @@
         return { type: "doc", content: String(text || "").split(/\n\s*\n/).filter(Boolean).map((p) => ({ type: "paragraph", content: [{ type: "text", text: p.trim() }] })) };
       }
       async function refreshAuth() {
-        const res = await supabaseClient.auth.getSession();
+        const res = await withTimeout(supabaseClient.auth.getSession(), 3000).catch(() => ({ data: { session: null } }));
         session = res.data.session;
         isAdmin = false;
         if (session?.user) {
-          const { data } = await supabaseClient.from("user_roles").select("role").eq("user_id", session.user.id).eq("role", "admin").maybeSingle();
+          const { data } = await withTimeout(supabaseClient.rpc("has_role", { _user_id: session.user.id, _role: "admin" }), 3000).catch(() => ({ data: false }));
           isAdmin = !!data;
         }
         nav.innerHTML = `<a href="#/">Kirjat</a>${isAdmin ? `<a href="#/admin">Admin</a>` : ""}${session ? `<button class="secondary" id="logout" type="button">Kirjaudu ulos</button>` : `<a href="#/login">Kirjaudu</a>`}`;
