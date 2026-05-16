@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { RichEditor } from "@/components/RichEditor";
+import { InlineSection, InlineSectionTitle } from "@/components/InlineSection";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { Plus, Trash2, Save, ChevronUp, ChevronDown } from "lucide-react";
@@ -189,19 +189,6 @@ function ChapterEditor({ chapter, bookId, totalChapters }: { chapter: { id: stri
 
 function SectionEditor({ section, chapterId }: { section: { id: string; title: string | null; content: unknown }; chapterId: string }) {
   const qc = useQueryClient();
-  const [title, setTitle] = useState(section.title ?? "");
-  const [content, setContent] = useState<unknown>(section.content);
-
-  const save = useMutation({
-    mutationFn: async () => {
-      const { error } = await supabase.from("sections").update({
-        title: title || null, content: content as never,
-      }).eq("id", section.id);
-      if (error) throw error;
-    },
-    onSuccess: () => toast.success("Osio tallennettu"),
-    onError: (e: Error) => toast.error(e.message),
-  });
 
   const del = useMutation({
     mutationFn: async () => {
@@ -213,14 +200,15 @@ function SectionEditor({ section, chapterId }: { section: { id: string; title: s
 
   return (
     <div className="rounded border bg-background p-4">
-      <div className="mb-3 flex gap-2">
-        <Input placeholder="Osion otsikko (valinnainen)" value={title} onChange={(e) => setTitle(e.target.value)} />
-        <Button size="sm" onClick={() => save.mutate()}><Save className="mr-1 h-4 w-4" /> Tallenna</Button>
+      <div className="mb-3 flex items-start justify-between gap-2">
+        <div className="flex-1">
+          <InlineSectionTitle sectionId={section.id} initialTitle={section.title} editable />
+        </div>
         <Button size="sm" variant="ghost" onClick={() => { if (confirm("Poistetaanko osio?")) del.mutate(); }}>
           <Trash2 className="h-4 w-4 text-destructive" />
         </Button>
       </div>
-      <RichEditor value={content} onChange={setContent} />
+      <InlineSection sectionId={section.id} initialContent={section.content} editable />
     </div>
   );
 }
