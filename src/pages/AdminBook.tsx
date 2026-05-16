@@ -1,4 +1,3 @@
-import { Link, useParams } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -15,8 +14,7 @@ function slugify(s: string) {
     .replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
-export default function AdminBook() {
-  const { bookId = "" } = useParams();
+export default function AdminBook({ bookId }: { bookId: string }) {
   const qc = useQueryClient();
 
   const { data: book } = useQuery({
@@ -77,7 +75,7 @@ export default function AdminBook() {
 
   return (
     <div className="mx-auto max-w-4xl px-6 py-12">
-      <Link to="/admin" className="text-sm text-muted-foreground hover:text-foreground">← Hallinta</Link>
+      <a href="#/admin" className="text-sm text-muted-foreground hover:text-foreground">← Hallinta</a>
 
       <section className="mt-6 rounded-lg border bg-card p-6">
         <h1 className="text-2xl">Kirjan tiedot</h1>

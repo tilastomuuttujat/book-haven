@@ -1,9 +1,7 @@
-import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 
-export default function BookPage() {
-  const { slug = "" } = useParams();
+export default function BookPage({ slug }: { slug: string }) {
   const { data, isLoading, error } = useQuery({
     queryKey: ["book", slug],
     queryFn: async () => {
@@ -22,7 +20,7 @@ export default function BookPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
-      <Link to="/" className="text-sm text-muted-foreground hover:text-foreground">← Kirjat</Link>
+      <a href="#/" className="text-sm text-muted-foreground hover:text-foreground">← Kirjat</a>
       <h1 className="mt-6 text-5xl">{data.book.title}</h1>
       <p className="mt-2 text-muted-foreground">{data.book.author}</p>
       {data.book.description && <p className="mt-6 max-w-prose text-foreground/80">{data.book.description}</p>}
@@ -31,13 +29,13 @@ export default function BookPage() {
       <ol className="mt-4 space-y-2">
         {data.chapters.map((c, i) => (
           <li key={c.id}>
-            <Link
-              to={`/books/${slug}/${c.slug}`}
+            <a
+              href={`#/books/${slug}/${c.slug}`}
               className="flex items-baseline gap-3 rounded px-2 py-2 hover:bg-secondary"
             >
               <span className="font-mono text-sm text-muted-foreground">{String(i + 1).padStart(2, "0")}</span>
               <span className="font-serif text-lg">{c.title}</span>
-            </Link>
+            </a>
           </li>
         ))}
         {data.chapters.length === 0 && <li className="text-muted-foreground">Ei vielä lukuja.</li>}

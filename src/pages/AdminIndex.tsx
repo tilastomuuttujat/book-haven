@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -54,14 +53,14 @@ export default function AdminIndex() {
         <h2 className="text-2xl">Kirjat</h2>
         <div className="mt-4 space-y-2">
           {books?.map((b) => (
-            <Link key={b.id} to={`/admin/books/${b.id}`}
+            <a key={b.id} href={`#/admin/books/${b.id}`}
               className="flex items-center justify-between rounded border bg-card p-4 hover:border-accent">
               <div>
                 <div className="font-serif text-lg">{b.title}</div>
                 <div className="text-xs text-muted-foreground">{b.author}</div>
               </div>
               <Pencil className="h-4 w-4 text-muted-foreground" />
-            </Link>
+            </a>
           ))}
         </div>
       </section>

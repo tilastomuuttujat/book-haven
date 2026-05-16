@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/use-auth";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,7 +7,6 @@ import { toast } from "sonner";
 
 export default function Login() {
   const { signIn } = useAuth();
-  const nav = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -22,7 +20,7 @@ export default function Login() {
       toast.error(error.message);
     } else {
       toast.success("Kirjautuminen onnistui");
-      nav("/admin");
+      window.location.hash = "#/admin";
     }
   };
 
