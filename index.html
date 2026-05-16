@@ -629,7 +629,7 @@
         const parts = path().split("/").filter(Boolean).map(decodeURIComponent);
         try {
           if (session?.user?.id && adminRoleUser !== session.user.id) await refreshAuth();
-          else refreshAuth();
+          else void refreshAuth().catch(() => {});
           if (!parts.length || (parts[0] === "books" && !parts[1])) return home();
           if (parts[0] === "login") return login();
           if (parts[0] === "admin" && !parts[1]) return admin();
