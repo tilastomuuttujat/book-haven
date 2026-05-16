@@ -1,10 +1,8 @@
-import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { RenderContent } from "@/components/RenderContent";
 
-export default function ChapterPage() {
-  const { slug = "", chapterSlug = "" } = useParams();
+export default function ChapterPage({ slug, chapterSlug }: { slug: string; chapterSlug: string }) {
   const { data, isLoading, error } = useQuery({
     queryKey: ["chapter", slug, chapterSlug],
     queryFn: async () => {
@@ -30,9 +28,9 @@ export default function ChapterPage() {
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-16">
-      <Link to={`/books/${slug}`} className="text-sm text-muted-foreground hover:text-foreground">
+      <a href={`#/books/${slug}`} className="text-sm text-muted-foreground hover:text-foreground">
         ← {data.book.title}
-      </Link>
+      </a>
       <h1 className="mt-6 text-4xl md:text-5xl">{data.chapter.title}</h1>
 
       <div className="mt-10 space-y-12">
@@ -46,14 +44,14 @@ export default function ChapterPage() {
 
       <nav className="mt-16 flex justify-between border-t pt-6 text-sm">
         {prev ? (
-          <Link to={`/books/${slug}/${prev.slug}`} className="hover:text-foreground text-muted-foreground">
+          <a href={`#/books/${slug}/${prev.slug}`} className="hover:text-foreground text-muted-foreground">
             ← {prev.title}
-          </Link>
+          </a>
         ) : <span />}
         {next ? (
-          <Link to={`/books/${slug}/${next.slug}`} className="hover:text-foreground text-muted-foreground text-right">
+          <a href={`#/books/${slug}/${next.slug}`} className="hover:text-foreground text-muted-foreground text-right">
             {next.title} →
-          </Link>
+          </a>
         ) : <span />}
       </nav>
     </article>
