@@ -159,6 +159,9 @@
       }
       function saveSession(nextSession) {
         session = nextSession;
+        adminRoleUser = null;
+        adminRoleCheckedAt = 0;
+        selectCache.clear();
         if (nextSession) localStorage.setItem(SESSION_KEY, JSON.stringify(nextSession));
         else localStorage.removeItem(SESSION_KEY);
       }
@@ -183,6 +186,15 @@
       const restUrl = (table, query = "") => `${SUPABASE_URL}/rest/v1/${table}${query}`;
       const eq = (value) => `eq.${encodeURIComponent(value)}`;
       const select = (table, query) => request(restUrl(table, query), { headers: headers() });
+      async function cachedSelect(table, query) {
+        const key = `${table}${query}|${session?.access_token ? "auth" : "anon"}`;
+        const hit = selectCache.get(key);
+        if (hit && Date.now() - hit.time < CACHE_MS) return hit.data;
+        const data = await select(table, query);
+        selectCache.set(key, { time: Date.now(), data });
+        return data;
+      }
+      function clearDataCache() { selectCache.clear(); }
       const insert = (table, body) => request(restUrl(table), { method: "POST", headers: headers("return=representation"), body: JSON.stringify(body) });
       const update = (table, query, body) => request(restUrl(table, query), { method: "PATCH", headers: headers("return=representation"), body: JSON.stringify(body) });
       const remove = (table, query) => request(restUrl(table, query), { method: "DELETE", headers: headers(), body: undefined });
@@ -200,7 +212,14 @@
         }
       }
       async function refreshAuth() {
+        if (session?.user?.id === adminRoleUser && Date.now() - adminRoleCheckedAt < 60000) {
+          nav.innerHTML = `<a href="#/">Kirjat</a>${isAdmin ? `<a href="#/admin">Admin</a>` : ""}${session ? `<button class="secondary" id="logout" type="button">Kirjaudu ulos</button>` : `<a href="#/login">Kirjaudu</a>`}`;
+          document.getElementById("logout")?.addEventListener("click", () => { saveSession(null); isAdmin = false; renderNavOnly(); location.hash = "#/"; });
+          return;
+        }
         isAdmin = await withTimeout(hasAdminRole(), 3000).catch(() => false);
+        adminRoleUser = session?.user?.id || null;
+        adminRoleCheckedAt = Date.now();
         nav.innerHTML = `<a href="#/">Kirjat</a>${isAdmin ? `<a href="#/admin">Admin</a>` : ""}${session ? `<button class="secondary" id="logout" type="button">Kirjaudu ulos</button>` : `<a href="#/login">Kirjaudu</a>`}`;
         document.getElementById("logout")?.addEventListener("click", () => { saveSession(null); isAdmin = false; renderNavOnly(); location.hash = "#/"; });
       }
