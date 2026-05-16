@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Harri Käyhkö – Kirjat</title>
     <meta name="description" content="Harri Käyhkön kirjat luettavaksi verkossa." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -108,6 +111,22 @@
     <footer>© <span id="year"></span> Harri Käyhkö</footer>
 
     <script>
+      // Pura mahdolliset vanhat service workerit ja tyhjennä Cache Storage,
+      // jotta vanha JS ei jää jumiin selaimeen sivun päivityksen jälkeen.
+      (function purgeStaleCaches() {
+        try {
+          if ("serviceWorker" in navigator && navigator.serviceWorker.getRegistrations) {
+            navigator.serviceWorker.getRegistrations()
+              .then((regs) => regs.forEach((r) => r.unregister().catch(() => {})))
+              .catch(() => {});
+          }
+          if (typeof caches !== "undefined" && caches.keys) {
+            caches.keys()
+              .then((keys) => keys.forEach((k) => caches.delete(k).catch(() => {})))
+              .catch(() => {});
+          }
+        } catch (_) {}
+      })();
       window.addEventListener("error", (event) => {
         const appNode = document.getElementById("app");
         if (appNode) appNode.innerHTML = `<p class="error">Virhe: ${escapeHtml(event.message || "sovellus ei käynnistynyt")}</p>`;
