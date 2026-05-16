@@ -11,39 +11,62 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const qc = useQueryClient();
 
   useEffect(() => {
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_e, s) => {
+    let active = true;
+
+    const loadSession = async (s: Session | null) => {
+      if (!active) return;
       setSession(s);
-      if (s?.user) {
-        setTimeout(async () => {
-          const { data } = await supabase
-            .from("user_roles")
-            .select("role")
-            .eq("user_id", s.user.id)
-            .eq("role", "admin")
-            .maybeSingle();
-          setIsAdmin(!!data);
-        }, 0);
-      } else {
-        setIsAdmin(false);
+      setIsAdmin(false);
+
+      if (!s?.user) {
+        setLoading(false);
+        qc.invalidateQueries();
+        return;
       }
-      qc.invalidateQueries();
+
+      try {
+        const roleCheck = supabase.rpc("has_role", {
+          _user_id: s.user.id,
+          _role: "admin",
+        });
+        const timeout = new Promise<{ data: false }>((resolve) => {
+          window.setTimeout(() => resolve({ data: false }), 3000);
+        });
+        const { data } = await Promise.race([roleCheck, timeout]);
+
+        if (!active) return;
+        setIsAdmin(!!data);
+      } catch {
+        if (!active) return;
+        setIsAdmin(false);
+      } finally {
+        if (!active) return;
+        setLoading(false);
+        qc.invalidateQueries();
+      }
+    };
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_e, s) => {
+      setTimeout(() => void loadSession(s), 0);
     });
 
-    supabase.auth.getSession().then(async ({ data: { session: s } }) => {
-      setSession(s);
-      if (s?.user) {
-        const { data } = await supabase
-          .from("user_roles")
-          .select("role")
-          .eq("user_id", s.user.id)
-          .eq("role", "admin")
-          .maybeSingle();
-        setIsAdmin(!!data);
-      }
+    const sessionTimeout = new Promise<{ data: { session: null } }>((resolve) => {
+      window.setTimeout(() => resolve({ data: { session: null } }), 3000);
+    });
+
+    Promise.race([supabase.auth.getSession(), sessionTimeout]).then(async ({ data: { session: s } }) => {
+      await loadSession(s);
+    }).catch(() => {
+      if (!active) return;
+      setSession(null);
+      setIsAdmin(false);
       setLoading(false);
     });
 
-    return () => subscription.unsubscribe();
+    return () => {
+      active = false;
+      subscription.unsubscribe();
+    };
   }, [qc]);
 
   const signIn = async (email: string, password: string) => {
