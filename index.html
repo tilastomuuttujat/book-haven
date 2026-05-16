@@ -381,6 +381,21 @@
         if (addBtn) addBtn.onclick = async () => {
           try { await insert("sections", { chapter_id: currentChapter.id, title: null, content: textToDoc(""), position: sections.length }); clearDataCache(); route(); } catch (error) { flash(error.message, false); }
         };
+        document.querySelectorAll('[data-move-section]').forEach((b) => b.onclick = async (e) => {
+          e.preventDefault();
+          if (b.disabled) return;
+          const id = b.dataset.moveSection;
+          const dir = b.dataset.dir;
+          const i = sections.findIndex((s) => s.id === id);
+          const j = dir === "up" ? i - 1 : i + 1;
+          if (i < 0 || j < 0 || j >= sections.length) return;
+          const a = sections[i], c = sections[j];
+          try {
+            await update("sections", `?id=${eq(a.id)}`, { position: c.position });
+            await update("sections", `?id=${eq(c.id)}`, { position: a.position });
+            clearDataCache(); route();
+          } catch (error) { flash(error.message, false); }
+        };
         setupFormatBar();
       }
 
