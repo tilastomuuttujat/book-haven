@@ -510,16 +510,16 @@
       }
       async function loadSections(chapterId) {
         const target = document.getElementById(`sections-${chapterId}`);
-        const sections = await select("sections", `?select=*&chapter_id=${eq(chapterId)}&order=position.asc`);
+        const sections = await cachedSelect("sections", `?select=*&chapter_id=${eq(chapterId)}&order=position.asc`);
         target.innerHTML = `<div class="panel">${sections.map((s) => `<div class="field"><label>Osion otsikko</label><input data-section-title="${esc(s.id)}" value="${esc(s.title ?? "")}"></div><div class="field"><label>Sisältö</label><textarea data-section-text="${esc(s.id)}">${esc(docToText(s.content))}</textarea></div><div class="row" style="margin-bottom:20px"><button data-save-section="${esc(s.id)}">Tallenna osio</button><button class="danger" data-del-section="${esc(s.id)}">Poista osio</button></div>`).join("")}<button class="secondary" id="addSection-${chapterId}">Lisää osio</button></div>`;
-        document.getElementById(`addSection-${chapterId}`).onclick = async () => { try { await insert("sections", { chapter_id: chapterId, title: null, content: textToDoc(""), position: sections.length }); loadSections(chapterId); } catch (error) { alert(error.message); } };
-        target.querySelectorAll("[data-save-section]").forEach((button) => button.onclick = async () => { const sectionId = button.dataset.saveSection; const title = target.querySelector(`[data-section-title="${sectionId}"]`).value; const text = target.querySelector(`[data-section-text="${sectionId}"]`).value; try { await update("sections", `?id=${eq(sectionId)}`, { title: title || null, content: textToDoc(text) }); alert("Tallennettu"); } catch (error) { alert(error.message); } });
-        target.querySelectorAll("[data-del-section]").forEach((button) => button.onclick = async () => { if (!confirm("Poistetaanko osio?")) return; try { await remove("sections", `?id=${eq(button.dataset.delSection)}`); loadSections(chapterId); } catch (error) { alert(error.message); } });
+        document.getElementById(`addSection-${chapterId}`).onclick = async () => { try { await insert("sections", { chapter_id: chapterId, title: null, content: textToDoc(""), position: sections.length }); clearDataCache(); loadSections(chapterId); } catch (error) { alert(error.message); } };
+        target.querySelectorAll("[data-save-section]").forEach((button) => button.onclick = async () => { const sectionId = button.dataset.saveSection; const title = target.querySelector(`[data-section-title="${sectionId}"]`).value; const text = target.querySelector(`[data-section-text="${sectionId}"]`).value; try { await update("sections", `?id=${eq(sectionId)}`, { title: title || null, content: textToDoc(text) }); clearDataCache(); alert("Tallennettu"); } catch (error) { alert(error.message); } });
+        target.querySelectorAll("[data-del-section]").forEach((button) => button.onclick = async () => { if (!confirm("Poistetaanko osio?")) return; try { await remove("sections", `?id=${eq(button.dataset.delSection)}`); clearDataCache(); loadSections(chapterId); } catch (error) { alert(error.message); } });
       }
       async function route() {
         const parts = path().split("/").filter(Boolean).map(decodeURIComponent);
         try {
-          await refreshAuth();
+          refreshAuth();
           if (!parts.length || (parts[0] === "books" && !parts[1])) return home();
           if (parts[0] === "login") return login();
           if (parts[0] === "admin" && !parts[1]) return admin();
