@@ -1,1 +1,4 @@
 project_id = "etbjymyxiekkkvqwcygp"
+
+[functions.commit-book-json]
+verify_jwt = false
