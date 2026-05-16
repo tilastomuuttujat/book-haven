@@ -292,7 +292,7 @@
         const next = idx >= 0 && idx < all.length - 1 ? all[idx + 1] : null;
         const ed = isAdmin ? ' contenteditable="true" spellcheck="false"' : "";
         const sectionsHtml = sections.map((s) => `<section data-section-id="${esc(s.id)}">${isAdmin ? `<button class="section-del" data-del-section="${esc(s.id)}">Poista osio</button>` : ""}<h2 data-field="title"${ed} data-placeholder="Osion otsikko (valinnainen)">${esc(s.title ?? "")}</h2><div data-field="content"${ed}>${renderDoc(s.content) || (isAdmin ? "<p>Kirjoita tähän…</p>" : "")}</div></section>`).join("");
-        app.innerHTML = `<article><a class="back" href="#/books/${esc(slug)}">← ${esc(currentBook.title)}</a><h1 class="chapter-title" data-chapter-title${ed}>${esc(currentChapter.title)}</h1><div class="reader" id="reader" style="margin-top:40px">${sectionsHtml}</div>${isAdmin ? `<button class="section-add" id="addSectionBtn">+ Lisää osio</button>` : ""}<nav class="pager">${prev ? `<a href="#/books/${esc(slug)}/${esc(prev.slug)}">← ${esc(prev.title)}</a>` : `<span></span>`}${next ? `<a class="right" href="#/books/${esc(slug)}/${esc(next.slug)}">${esc(next.title)} →</a>` : `<span></span>`}</nav></article>${isAdmin ? `<div class="edit-hint">Muokkaustila — klikkaa tekstiä</div><div class="edit-badge" id="editBadge">Tallennetaan…</div>` : ""}`;
+        paint(`<article><a class="back" href="#/books/${esc(slug)}">← ${esc(currentBook.title)}</a><h1 class="chapter-title" data-chapter-title${ed}>${esc(currentChapter.title)}</h1><div class="reader" id="reader" style="margin-top:40px">${sectionsHtml}</div>${isAdmin ? `<button class="section-add" id="addSectionBtn">+ Lisää osio</button>` : ""}<nav class="pager">${prev ? `<a href="#/books/${esc(slug)}/${esc(prev.slug)}">← ${esc(prev.title)}</a>` : `<span></span>`}${next ? `<a class="right" href="#/books/${esc(slug)}/${esc(next.slug)}">${esc(next.title)} →</a>` : `<span></span>`}</nav></article>${isAdmin ? `<div class="edit-hint">Muokkaustila — klikkaa tekstiä</div><div class="edit-badge" id="editBadge">Tallennetaan…</div>` : ""}`);
         if (!isAdmin) return;
         const badge = document.getElementById("editBadge");
         const flash = (text, ok = true) => { badge.textContent = text; badge.style.background = ok ? "var(--accent)" : "var(--danger)"; badge.classList.add("show"); clearTimeout(flash._t); flash._t = setTimeout(() => badge.classList.remove("show"), 1400); };
@@ -352,6 +352,7 @@
           flash("Tallennetaan…");
           try {
             await update("sections", `?id=${eq(sectionId)}`, { title: (titleEl.innerText || "").trim() || null, content: htmlToDoc(contentEl) });
+            clearDataCache();
             flash("Tallennettu ✓");
           } catch (error) { flash(error.message, false); }
         };
@@ -365,17 +366,18 @@
           flash("Tallennetaan…");
           try {
             await update("chapters", `?id=${eq(currentChapter.id)}`, { title: (titleEl.innerText || "").trim() || currentChapter.title });
+            clearDataCache();
             flash("Tallennettu ✓");
           } catch (error) { flash(error.message, false); }
         });
         document.querySelectorAll('[data-del-section]').forEach((b) => b.onclick = async (e) => {
           e.preventDefault();
           if (!confirm("Poistetaanko osio?")) return;
-          try { await remove("sections", `?id=${eq(b.dataset.delSection)}`); route(); } catch (error) { flash(error.message, false); }
+          try { await remove("sections", `?id=${eq(b.dataset.delSection)}`); clearDataCache(); route(); } catch (error) { flash(error.message, false); }
         });
         const addBtn = document.getElementById("addSectionBtn");
         if (addBtn) addBtn.onclick = async () => {
-          try { await insert("sections", { chapter_id: currentChapter.id, title: null, content: textToDoc(""), position: sections.length }); route(); } catch (error) { flash(error.message, false); }
+          try { await insert("sections", { chapter_id: currentChapter.id, title: null, content: textToDoc(""), position: sections.length }); clearDataCache(); route(); } catch (error) { flash(error.message, false); }
         };
         setupFormatBar();
       }
