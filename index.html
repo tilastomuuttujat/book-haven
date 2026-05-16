@@ -272,13 +272,47 @@
         const books = await cachedSelect("books", "?select=*&order=position.asc");
         paint(`<section class="hero"><h1>Kirjasto</h1><p>Harri Käyhkön julkaisemat tekstit – luettavissa verkossa.</p></section><section class="grid">${books.map((b) => `<a class="card" href="#/books/${esc(b.slug)}"><h2>${esc(b.title)}</h2><p class="muted small">${esc(b.author)}</p>${b.description ? `<p>${esc(b.description)}</p>` : ""}</a>`).join("") || `<p class="muted">Ei vielä kirjoja.</p>`}</section>`);
       }
+      async function buildBookText(currentBook, chapters) {
+        const parts = [currentBook.title.toUpperCase(), currentBook.author];
+        if (currentBook.description) parts.push("", currentBook.description);
+        parts.push("", "");
+        for (let i = 0; i < chapters.length; i++) {
+          const c = chapters[i];
+          const sections = await cachedSelect("sections", `?select=*&chapter_id=${eq(c.id)}&order=position.asc`);
+          parts.push(`${String(i + 1).padStart(2, "0")}. ${c.title}`, "");
+          for (const s of sections) {
+            if (s.title) parts.push(s.title, "");
+            const text = docToText(s.content);
+            if (text) parts.push(text, "");
+          }
+          parts.push("");
+        }
+        return parts.join("\n").replace(/\n{3,}/g, "\n\n").trim() + "\n";
+      }
+      async function copyBookToClipboard(currentBook, chapters, btn) {
+        const original = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = "Kopioidaan…";
+        try {
+          const text = await buildBookText(currentBook, chapters);
+          await navigator.clipboard.writeText(text);
+          btn.textContent = "Kopioitu ✓";
+        } catch (e) {
+          btn.textContent = "Kopiointi epäonnistui";
+          console.error(e);
+        } finally {
+          setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 1600);
+        }
+      }
       async function book(slug) {
         setStatus("Ladataan…");
         const books = await cachedSelect("books", `?select=*&slug=${eq(slug)}&limit=1`);
         const currentBook = books[0];
         if (!currentBook) return setError("Kirjaa ei löytynyt.");
         const chapters = await cachedSelect("chapters", `?select=*&book_id=${eq(currentBook.id)}&order=position.asc`);
-        paint(`<a class="back" href="#/">← Kirjat</a><h1 class="book-title">${esc(currentBook.title)}</h1><p class="muted">${esc(currentBook.author)}</p>${currentBook.description ? `<p class="reader">${esc(currentBook.description)}</p>` : ""}<h2 style="margin-top:48px;font-size:32px">Sisällysluettelo</h2><ol class="toc">${chapters.map((c, i) => `<li><a href="#/books/${esc(slug)}/${esc(c.slug)}"><span class="num">${String(i + 1).padStart(2, "0")}</span><span style="font-family:Instrument Serif,Georgia,serif;font-size:22px">${esc(c.title)}</span></a></li>`).join("") || `<li class="muted">Ei vielä lukuja.</li>`}</ol>`);
+        paint(`<a class="back" href="#/">← Kirjat</a><div class="row" style="justify-content:space-between;align-items:flex-start;gap:18px"><div><h1 class="book-title">${esc(currentBook.title)}</h1><p class="muted">${esc(currentBook.author)}</p></div>${chapters.length ? `<button class="secondary" id="copyBookBtn" type="button" title="Kopioi koko kirja leikepöydälle">📋 Kopioi kirja</button>` : ""}</div>${currentBook.description ? `<p class="reader">${esc(currentBook.description)}</p>` : ""}<h2 style="margin-top:48px;font-size:32px">Sisällysluettelo</h2><ol class="toc">${chapters.map((c, i) => `<li><a href="#/books/${esc(slug)}/${esc(c.slug)}"><span class="num">${String(i + 1).padStart(2, "0")}</span><span style="font-family:Instrument Serif,Georgia,serif;font-size:22px">${esc(c.title)}</span></a></li>`).join("") || `<li class="muted">Ei vielä lukuja.</li>`}</ol>`);
+        const copyBtn = document.getElementById("copyBookBtn");
+        if (copyBtn) copyBtn.onclick = () => copyBookToClipboard(currentBook, chapters, copyBtn);
       }
       async function chapter(slug, chapterSlug) {
         setStatus("Ladataan…");
