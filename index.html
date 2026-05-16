@@ -81,6 +81,12 @@
       .edit-hint { position: fixed; top: 70px; right: 20px; background: var(--card); border: 1px solid var(--accent); color: var(--accent); padding: 6px 12px; border-radius: 999px; font-size: 12px; z-index: 50; }
       .section-add { display: block; margin: 20px 0; padding: 10px; border: 1px dashed var(--line); background: transparent; color: var(--muted); width: 100%; }
       .section-del { float: right; margin-top: -8px; background: transparent; color: var(--danger); border-color: var(--line); padding: 4px 10px; font-size: 12px; }
+      #fmtbar { position: absolute; display: none; background: #2a2520; color: #fffdf8; border-radius: 8px; padding: 4px; gap: 2px; z-index: 100; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+      #fmtbar.show { display: inline-flex; }
+      #fmtbar button { background: transparent; border: none; color: #fffdf8; padding: 6px 10px; font-size: 13px; border-radius: 4px; min-width: 32px; }
+      #fmtbar button:hover { background: rgba(255,255,255,.15); }
+      #fmtbar button.active { background: var(--accent); }
+      #fmtbar .sep { width: 1px; background: rgba(255,255,255,.2); margin: 4px 2px; }
       @media (max-width: 720px) {
         .bar, main, footer { width: min(100% - 32px, 980px); }
         .grid { grid-template-columns: 1fr; }
@@ -258,9 +264,54 @@
         if (!isAdmin) return;
         const badge = document.getElementById("editBadge");
         const flash = (text, ok = true) => { badge.textContent = text; badge.style.background = ok ? "var(--accent)" : "var(--danger)"; badge.classList.add("show"); clearTimeout(flash._t); flash._t = setTimeout(() => badge.classList.remove("show"), 1400); };
+        const inlineFromNode = (node, marks = []) => {
+          if (node.nodeType === 3) {
+            const t = node.nodeValue;
+            return t ? [{ type: "text", text: t, ...(marks.length ? { marks: marks.map((m) => ({ type: m })) } : {}) }] : [];
+          }
+          if (node.nodeType !== 1) return [];
+          const tag = node.tagName;
+          if (tag === "BR") return [{ type: "hardBreak" }];
+          const next = marks.slice();
+          if (tag === "STRONG" || tag === "B") next.push("bold");
+          if (tag === "EM" || tag === "I") next.push("italic");
+          const out = [];
+          node.childNodes.forEach((c) => out.push(...inlineFromNode(c, next)));
+          return out;
+        };
+        const inlineFrom = (el) => {
+          const out = [];
+          el.childNodes.forEach((c) => out.push(...inlineFromNode(c)));
+          return out;
+        };
+        const blockFromEl = (el) => {
+          const tag = el.tagName;
+          if (tag === "H1") return { type: "heading", attrs: { level: 1 }, content: inlineFrom(el) };
+          if (tag === "H2") return { type: "heading", attrs: { level: 2 }, content: inlineFrom(el) };
+          if (tag === "H3") return { type: "heading", attrs: { level: 3 }, content: inlineFrom(el) };
+          if (tag === "BLOCKQUOTE") {
+            const inner = [];
+            el.childNodes.forEach((c) => { const b = blockFromAny(c); if (b) inner.push(...(Array.isArray(b) ? b : [b])); });
+            return { type: "blockquote", content: inner.length ? inner : [{ type: "paragraph", content: inlineFrom(el) }] };
+          }
+          if (tag === "UL" || tag === "OL") {
+            const items = Array.from(el.children).filter((c) => c.tagName === "LI").map((li) => ({ type: "listItem", content: [{ type: "paragraph", content: inlineFrom(li) }] }));
+            return { type: tag === "UL" ? "bulletList" : "orderedList", content: items };
+          }
+          return { type: "paragraph", content: inlineFrom(el) };
+        };
+        const blockFromAny = (node) => {
+          if (node.nodeType === 3) {
+            const t = node.nodeValue.trim();
+            return t ? { type: "paragraph", content: [{ type: "text", text: node.nodeValue }] } : null;
+          }
+          if (node.nodeType !== 1) return null;
+          return blockFromEl(node);
+        };
         const htmlToDoc = (el) => {
-          const text = (el.innerText || "").replace(/\u00a0/g, " ");
-          return textToDoc(text);
+          const content = [];
+          el.childNodes.forEach((n) => { const b = blockFromAny(n); if (b) content.push(b); });
+          return { type: "doc", content: content.length ? content : [{ type: "paragraph", content: [] }] };
         };
         const saveSection = async (sectionEl) => {
           const sectionId = sectionEl.dataset.sectionId;
@@ -294,6 +345,78 @@
         if (addBtn) addBtn.onclick = async () => {
           try { await insert("sections", { chapter_id: currentChapter.id, title: null, content: textToDoc(""), position: sections.length }); route(); } catch (error) { flash(error.message, false); }
         };
+        setupFormatBar();
+      }
+
+      function setupFormatBar() {
+        let bar = document.getElementById("fmtbar");
+        if (!bar) {
+          bar = document.createElement("div");
+          bar.id = "fmtbar";
+          bar.innerHTML = `<button data-cmd="bold" title="Lihavoi (Ctrl+B)"><b>B</b></button><button data-cmd="italic" title="Kursivoi (Ctrl+I)"><i>I</i></button><span class="sep"></span><button data-block="p" title="Kappale">P</button><button data-block="h2" title="Otsikko 2">H2</button><button data-block="h3" title="Otsikko 3">H3</button><span class="sep"></span><button data-block="blockquote" title="Sitaatti">❝</button><button data-cmd="insertUnorderedList" title="Lista">•</button><button data-cmd="insertOrderedList" title="Numeroitu lista">1.</button>`;
+          document.body.appendChild(bar);
+          bar.addEventListener("mousedown", (e) => e.preventDefault());
+          bar.querySelectorAll("button").forEach((btn) => btn.addEventListener("click", () => {
+            const cmd = btn.dataset.cmd;
+            const block = btn.dataset.block;
+            if (cmd) document.execCommand(cmd, false);
+            else if (block === "blockquote") toggleBlockquote();
+            else if (block) document.execCommand("formatBlock", false, block);
+            updateBarState();
+          }));
+        }
+        const getEditableHost = () => {
+          const sel = window.getSelection();
+          if (!sel || sel.rangeCount === 0) return null;
+          let n = sel.anchorNode;
+          while (n && n !== document.body) {
+            if (n.nodeType === 1 && n.getAttribute && n.getAttribute("contenteditable") === "true" && n.dataset.field === "content") return n;
+            n = n.parentNode;
+          }
+          return null;
+        };
+        const findBlock = (node, host) => {
+          while (node && node !== host) {
+            if (node.nodeType === 1 && /^(P|H1|H2|H3|BLOCKQUOTE|LI|UL|OL)$/.test(node.tagName)) return node;
+            node = node.parentNode;
+          }
+          return null;
+        };
+        const toggleBlockquote = () => {
+          const sel = window.getSelection();
+          const host = getEditableHost();
+          if (!host || !sel.rangeCount) return;
+          let node = sel.anchorNode;
+          if (node && node.nodeType === 3) node = node.parentNode;
+          const bq = (function () { let n = node; while (n && n !== host) { if (n.tagName === "BLOCKQUOTE") return n; n = n.parentNode; } return null; })();
+          if (bq) {
+            while (bq.firstChild) bq.parentNode.insertBefore(bq.firstChild, bq);
+            bq.remove();
+          } else {
+            const block = findBlock(node, host) || node;
+            const wrap = document.createElement("blockquote");
+            block.parentNode.insertBefore(wrap, block);
+            wrap.appendChild(block);
+          }
+        };
+        const updateBarState = () => {
+          const host = getEditableHost();
+          if (!host) { bar.classList.remove("show"); return; }
+          const sel = window.getSelection();
+          if (!sel.rangeCount || sel.isCollapsed) { bar.classList.remove("show"); return; }
+          const rect = sel.getRangeAt(0).getBoundingClientRect();
+          if (!rect.width && !rect.height) { bar.classList.remove("show"); return; }
+          bar.classList.add("show");
+          const barRect = bar.getBoundingClientRect();
+          const top = rect.top + window.scrollY - barRect.height - 8;
+          const left = Math.max(8, rect.left + window.scrollX + rect.width / 2 - barRect.width / 2);
+          bar.style.top = `${Math.max(window.scrollY + 8, top)}px`;
+          bar.style.left = `${left}px`;
+          bar.querySelectorAll("button[data-cmd]").forEach((b) => { try { b.classList.toggle("active", document.queryCommandState(b.dataset.cmd)); } catch { } });
+        };
+        document.addEventListener("selectionchange", updateBarState);
+        window.addEventListener("scroll", updateBarState, { passive: true });
+        window.addEventListener("resize", updateBarState);
       }
       function login() {
         app.innerHTML = `<section class="form"><h1 style="font-size:40px">Kirjaudu sisään</h1><p class="muted">Vain admin voi muokata sisältöä.</p><form id="loginForm" class="panel"><div class="field"><label>Sähköposti</label><input id="email" type="email" autocomplete="email" required></div><div class="field"><label>Salasana</label><input id="password" type="password" autocomplete="current-password" required></div><button id="loginButton" type="submit">Kirjaudu</button><p id="loginMsg" class="error"></p></form></section>`;
