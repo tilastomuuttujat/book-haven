@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { AuthProvider, useAuth } from "@/hooks/use-auth";
 import { Button } from "@/components/ui/button";
@@ -20,7 +20,7 @@ function currentHashPath() {
   return path.startsWith("/") ? path : `/${path}`;
 }
 
-function HashLink({ to, className, children }: { to: string; className?: string; children: React.ReactNode }) {
+function HashLink({ to, className, children }: { to: string; className?: string; children: ReactNode }) {
   return <a href={`#${to}`} className={className}>{children}</a>;
 }
 

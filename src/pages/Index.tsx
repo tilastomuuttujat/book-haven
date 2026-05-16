@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -28,15 +27,15 @@ export default function Index() {
 
       <div className="grid gap-6 md:grid-cols-2">
         {books?.map((b) => (
-          <Link
+          <a
             key={b.id}
-            to={`/books/${b.slug}`}
+            href={`#/books/${b.slug}`}
             className="group rounded-lg border bg-card p-6 transition hover:border-accent hover:shadow-sm"
           >
             <h2 className="text-2xl group-hover:text-accent-foreground">{b.title}</h2>
             <p className="mt-1 text-sm text-muted-foreground">{b.author}</p>
             {b.description && <p className="mt-3 text-sm leading-relaxed text-foreground/80">{b.description}</p>}
-          </Link>
+          </a>
         ))}
         {books?.length === 0 && (
           <p className="text-muted-foreground">Ei vielä kirjoja.</p>
