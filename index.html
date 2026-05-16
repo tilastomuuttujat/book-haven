@@ -102,7 +102,7 @@
         <nav id="nav"><a href="#/">Kirjat</a><a href="#/login">Kirjaudu</a></nav>
       </div>
     </header>
-    <main id="app"><p class="status">Ladataan…</p></main>
+    <main id="app"></main>
     <footer>© <span id="year"></span> Harri Käyhkö</footer>
 
     <script>
@@ -120,6 +120,11 @@
 
       let session = readSession();
       let isAdmin = false;
+      let statusTimer = null;
+      let adminRoleUser = null;
+      let adminRoleCheckedAt = 0;
+      const selectCache = new Map();
+      const CACHE_MS = 15000;
 
       function escapeHtml(value) {
         return String(value ?? "").replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" })[char]);
@@ -130,8 +135,17 @@
         const hashPath = location.hash.replace(/^#/, "");
         return hashPath ? (hashPath.startsWith("/") ? hashPath : `/${hashPath}`) : "/";
       };
-      const setStatus = (text) => { app.innerHTML = `<p class="status">${esc(text)}</p>`; };
-      const setError = (text) => { app.innerHTML = `<p class="error">${esc(text)}</p>`; };
+      function paint(html) {
+        clearTimeout(statusTimer);
+        app.innerHTML = html;
+      }
+      const setStatus = (text) => {
+        clearTimeout(statusTimer);
+        const html = `<p class="status">${esc(text)}</p>`;
+        if (text === "Ladataan…") statusTimer = setTimeout(() => { app.innerHTML = html; }, 350);
+        else app.innerHTML = html;
+      };
+      const setError = (text) => paint(`<p class="error">${esc(text)}</p>`);
       function withTimeout(promise, ms = 8000) {
         let timer;
         const timeout = new Promise((_, reject) => {
