@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/use-auth";
 import { InlineSection, InlineSectionTitle } from "@/components/InlineSection";
+import { withQueryTimeout } from "@/lib/query-timeout";
 
 export default function ChapterPage({ slug, chapterSlug }: { slug: string; chapterSlug: string }) {
   const { isAdmin } = useAuth();
@@ -9,15 +10,15 @@ export default function ChapterPage({ slug, chapterSlug }: { slug: string; chapt
   const { data, isLoading, error } = useQuery({
     queryKey: ["chapter", slug, chapterSlug],
     queryFn: async () => {
-      const { data: book } = await supabase.from("books").select("id,title,slug").eq("slug", slug).maybeSingle();
+      const { data: book } = await withQueryTimeout(supabase.from("books").select("id,title,slug").eq("slug", slug).maybeSingle());
       if (!book) throw new Error("not_found");
-      const { data: chapter } = await supabase.from("chapters")
-        .select("*").eq("book_id", book.id).eq("slug", chapterSlug).maybeSingle();
+      const { data: chapter } = await withQueryTimeout(supabase.from("chapters")
+        .select("*").eq("book_id", book.id).eq("slug", chapterSlug).maybeSingle());
       if (!chapter) throw new Error("not_found");
-      const { data: sections } = await supabase.from("sections")
-        .select("*").eq("chapter_id", chapter.id).order("position");
-      const { data: allChapters } = await supabase.from("chapters")
-        .select("slug,title,position").eq("book_id", book.id).order("position");
+      const { data: sections } = await withQueryTimeout(supabase.from("sections")
+        .select("*").eq("chapter_id", chapter.id).order("position"));
+      const { data: allChapters } = await withQueryTimeout(supabase.from("chapters")
+        .select("slug,title,position").eq("book_id", book.id).order("position"));
       return { book, chapter, sections: sections ?? [], allChapters: allChapters ?? [] };
     },
   });
