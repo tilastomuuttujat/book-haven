@@ -1,16 +1,17 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import { withQueryTimeout } from "@/lib/query-timeout";
 
 export default function BookPage({ slug }: { slug: string }) {
   const { data, isLoading, error } = useQuery({
     queryKey: ["book", slug],
     queryFn: async () => {
-      const { data: book, error } = await supabase
-        .from("books").select("*").eq("slug", slug).maybeSingle();
+      const { data: book, error } = await withQueryTimeout(supabase
+        .from("books").select("*").eq("slug", slug).maybeSingle());
       if (error) throw error;
       if (!book) throw new Error("not_found");
-      const { data: chapters } = await supabase
-        .from("chapters").select("*").eq("book_id", book.id).order("position");
+      const { data: chapters } = await withQueryTimeout(supabase
+        .from("chapters").select("*").eq("book_id", book.id).order("position"));
       return { book, chapters: chapters ?? [] };
     },
   });

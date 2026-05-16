@@ -1,14 +1,15 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import { withQueryTimeout } from "@/lib/query-timeout";
 
 export default function Index() {
   const { data: books, isLoading } = useQuery({
     queryKey: ["books"],
     queryFn: async () => {
-      const { data, error } = await supabase
+      const { data, error } = await withQueryTimeout(supabase
         .from("books")
         .select("*")
-        .order("position", { ascending: true });
+        .order("position", { ascending: true }));
       if (error) throw error;
       return data;
     },
@@ -24,6 +25,7 @@ export default function Index() {
       </div>
 
       {isLoading && <p className="text-muted-foreground">Ladataan…</p>}
+      {!isLoading && !books && <p className="text-muted-foreground">Sisältöä ei saatu ladattua. Päivitä sivu.</p>}
 
       <div className="grid gap-6 md:grid-cols-2">
         {books?.map((b) => (

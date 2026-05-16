@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { InlineSection, InlineSectionTitle } from "@/components/InlineSection";
+import { withQueryTimeout } from "@/lib/query-timeout";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { Plus, Trash2, Save, ChevronUp, ChevronDown } from "lucide-react";
@@ -20,7 +21,7 @@ export default function AdminBook({ bookId }: { bookId: string }) {
   const { data: book } = useQuery({
     queryKey: ["admin-book", bookId],
     queryFn: async () => {
-      const { data, error } = await supabase.from("books").select("*").eq("id", bookId).single();
+      const { data, error } = await withQueryTimeout(supabase.from("books").select("*").eq("id", bookId).single());
       if (error) throw error;
       return data;
     },
@@ -29,7 +30,7 @@ export default function AdminBook({ bookId }: { bookId: string }) {
   const { data: chapters } = useQuery({
     queryKey: ["admin-chapters", bookId],
     queryFn: async () => {
-      const { data, error } = await supabase.from("chapters").select("*").eq("book_id", bookId).order("position");
+      const { data, error } = await withQueryTimeout(supabase.from("chapters").select("*").eq("book_id", bookId).order("position"));
       if (error) throw error;
       return data;
     },
@@ -114,7 +115,7 @@ function ChapterEditor({ chapter, bookId, totalChapters }: { chapter: { id: stri
   const { data: sections } = useQuery({
     queryKey: ["admin-sections", chapter.id],
     queryFn: async () => {
-      const { data, error } = await supabase.from("sections").select("*").eq("chapter_id", chapter.id).order("position");
+      const { data, error } = await withQueryTimeout(supabase.from("sections").select("*").eq("chapter_id", chapter.id).order("position"));
       if (error) throw error;
       return data;
     },
