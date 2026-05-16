@@ -24,26 +24,37 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         return;
       }
 
-      const roleCheck = supabase.rpc("has_role", {
-        _user_id: s.user.id,
-        _role: "admin",
-      });
-      const timeout = new Promise<{ data: false }>((resolve) => {
-        window.setTimeout(() => resolve({ data: false }), 3000);
-      });
-      const { data } = await Promise.race([roleCheck, timeout]);
+      try {
+        const roleCheck = supabase.rpc("has_role", {
+          _user_id: s.user.id,
+          _role: "admin",
+        });
+        const timeout = new Promise<{ data: false }>((resolve) => {
+          window.setTimeout(() => resolve({ data: false }), 3000);
+        });
+        const { data } = await Promise.race([roleCheck, timeout]);
 
-      if (!active) return;
-      setIsAdmin(!!data);
-      setLoading(false);
-      qc.invalidateQueries();
+        if (!active) return;
+        setIsAdmin(!!data);
+      } catch {
+        if (!active) return;
+        setIsAdmin(false);
+      } finally {
+        if (!active) return;
+        setLoading(false);
+        qc.invalidateQueries();
+      }
     };
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_e, s) => {
       setTimeout(() => void loadSession(s), 0);
     });
 
-    supabase.auth.getSession().then(async ({ data: { session: s } }) => {
+    const sessionTimeout = new Promise<{ data: { session: null } }>((resolve) => {
+      window.setTimeout(() => resolve({ data: { session: null } }), 3000);
+    });
+
+    Promise.race([supabase.auth.getSession(), sessionTimeout]).then(async ({ data: { session: s } }) => {
       await loadSession(s);
     }).catch(() => {
       if (!active) return;
