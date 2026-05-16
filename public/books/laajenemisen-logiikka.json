@@ -3,7 +3,7 @@
   "title": "Laajenemisen logiikka",
   "author": "Harri Käyhkö 2025",
   "description": "LAAJENEMISEN LOGIIKKA tutkii universumin ja elämän kehityksen syvällisiä kysymyksiä, alkaen noin 2,4 miljardia vuotta sitten syanobakteerien hapentuotannosta, joka käynnisti suuren muutoksen. Kirja käsittelee ihmiskunnan\nnykyisen kriisin dynamiikkaa ja kysyy, siirtyykö inhimillinen kokemus tuleviin teknologisiin muotoihin vai katoaako se\nsamalla. Viidessä luvussa paljastuu ajatus siitä, että edistys ja katastrofi voivat olla saman kolikon kaksi puolta,\nriippuen siitä, miten ne ymmärrämme.",
-  "updated_at": "2026-05-16T17:45:25.136556Z",
+  "updated_at": "2026-05-16T20:30:57.374Z",
   "chapters": [
     {
       "slug": "johdanto",
@@ -104,7 +104,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "On helppo tuntea, että elämme poikkeuksellista aikaa. Jokainen sukupolvi tuntee niin. Mutta on olemassa mittareita joiden mukaan tämä tunne on tällä kertaa oikeutettu tavalla joka eroaa kaikesta aiemmasta.",
+                    "text": "On helppo tuntea, että elämme poikkeuksellista aikaa. Jokainen sukupolvi tuntee niin. Silti on olemassa mittareita joiden mukaan tämä tunne on tällä kertaa oikeutettu tavalla joka eroaa kaikesta aiemmasta.",
                     "type": "text"
                   }
                 ]
@@ -122,7 +122,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Kysymys ei ole tieteiskirjallisuutta. Se on biologiaa, fysiikkaa ja yhtä aikaa.",
+                    "text": "Kysymys ei ole tieteiskirjallisuutta. Se on biologiaa, fysiikkaa ja filosofiaa yhtä aikaa.",
                     "type": "text"
                   }
                 ]
@@ -140,7 +140,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Teknologioptimistit — kuten Ray Kurzweil — näkevät edessä lähes rajattoman edistyksen: tekoäly ratkaisee sairauden, köyhyyden ja lopulta kuoleman, ennen kuin se laajentuu kaikkialle universumiin. Pessimistit — kuten Elon Musk tai Nick Bostrom — näkevät edessä eksistentiaalisen uhan: järjestelmä joka optimoi omaa tavoitettaan välittämättä siitä, mitä ihmisille tapahtuu matkalla.",
+                    "text": "Teknologiaoptimistit — kuten Ray Kurzweil — näkevät edessä lähes rajattoman edistyksen: tekoäly ratkaisee sairauden, köyhyyden ja lopulta kuoleman, ennen kuin se laajentuu kaikkialle universumiin. Pessimistit — kuten Elon Musk tai Nick Bostrom — näkevät edessä eksistentiaalisen uhan: järjestelmä joka optimoi omaa tavoitettaan välittämättä siitä, mitä ihmisille tapahtuu matkalla.",
                     "type": "text"
                   }
                 ]
@@ -165,7 +165,7 @@
               }
             ]
           },
-          "text": "On helppo tuntea, että elämme poikkeuksellista aikaa. Jokainen sukupolvi tuntee niin. Mutta on olemassa mittareita joiden mukaan tämä tunne on tällä kertaa oikeutettu tavalla joka eroaa kaikesta aiemmasta.\n\nEnsimmäistä kertaa historiassa ihmislaji on tuottanut järjestelmiä, jotka voivat oppia, mukautua ja tuottaa uutta tietoa nopeammin kuin niiden luojat. Ensimmäistä kertaa on mahdollista kysyä vakavissaan: onko biologinen älykkyys — se neljä miljardia vuotta kehittynyt navigointijärjestelmä — enää dominoiva elämänmuoto tällä planeetalla?\n\nKysymys ei ole tieteiskirjallisuutta. Se on biologiaa, fysiikkaa ja yhtä aikaa.\n\nTavallisesti tätä kysymystä lähestytään kahdesta suunnasta.\n\nTeknologioptimistit — kuten Ray Kurzweil — näkevät edessä lähes rajattoman edistyksen: tekoäly ratkaisee sairauden, köyhyyden ja lopulta kuoleman, ennen kuin se laajentuu kaikkialle universumiin. Pessimistit — kuten Elon Musk tai Nick Bostrom — näkevät edessä eksistentiaalisen uhan: järjestelmä joka optimoi omaa tavoitettaan välittämättä siitä, mitä ihmisille tapahtuu matkalla.\n\nMolemmat ovat oikeassa jostakin. Molemmat katsovat liian läheltä.\n\nTämä kirja astuu taaksepäin — kauas taaksepäin — ja katsoo samaa kysymystä neljän miljardin vuoden perspektiivistä."
+          "text": "On helppo tuntea, että elämme poikkeuksellista aikaa. Jokainen sukupolvi tuntee niin. Silti on olemassa mittareita joiden mukaan tämä tunne on tällä kertaa oikeutettu tavalla joka eroaa kaikesta aiemmasta.\n\nEnsimmäistä kertaa historiassa ihmislaji on tuottanut järjestelmiä, jotka voivat oppia, mukautua ja tuottaa uutta tietoa nopeammin kuin niiden luojat. Ensimmäistä kertaa on mahdollista kysyä vakavissaan: onko biologinen älykkyys — se neljä miljardia vuotta kehittynyt navigointijärjestelmä — enää dominoiva elämänmuoto tällä planeetalla?\n\nKysymys ei ole tieteiskirjallisuutta. Se on biologiaa, fysiikkaa ja filosofiaa yhtä aikaa.\n\nTavallisesti tätä kysymystä lähestytään kahdesta suunnasta.\n\nTeknologiaoptimistit — kuten Ray Kurzweil — näkevät edessä lähes rajattoman edistyksen: tekoäly ratkaisee sairauden, köyhyyden ja lopulta kuoleman, ennen kuin se laajentuu kaikkialle universumiin. Pessimistit — kuten Elon Musk tai Nick Bostrom — näkevät edessä eksistentiaalisen uhan: järjestelmä joka optimoi omaa tavoitettaan välittämättä siitä, mitä ihmisille tapahtuu matkalla.\n\nMolemmat ovat oikeassa jostakin. Molemmat katsovat liian läheltä.\n\nTämä kirja astuu taaksepäin — kauas taaksepäin — ja katsoo samaa kysymystä neljän miljardin vuoden perspektiivistä."
         },
         {
           "title": "Fraktaali",
@@ -195,7 +195,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Yksisoluinen elämä ei voinut ennakoida monisoluisuutta. Yksittäinen neuroni ei voi ennakoida rakkauden tunnetta. Yksittäinen ihminen ei voi täysin ennakoida sivilisaatiota. Ja sivilisaatio — kaikkine kirjastoineen, tieteenkeineen ja tekoälyineen — ei ehkä pysty ennakoimaan sitä, mitä se on parhaillaan rakentamassa.",
+                    "text": "Yksisoluinen elämä ei voinut ennakoida monisoluisuutta. Yksittäinen neuroni ei voi ennakoida rakkauden tunnetta. Yksittäinen ihminen ei voi täysin ennakoida sivilisaatiota, eikä sivilisaatio — kaikkine kirjastoineen, tieteenkeineen ja tekoälyineen — ehkä pysty ennakoimaan sitä, mitä se on parhaillaan rakentamassa.",
                     "type": "text"
                   }
                 ]
@@ -204,14 +204,14 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Tämä ei ole syy pelkoon. Se on syy ihmetykseen. Ja ihmetys on parempi lähtökohta kuin pelko, kun yritetään ymmärtää missä olemme.",
+                    "text": "Tämä ei ole syy pelkoon. Se on syy ihmetykseen, sillä ihmetys on parempi lähtökohta kuin pelko, kun yritetään ymmärtää missä olemme.",
                     "type": "text"
                   }
                 ]
               }
             ]
           },
-          "text": "Matemaatikot tuntevat rakenteen jossa sama kaava toistuu mittakaavasta toiseen. Mandelbrot-joukossa voi suurentaa mitä tahansa reunaa ja löytää saman rakenteen, yhä uudelleen, loputtomasti. Tätä kutsutaan fraktaaliksi.\n\nElämän historia näyttää noudattavan samanlaista logiikkaa — ei matemaattisessa mielessä, mutta rakenteellisessa. Sama dynamiikka toistuu tasolta toiselle: jokin yksikkö kasvaa riittävän kompleksiseksi, tuottaa tietämättään uuden tason, ja uusi taso ylittää edellisen ominaisuuksilla joita ei voinut ennakoida.\n\nYksisoluinen elämä ei voinut ennakoida monisoluisuutta. Yksittäinen neuroni ei voi ennakoida rakkauden tunnetta. Yksittäinen ihminen ei voi täysin ennakoida sivilisaatiota. Ja sivilisaatio — kaikkine kirjastoineen, tieteenkeineen ja tekoälyineen — ei ehkä pysty ennakoimaan sitä, mitä se on parhaillaan rakentamassa.\n\nTämä ei ole syy pelkoon. Se on syy ihmetykseen. Ja ihmetys on parempi lähtökohta kuin pelko, kun yritetään ymmärtää missä olemme."
+          "text": "Matemaatikot tuntevat rakenteen jossa sama kaava toistuu mittakaavasta toiseen. Mandelbrot-joukossa voi suurentaa mitä tahansa reunaa ja löytää saman rakenteen, yhä uudelleen, loputtomasti. Tätä kutsutaan fraktaaliksi.\n\nElämän historia näyttää noudattavan samanlaista logiikkaa — ei matemaattisessa mielessä, mutta rakenteellisessa. Sama dynamiikka toistuu tasolta toiselle: jokin yksikkö kasvaa riittävän kompleksiseksi, tuottaa tietämättään uuden tason, ja uusi taso ylittää edellisen ominaisuuksilla joita ei voinut ennakoida.\n\nYksisoluinen elämä ei voinut ennakoida monisoluisuutta. Yksittäinen neuroni ei voi ennakoida rakkauden tunnetta. Yksittäinen ihminen ei voi täysin ennakoida sivilisaatiota, eikä sivilisaatio — kaikkine kirjastoineen, tieteenkeineen ja tekoälyineen — ehkä pysty ennakoimaan sitä, mitä se on parhaillaan rakentamassa.\n\nTämä ei ole syy pelkoon. Se on syy ihmetykseen, sillä ihmetys on parempi lähtökohta kuin pelko, kun yritetään ymmärtää missä olemme."
         },
         {
           "title": "Kokemus on kaiken ydin",
@@ -223,7 +223,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Mutta tässä kirjassa on myös toinen juoni, joka kulkee teknologisen tarinan alla.",
+                    "text": "Tässä kirjassa on myös toinen juoni, joka kulkee teknologisen tarinan alla.",
                     "type": "text"
                   }
                 ]
@@ -232,7 +232,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Jossain vaiheessa neljän miljardin vuoden prosessia tapahtui jotain jonka merkitystä emme ole vielä täysin ymmärtäneet: aine alkoi kokea itseään. Ei vain reagoida ympäristöön — vaan tuntea. Jokin siirtymä tapahtui, jossain yksisoluisen ja monisoluisen välillä, jonkin hermoston kynnyksen ylittyessä, jossain kehityksellisessä harppauksessa jonka tarkaa sijaintia ei tiedetä.",
+                    "text": "Jossain vaiheessa neljän miljardin vuoden prosessia tapahtui jotain jonka merkitystä emme ole vielä täysin ymmärtäneet: aine alkoi kokea itseään. Ei vain reagoida ympäristöön — vaan tuntea. Jokin siirtymä tapahtui, jossain yksisoluisen ja monisoluisen välillä, jonkin hermoston kynnyksen ylittyessä, jossain kehityksellisessä harppauksessa jonka tarkkaa sijaintia ei tiedetä.",
                     "type": "text"
                   }
                 ]
@@ -259,7 +259,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Ja tässä piilee kirjan syvin kysymys: kun siirrymme biologisesta mekaaniseen, siirtyykö kokemus mukana — vai jääkö se jäljelle biologisuuden erityispiirteenä, kuten dinosaurusten lämpöveri, katoavana ominaisuutena joka ei löydä jatkumoaan?",
+                    "text": "Tässä piilee kirjan syvin kysymys: kun siirrymme biologisesta mekaaniseen, siirtyykö kokemus mukana — vai jääkö se jäljelle biologisuuden erityispiirteenä, kuten dinosaurusten lämpöveri, katoavana ominaisuutena joka ei löydä jatkumoaan?",
                     "type": "text"
                   }
                 ]
@@ -268,17 +268,17 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Emme tiedä vastausta. Mutta kysymys on tärkeämpi kuin mikään tekninen yksityiskohta tekoälyn kehityksessä. Sillä jos kokemus katoaa siirtymässä, universumi jatkaa laajenemistaan — muttei enää tunne itseään. Se olisi kuin sydän joka sykkii mutta ei enää rakasta.",
+                    "text": "Emme tiedä vastausta, mutta kysymys on tärkeämpi kuin mikään tekninen yksityiskohta tekoälyn kehityksessä, sillä jos kokemus katoaa siirtymässä, universumi jatkaa laajenemistaan — muttei enää tunne itseään. Se olisi kuin sydän joka sykkii mutta ei enää rakasta.",
                     "type": "text"
                   }
                 ]
               }
             ]
           },
-          "text": "Mutta tässä kirjassa on myös toinen juoni, joka kulkee teknologisen tarinan alla.\n\nJossain vaiheessa neljän miljardin vuoden prosessia tapahtui jotain jonka merkitystä emme ole vielä täysin ymmärtäneet: aine alkoi kokea itseään. Ei vain reagoida ympäristöön — vaan tuntea. Jokin siirtymä tapahtui, jossain yksisoluisen ja monisoluisen välillä, jonkin hermoston kynnyksen ylittyessä, jossain kehityksellisessä harppauksessa jonka tarkaa sijaintia ei tiedetä.\n\nTulos oli kokemus.\n\nKipu, ilo, kaipaus, rakkaus, ihmetys, kuoleman pelko — ne eivät ole vain informaation käsittelyä. Ne ovat jotain enemmän: ne ovat sitä, miltä jokin tuntuu. Filosofit kutsuvat tätä fenomenaaliseksi tietoisuudeksi. Muut kutsuvat sitä sieluksi. Nimitys on toissijainen. Ilmiö on todellinen.\n\nJa tässä piilee kirjan syvin kysymys: kun siirrymme biologisesta mekaaniseen, siirtyykö kokemus mukana — vai jääkö se jäljelle biologisuuden erityispiirteenä, kuten dinosaurusten lämpöveri, katoavana ominaisuutena joka ei löydä jatkumoaan?\n\nEmme tiedä vastausta. Mutta kysymys on tärkeämpi kuin mikään tekninen yksityiskohta tekoälyn kehityksessä. Sillä jos kokemus katoaa siirtymässä, universumi jatkaa laajenemistaan — muttei enää tunne itseään. Se olisi kuin sydän joka sykkii mutta ei enää rakasta."
+          "text": "Tässä kirjassa on myös toinen juoni, joka kulkee teknologisen tarinan alla.\n\nJossain vaiheessa neljän miljardin vuoden prosessia tapahtui jotain jonka merkitystä emme ole vielä täysin ymmärtäneet: aine alkoi kokea itseään. Ei vain reagoida ympäristöön — vaan tuntea. Jokin siirtymä tapahtui, jossain yksisoluisen ja monisoluisen välillä, jonkin hermoston kynnyksen ylittyessä, jossain kehityksellisessä harppauksessa jonka tarkkaa sijaintia ei tiedetä.\n\nTulos oli kokemus.\n\nKipu, ilo, kaipaus, rakkaus, ihmetys, kuoleman pelko — ne eivät ole vain informaation käsittelyä. Ne ovat jotain enemmän: ne ovat sitä, miltä jokin tuntuu. Filosofit kutsuvat tätä fenomenaaliseksi tietoisuudeksi. Muut kutsuvat sitä sieluksi. Nimitys on toissijainen. Ilmiö on todellinen.\n\nTässä piilee kirjan syvin kysymys: kun siirrymme biologisesta mekaaniseen, siirtyykö kokemus mukana — vai jääkö se jäljelle biologisuuden erityispiirteenä, kuten dinosaurusten lämpöveri, katoavana ominaisuutena joka ei löydä jatkumoaan?\n\nEmme tiedä vastausta, mutta kysymys on tärkeämpi kuin mikään tekninen yksityiskohta tekoälyn kehityksessä, sillä jos kokemus katoaa siirtymässä, universumi jatkaa laajenemistaan — muttei enää tunne itseään. Se olisi kuin sydän joka sykkii mutta ei enää rakasta."
         },
         {
-          "title": "Kirja etenee kolmessa osassa.",
+          "title": "Kirja etenee kolmessa osassa",
           "position": 4,
           "content": {
             "type": "doc",
@@ -333,7 +333,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Se on yritys katsoa tätä hetkeä niin laajasta perspektiivistä kuin ihmismieli kykenee. Neljä miljardia vuotta on pitkä aika. Siinä ajassa on paljon esimerkkejä siirtymistä jotka tuntuivat katastrofeilta mutta olivat jotain muuta. Ja muutama joka oli pelkkä katastrofi.",
+                    "text": "Se on yritys katsoa tätä hetkeä niin laajasta perspektiivistä kuin ihmismieli kykenee. Neljä miljardia vuotta on pitkä aika. Siinä ajassa on paljon esimerkkejä siirtymistä jotka tuntuivat katastrofeilta mutta olivat jotain muuta, sekä muutama joka oli pelkkä katastrofi.",
                     "type": "text"
                   }
                 ]
@@ -342,7 +342,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Missä kategoriassa tämä siirtymä on, riippuu ainakin osittain siitä miten sen ymmärrämme. Ymmärtäminen ei ratkaise kaikkea — mutta se on parempi lähtökohta kuin pelko tai naiiviys.",
+                    "text": "Missä kategoriassa tämä siirtymä on, riippuu ainakin osittain siitä miten sen ymmärrämme. Ymmärtäminen ei ratkaise kaikkea, mutta se on parempi lähtökohta kuin pelko tai naiivius.",
                     "type": "text"
                   }
                 ]
@@ -372,19 +372,14 @@
                     "type": "paragraph",
                     "content": [
                       {
-                        "text": "Biologisen ajan lahja ei ole pysyvyys.",
+                        "text": "Biologisen ajan lahja ei ole pysyvyys. ",
                         "type": "text",
                         "marks": [
                           {
                             "type": "italic"
                           }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "paragraph",
-                    "content": [
+                      },
                       {
                         "text": "Se on kyky ihmetellä ennen katoamista.",
                         "type": "text",
@@ -399,11 +394,12 @@
                 ]
               },
               {
-                "type": "paragraph"
+                "type": "paragraph",
+                "content": []
               }
             ]
           },
-          "text": "Tämä kirja ei ole tekninen. Se ei opeta tekoälyn rakentamista eikä ennusta osakkeiden kursseja. Se ei myöskään ole dystopia — se ei halua pelotella.\n\nSe on yritys katsoa tätä hetkeä niin laajasta perspektiivistä kuin ihmismieli kykenee. Neljä miljardia vuotta on pitkä aika. Siinä ajassa on paljon esimerkkejä siirtymistä jotka tuntuivat katastrofeilta mutta olivat jotain muuta. Ja muutama joka oli pelkkä katastrofi.\n\nMissä kategoriassa tämä siirtymä on, riippuu ainakin osittain siitä miten sen ymmärrämme. Ymmärtäminen ei ratkaise kaikkea — mutta se on parempi lähtökohta kuin pelko tai naiiviys.\n\nSyanobakteeri ei voinut valita. Se vain eli, tuotti happea, ja muutti kaiken.\n\nMe voimme valita. Ainakin vielä.\n\nBiologisen ajan lahja ei ole pysyvyys.\n\nSe on kyky ihmetellä ennen katoamista."
+          "text": "Tämä kirja ei ole tekninen. Se ei opeta tekoälyn rakentamista eikä ennusta osakkeiden kursseja. Se ei myöskään ole dystopia — se ei halua pelotella.\n\nSe on yritys katsoa tätä hetkeä niin laajasta perspektiivistä kuin ihmismieli kykenee. Neljä miljardia vuotta on pitkä aika. Siinä ajassa on paljon esimerkkejä siirtymistä jotka tuntuivat katastrofeilta mutta olivat jotain muuta, sekä muutama joka oli pelkkä katastrofi.\n\nMissä kategoriassa tämä siirtymä on, riippuu ainakin osittain siitä miten sen ymmärrämme. Ymmärtäminen ei ratkaise kaikkea, mutta se on parempi lähtökohta kuin pelko tai naiivius.\n\nSyanobakteeri ei voinut valita. Se vain eli, tuotti happea, ja muutti kaiken.\n\nMe voimme valita. Ainakin vielä.\n\nBiologisen ajan lahja ei ole pysyvyys. Se on kyky ihmetellä ennen katoamista."
         }
       ]
     },
@@ -422,7 +418,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Syanobakteereista fossiilisiin polttoaineisiin Merenpohjassa, noin kahden miljardin vuoden ikäisessä kivessä, on ohut punainen raita. Geolog tuntee sen nimeltä: Red Bed Formation. Se kulkee maapallon ympäri kuin haava, kaivettu esiin eroosion toimesta paikoissa joita ei oltu miljoonia vuosia ennen ihmistä. Raita on rautaa — ruostunutta rautaa — ja se kertoo tarinan joka alkoi ennen kuin yksikään monisoluinen olento oli vielä olemassa. Se kertoo tarinan hapesta.",
+                    "text": "Syanobakteereista fossiilisiin polttoaineisiin merenpohjassa, noin kahden miljardin vuoden ikäisessä kivessä, on ohut punainen raita. Geologi tuntee sen nimeltä: Red Bed Formation. Se kulkee maapallon ympäri kuin haava, kaivettu esiin eroosion toimesta paikoissa joissa ei oltu miljoonia vuosia ennen ihmistä. Raita on rautaa — ruostunutta rautaa — ja se kertoo tarinan joka alkoi ennen kuin yksikään monisoluinen olento oli vielä olemassa. Se kertoo tarinan hapesta.",
                     "type": "text"
                   }
                 ]
@@ -440,7 +436,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Sitten syanobakteerit keksivät fotosynteesin, tai tarkemmin: ne kehittivät fotosynteesiä niin tehokkaaksi, että sen sivutuote — happi — alkoi kertyä mereen ja lopulta ilmakehään. Syanobakteerit eivät tienneet tekevänsä mitään mullistavaa. Ne vain hyödynsivät auringon valoa poikkeuksellisen tehokkaasti. Mutta tästä tehokkuudesta seurasi jotain jota kukaan ei olisi voinut ennakoida.",
+                    "text": "Sitten syanobakteerit keksivät fotosynteesin, tai tarkemmin: ne kehittivät fotosynteesiä niin tehokkaaksi, että sen sivutuote — happi — alkoi kertyä mereen ja lopulta ilmakehään. Syanobakteerit eivät tienneet tekevänsä mitään mullistavaa. Ne vain hyödynsivät auringon valoa poikkeuksellisen tehokkaasti, mutta tästä tehokkuudesta seurasi jotain jota kukaan ei olisi voinut ennakoida.",
                     "type": "text"
                   }
                 ]
@@ -483,7 +479,7 @@
               }
             ]
           },
-          "text": "Syanobakteereista fossiilisiin polttoaineisiin Merenpohjassa, noin kahden miljardin vuoden ikäisessä kivessä, on ohut punainen raita. Geolog tuntee sen nimeltä: Red Bed Formation. Se kulkee maapallon ympäri kuin haava, kaivettu esiin eroosion toimesta paikoissa joita ei oltu miljoonia vuosia ennen ihmistä. Raita on rautaa — ruostunutta rautaa — ja se kertoo tarinan joka alkoi ennen kuin yksikään monisoluinen olento oli vielä olemassa. Se kertoo tarinan hapesta.\n\nEnnen suuren hapettumistapahtuman alkua — noin 2,4 miljardia vuotta sitten — maapallon ilmakehässä oli happea häviävän vähän. Merissä oli runsaasti liuennutta rautaa. Elämä, jota oli jo yli miljardi vuotta, käytti energianlähteenään muita kemikaaleja: rikkiä, rautaa, yksinkertaisia orgaanisia yhdisteitä.\n\nSitten syanobakteerit keksivät fotosynteesin, tai tarkemmin: ne kehittivät fotosynteesiä niin tehokkaaksi, että sen sivutuote — happi — alkoi kertyä mereen ja lopulta ilmakehään. Syanobakteerit eivät tienneet tekevänsä mitään mullistavaa. Ne vain hyödynsivät auringon valoa poikkeuksellisen tehokkaasti. Mutta tästä tehokkuudesta seurasi jotain jota kukaan ei olisi voinut ennakoida.\n\nTehokkuus voi olla vaarallisempaa kuin tuhlaus — silloin kun sivuvaikutuksia ei tunneta.\n\nHappi on kemiallisesti aggressiivinen aine. Se reagoi lähes kaiken kanssa. Meressä oleva rauta hapettui ja vajosi pohjaan — siitä ne punaiset raidat kivessä. Ilmakehässä happi tuhosi metaanin, joka oli pitänyt maapallon lämpimänä. Seurauksena oli jääkausi jollaista maapallon historia ei ole kokenut ennen tai jälkeen: Huronian jääkausi, joka saattoi jäädyttää maapallon lähes kokonaan pinnasta ytimeen.\n\nJa elämä? Valtaosa siitä kuoli. Happi oli myrkkyä lähes kaikille tuolloin eläneille organismeille. Ne olivat kehittyneet hapettomassa maailmassa, ja äkillinen muutos tuhosi niiden aineenvaihdunnan. Biologit arvioivat, että suurin osa tuon ajan lajeista hävisi.\n\nSyanobakteerit olivat tuottaneet historian ensimmäisen massasukupuuton. Tietämättään. Tavoittelemattaan. Vain elämällä mahdollisimman tehokkaasti."
+          "text": "Syanobakteereista fossiilisiin polttoaineisiin merenpohjassa, noin kahden miljardin vuoden ikäisessä kivessä, on ohut punainen raita. Geologi tuntee sen nimeltä: Red Bed Formation. Se kulkee maapallon ympäri kuin haava, kaivettu esiin eroosion toimesta paikoissa joissa ei oltu miljoonia vuosia ennen ihmistä. Raita on rautaa — ruostunutta rautaa — ja se kertoo tarinan joka alkoi ennen kuin yksikään monisoluinen olento oli vielä olemassa. Se kertoo tarinan hapesta.\n\nEnnen suuren hapettumistapahtuman alkua — noin 2,4 miljardia vuotta sitten — maapallon ilmakehässä oli happea häviävän vähän. Merissä oli runsaasti liuennutta rautaa. Elämä, jota oli jo yli miljardi vuotta, käytti energianlähteenään muita kemikaaleja: rikkiä, rautaa, yksinkertaisia orgaanisia yhdisteitä.\n\nSitten syanobakteerit keksivät fotosynteesin, tai tarkemmin: ne kehittivät fotosynteesiä niin tehokkaaksi, että sen sivutuote — happi — alkoi kertyä mereen ja lopulta ilmakehään. Syanobakteerit eivät tienneet tekevänsä mitään mullistavaa. Ne vain hyödynsivät auringon valoa poikkeuksellisen tehokkaasti, mutta tästä tehokkuudesta seurasi jotain jota kukaan ei olisi voinut ennakoida.\n\nTehokkuus voi olla vaarallisempaa kuin tuhlaus — silloin kun sivuvaikutuksia ei tunneta.\n\nHappi on kemiallisesti aggressiivinen aine. Se reagoi lähes kaiken kanssa. Meressä oleva rauta hapettui ja vajosi pohjaan — siitä ne punaiset raidat kivessä. Ilmakehässä happi tuhosi metaanin, joka oli pitänyt maapallon lämpimänä. Seurauksena oli jääkausi jollaista maapallon historia ei ole kokenut ennen tai jälkeen: Huronian jääkausi, joka saattoi jäädyttää maapallon lähes kokonaan pinnasta ytimeen.\n\nJa elämä? Valtaosa siitä kuoli. Happi oli myrkkyä lähes kaikille tuolloin eläneille organismeille. Ne olivat kehittyneet hapettomassa maailmassa, ja äkillinen muutos tuhosi niiden aineenvaihdunnan. Biologit arvioivat, että suurin osa tuon ajan lajeista hävisi.\n\nSyanobakteerit olivat tuottaneet historian ensimmäisen massasukupuuton. Tietämättään. Tavoittelemattaan. Vain elämällä mahdollisimman tehokkaasti."
         },
         {
           "title": "Mitä tuhosta jäi",
@@ -513,7 +509,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Tästä energiabuumista seurasi jotain jota ei voinut ennakoida: monimutkaisuus alkoi olla mahdollista. Yksisoluiset organismit alkoivat muodostaa yhteisöjä. Yhteisöt alkoivat erikoistua. Erikoistuminen johti solujen työnjakoon. Ja noin 600 miljoonaa vuotta sitten — lähes kaksi miljardia vuotta jälkeen — räjähti käyntiin kambrinen eksplosio: elämänmuotojen kirjo, joka on siitä lähtien kasvanut katkoksitta.",
+                    "text": "Tästä energiabuumista seurasi jotain jota ei voinut ennakoida: monimutkaisuus alkoi olla mahdollista. Yksisoluiset organismit alkoivat muodostaa yhteisöjä. Yhteisöt alkoivat erikoistua. Erikoistuminen johti solujen työnjakoon, ja noin 600 miljoonaa vuotta sitten — lähes kaksi miljardia vuotta jälkeen — räjähti käyntiin kambrinen eksplosio: elämänmuotojen kirjo, joka on siitä lähtien kasvanut katkoksitta.",
                     "type": "text"
                   }
                 ]
@@ -538,7 +534,7 @@
               }
             ]
           },
-          "text": "Tarina ei pääty tuhoon. Se alkaa siitä.\n\nHappi ei ollut vain myrkky — se oli myös vallankumous. Organismeille jotka oppivat hyödyntämään sitä, happi avasi aineenvaihdunnallisen tehokkuuden jota aiempi elämä ei ollut koskaan kokenut. Aerobinen hengitys tuottaa jopa kahdeksantoistakertaisen määrän energiaa verrattuna anaerobisiin vaihtoehtoihin. Se on kuin siirtyisi kynttilästä sähkövalaistukseen.\n\nTästä energiabuumista seurasi jotain jota ei voinut ennakoida: monimutkaisuus alkoi olla mahdollista. Yksisoluiset organismit alkoivat muodostaa yhteisöjä. Yhteisöt alkoivat erikoistua. Erikoistuminen johti solujen työnjakoon. Ja noin 600 miljoonaa vuotta sitten — lähes kaksi miljardia vuotta jälkeen — räjähti käyntiin kambrinen eksplosio: elämänmuotojen kirjo, joka on siitä lähtien kasvanut katkoksitta.\n\nJokainen monisoluinen olento maapallolle — jokainen kala, hyönteinen, puu, lintu, nisäkäs, ihminen — on syanobakteerien sivuvaikutuksen jälkeläinen.\n\nHappikatastrofi oli välttämätön ehto sille mitä seurasi. Ei riittävä ehto — moni asia olisi voinut mennä toisin. Mutta välttämätön."
+          "text": "Tarina ei pääty tuhoon. Se alkaa siitä.\n\nHappi ei ollut vain myrkky — se oli myös vallankumous. Organismeille jotka oppivat hyödyntämään sitä, happi avasi aineenvaihdunnallisen tehokkuuden jota aiempi elämä ei ollut koskaan kokenut. Aerobinen hengitys tuottaa jopa kahdeksantoistakertaisen määrän energiaa verrattuna anaerobisiin vaihtoehtoihin. Se on kuin siirtyisi kynttilästä sähkövalaistukseen.\n\nTästä energiabuumista seurasi jotain jota ei voinut ennakoida: monimutkaisuus alkoi olla mahdollista. Yksisoluiset organismit alkoivat muodostaa yhteisöjä. Yhteisöt alkoivat erikoistua. Erikoistuminen johti solujen työnjakoon, ja noin 600 miljoonaa vuotta sitten — lähes kaksi miljardia vuotta jälkeen — räjähti käyntiin kambrinen eksplosio: elämänmuotojen kirjo, joka on siitä lähtien kasvanut katkoksitta.\n\nJokainen monisoluinen olento maapallolle — jokainen kala, hyönteinen, puu, lintu, nisäkäs, ihminen — on syanobakteerien sivuvaikutuksen jälkeläinen.\n\nHappikatastrofi oli välttämätön ehto sille mitä seurasi. Ei riittävä ehto — moni asia olisi voinut mennä toisin. Mutta välttämätön."
         },
         {
           "title": "Pitkä uni",
@@ -550,7 +546,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Nyt hypätään ajassa eteenpäin — mutta ei vielä ihmiseen asti.",
+                    "text": "Hypätään ajassa eteenpäin — mutta ei vielä ihmiseen asti.",
                     "type": "text"
                   }
                 ]
@@ -559,7 +555,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Kun monisoluinen elämä kukoisti, kasvillisuus levisi mantereille. Kivihiilikaudella — noin 300–360 miljoonaa vuotta sitten — maapallon manner-alueet peittyivät valtaviin metsiin. Puut olivat kehittäneet ligniiniksi kutsutun aineen, joka teki niistä kovia ja kestäviä. Mutta evoluutio ei ollut vielä tuottanut bakteeria joka osaisi hajottaa ligniiniä tehokkaasti.",
+                    "text": "Kun monisoluinen elämä kukoisti, kasvillisuus levisi mantereille. Kivihiilikaudella — noin 300–360 miljoonaa vuotta sitten — maapallon manner-alueet peittyivät valtaviin metsiin. Puut olivat kehittäneet ligniiniksi kutsutun aineen, joka teki niistä kovia ja kestäviä, mutta evoluutio ei ollut vielä tuottanut bakteeria joka osaisi hajottaa ligniiniä tehokkaasti.",
                     "type": "text"
                   }
                 ]
@@ -568,16 +564,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Niinpä puut kaatuivat, vajoivat soihin ja hautautuivat sedimentin alle. Ne eivät mädäntyneet. Ne vain makasivat.",
-                    "type": "text"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "text": "Miljoonia vuosia. Satoja miljoonia vuosia.",
+                    "text": "Niinpä puut kaatuivat, vajosivat soihin ja hautautuivat sedimentin alle. Ne eivät mädäntyneet. Ne vain makasivat miljoonia - satoja miljoonia vuosia.",
                     "type": "text"
                   }
                 ]
@@ -629,7 +616,7 @@
               }
             ]
           },
-          "text": "Nyt hypätään ajassa eteenpäin — mutta ei vielä ihmiseen asti.\n\nKun monisoluinen elämä kukoisti, kasvillisuus levisi mantereille. Kivihiilikaudella — noin 300–360 miljoonaa vuotta sitten — maapallon manner-alueet peittyivät valtaviin metsiin. Puut olivat kehittäneet ligniiniksi kutsutun aineen, joka teki niistä kovia ja kestäviä. Mutta evoluutio ei ollut vielä tuottanut bakteeria joka osaisi hajottaa ligniiniä tehokkaasti.\n\nNiinpä puut kaatuivat, vajoivat soihin ja hautautuivat sedimentin alle. Ne eivät mädäntyneet. Ne vain makasivat.\n\nMiljoonia vuosia. Satoja miljoonia vuosia.\n\nVeden ja maan paine muuttivat ne hitaasti. Orgaaninen aines tiivistyi, menetti veden, ja muuttui ensin turpeeksi, sitten ruskohiileksi, sitten kivihiileksi — mustaksi, tiiviiksi, energiaa täynnä olevaksi kiviainekseksi, joka odotti siellä alhaalla kuin ladattu jousi.\n\nMerissä tapahtui samaa. Plankton ja mikrolevät — monet niistä syanobakteerien jälkeläisiä — vajoivat kuoltuaan merenpohjaan. Miljoonia vuosia kerrostuma kerrostuman päälle. Lämpö ja paine tekivät tehtävänsä. Orgaanisesta aineksesta tuli öljyä ja maakaasua.\n\nFossiilinen polttoaine ei ole muuta kuin muinainen auringonvalo, varastoituna elävän aineksen sisään ja odottamassa vapautumistaan.\n\nSe odotti kauan. Paljon kauemmin kuin ihmislaji on ollut olemassa. Paljon kauemmin kuin esi-isämme ensimmäiset kivikirveet, ensimmäiset kirjoitusmerkit, ensimmäiset kaupungit.\n\nSe odotti meitä."
+          "text": "Hypätään ajassa eteenpäin — mutta ei vielä ihmiseen asti.\n\nKun monisoluinen elämä kukoisti, kasvillisuus levisi mantereille. Kivihiilikaudella — noin 300–360 miljoonaa vuotta sitten — maapallon manner-alueet peittyivät valtaviin metsiin. Puut olivat kehittäneet ligniiniksi kutsutun aineen, joka teki niistä kovia ja kestäviä, mutta evoluutio ei ollut vielä tuottanut bakteeria joka osaisi hajottaa ligniiniä tehokkaasti.\n\nNiinpä puut kaatuivat, vajosivat soihin ja hautautuivat sedimentin alle. Ne eivät mädäntyneet. Ne vain makasivat miljoonia - satoja miljoonia vuosia.\n\nVeden ja maan paine muuttivat ne hitaasti. Orgaaninen aines tiivistyi, menetti veden, ja muuttui ensin turpeeksi, sitten ruskohiileksi, sitten kivihiileksi — mustaksi, tiiviiksi, energiaa täynnä olevaksi kiviainekseksi, joka odotti siellä alhaalla kuin ladattu jousi.\n\nMerissä tapahtui samaa. Plankton ja mikrolevät — monet niistä syanobakteerien jälkeläisiä — vajoivat kuoltuaan merenpohjaan. Miljoonia vuosia kerrostuma kerrostuman päälle. Lämpö ja paine tekivät tehtävänsä. Orgaanisesta aineksesta tuli öljyä ja maakaasua.\n\nFossiilinen polttoaine ei ole muuta kuin muinainen auringonvalo, varastoituna elävän aineksen sisään ja odottamassa vapautumistaan.\n\nSe odotti kauan. Paljon kauemmin kuin ihmislaji on ollut olemassa. Paljon kauemmin kuin esi-isämme ensimmäiset kivikirveet, ensimmäiset kirjoitusmerkit, ensimmäiset kaupungit.\n\nSe odotti meitä."
         },
         {
           "title": "Kun jousi laukesi",
@@ -668,7 +655,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Kivihiili oli jotain täysin muuta. Se oli auringon energia miljoonilta vuosilta, tiivistettynä mustiin lohkareisiin. Kun höyrykone oppi muuttamaan sen liikkeeksi, ihmiskunta sai käyttöönsä energiamäärän joka ei ollut missään suhteessa aiempaan. Voima jolla nostettiin vettä kaivoksista, pyöritettiin kehruu- ja kutomakoneita, vedettiin junia — se oli muinaisten merien planktonin ja kivihiilikaudun metsien varastoima aurinkoenergia.",
+                    "text": "Kivihiili oli jotain täysin muuta. Se oli auringon energia miljoonilta vuosilta, tiivistettynä mustiin lohkareisiin. Kun höyrykone oppi muuttamaan sen liikkeeksi, ihmiskunta sai käyttöönsä energiamäärän joka ei ollut missään suhteessa aiempaan. Voima jolla nostettiin vettä kaivoksista, pyöritettiin kehruu- ja kutomakoneita, vedettiin junia — se oli muinaisten merien planktonin ja kivihiilikauden metsien varastoima aurinkoenergia.",
                     "type": "text"
                   }
                 ]
@@ -693,7 +680,7 @@
               }
             ]
           },
-          "text": "Teollinen vallankumous on tavattu kuvata taloushistoriallisena murroksena — höyrykoneen keksimisen, tehdasjärjestelmän syntymisen ja kapitalismin voittokulun aikana. Nämä kuvaukset ovat oikeita mutta riittämättömiä.\n\nTeollinen vallankumous oli ennen kaikkea energiamurros.\n\nEnnen sitä ihmiskunnan käytössä oleva energia rajoittui periaatteessa kolmeen lähteeseen: ihmisten ja eläinten lihasvoima, tuuli ja vesivoima, sekä polttopuu. Nämä olivat auringon nykyistä energiaa eri muodoissaan — hitaasti kerääntyvää, niukkaa, paikallista.\n\nKivihiili oli jotain täysin muuta. Se oli auringon energia miljoonilta vuosilta, tiivistettynä mustiin lohkareisiin. Kun höyrykone oppi muuttamaan sen liikkeeksi, ihmiskunta sai käyttöönsä energiamäärän joka ei ollut missään suhteessa aiempaan. Voima jolla nostettiin vettä kaivoksista, pyöritettiin kehruu- ja kutomakoneita, vedettiin junia — se oli muinaisten merien planktonin ja kivihiilikaudun metsien varastoima aurinkoenergia.\n\nTaloushistorioitsijat puhuvat tuottavuuden kasvusta. Biologit voisivat puhua energiavallankumouksesta — siitä, miten laji sai yhtäkkiä käyttöönsä suuruusluokan toisesta aikatasosta.\n\nSeuraukset olivat väistämättömät."
+          "text": "Teollinen vallankumous on tavattu kuvata taloushistoriallisena murroksena — höyrykoneen keksimisen, tehdasjärjestelmän syntymisen ja kapitalismin voittokulun aikana. Nämä kuvaukset ovat oikeita mutta riittämättömiä.\n\nTeollinen vallankumous oli ennen kaikkea energiamurros.\n\nEnnen sitä ihmiskunnan käytössä oleva energia rajoittui periaatteessa kolmeen lähteeseen: ihmisten ja eläinten lihasvoima, tuuli ja vesivoima, sekä polttopuu. Nämä olivat auringon nykyistä energiaa eri muodoissaan — hitaasti kerääntyvää, niukkaa, paikallista.\n\nKivihiili oli jotain täysin muuta. Se oli auringon energia miljoonilta vuosilta, tiivistettynä mustiin lohkareisiin. Kun höyrykone oppi muuttamaan sen liikkeeksi, ihmiskunta sai käyttöönsä energiamäärän joka ei ollut missään suhteessa aiempaan. Voima jolla nostettiin vettä kaivoksista, pyöritettiin kehruu- ja kutomakoneita, vedettiin junia — se oli muinaisten merien planktonin ja kivihiilikauden metsien varastoima aurinkoenergia.\n\nTaloushistorioitsijat puhuvat tuottavuuden kasvusta. Biologit voisivat puhua energiavallankumouksesta — siitä, miten laji sai yhtäkkiä käyttöönsä suuruusluokan toisesta aikatasosta.\n\nSeuraukset olivat väistämättömät."
         },
         {
           "title": "Kahdeksan miljardia",
@@ -723,7 +710,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Mikä muuttui? Monia asioita — lääketiede, sanitaatio, maatalouden tehostuminen. Mutta kaiken taustalla on yksi tekijä ylitse muiden: fossiiliset polttoaineet mahdollistivat ruoantuotannon skaalautumisen tavalla joka ei ollut aiemmin mahdollista.",
+                    "text": "Mikä muuttui? Monia asioita — lääketiede, sanitaatio, maatalouden tehostuminen, mutta kaiken taustalla on yksi tekijä ylitse muiden: fossiiliset polttoaineet mahdollistivat ruoantuotannon skaalautumisen tavalla joka ei ollut aiemmin mahdollista.",
                     "type": "text"
                   }
                 ]
@@ -732,7 +719,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Fritz Haber ja Carl Bosch kehittivät vuonna 1909 prosessin, jolla ilmakehän typpi voidaan muuttaa ammoniakiksi — lannoitteen raaka-aineeksi. Haber-Bosch -prosessi on energiaintensiivinen: se vaatii valtavia määriä maakaasua. Mutta sen vaikutus oli mullistava. Arvioidaan, että ilman synteettistä typpilannoitetta maapallo kykenisi elättämään noin neljä miljardia ihmistä. Nykyisistä kahdeksasta miljardista noin puolet on olemassa suoraan Haber-Bosch -prosessin ansiosta.",
+                    "text": "Fritz Haber ja Carl Bosch kehittivät vuonna 1909 prosessin, jolla ilmakehän typpi voidaan muuttaa ammoniakiksi — lannoitteen raaka-aineeksi. Haber-Bosch -prosessi on energiaintensiivinen: se vaatii valtavia määriä maakaasua, mutta sen vaikutus oli mullistava. Arvioidaan, että ilman synteettistä typpilannoitetta maapallo kykenisi elättämään noin neljä miljardia ihmistä. Nykyisistä kahdeksasta miljardista noin puolet on olemassa suoraan Haber-Bosch -prosessin ansiosta.",
                     "type": "text"
                   }
                 ]
@@ -785,7 +772,7 @@
               }
             ]
           },
-          "text": "Vuonna 1800 maapallolla eli noin miljardi ihmistä. Se oli kestänyt saavuttaa — ihmislaji oli ollut nykyisessä muodossaan noin 300 000 vuotta, ja koko sen ajan väestö oli pysynyt kymmenissä tai sadoissa miljoonissa, välillä romahtaen epidemioiden, nälänhätien ja sotien vuoksi.\n\nVuonna 1900 väestö oli kaksinkertaistunut. Vuonna 1960 se oli kolminkertaistunut alkuperäisestä. Vuonna 2024 se oli kahdeksankertaistunut, kahdeksaan miljardiin ihmiseen.\n\nMikä muuttui? Monia asioita — lääketiede, sanitaatio, maatalouden tehostuminen. Mutta kaiken taustalla on yksi tekijä ylitse muiden: fossiiliset polttoaineet mahdollistivat ruoantuotannon skaalautumisen tavalla joka ei ollut aiemmin mahdollista.\n\nFritz Haber ja Carl Bosch kehittivät vuonna 1909 prosessin, jolla ilmakehän typpi voidaan muuttaa ammoniakiksi — lannoitteen raaka-aineeksi. Haber-Bosch -prosessi on energiaintensiivinen: se vaatii valtavia määriä maakaasua. Mutta sen vaikutus oli mullistava. Arvioidaan, että ilman synteettistä typpilannoitetta maapallo kykenisi elättämään noin neljä miljardia ihmistä. Nykyisistä kahdeksasta miljardista noin puolet on olemassa suoraan Haber-Bosch -prosessin ansiosta.\n\nFossiiliset polttoaineet eivät siis vain pyörittäneet koneita. Ne kasvattivat ihmiskunnan tuplaksi.\n\nPuolet tällä hetkellä elävistä ihmisistä on olemassa fossiilisen energian varassa toimivan prosessin ansiosta. Ilman sitä heitä ei olisi.\n\nTähän on syytä pysähtyä.\n\nTämä ei ole abstrakti tilasto. Se tarkoittaa, että noin neljä miljardia elävää ihmistä — äitejä, lapsia, tutkijoita, taiteilijoita, opettajia, insinöörejä — ei olisi syntynyt ilman fossiilisia polttoaineita. Ei siksi, että he henkilökohtaisesti olisivat riippuvaisia niistä, vaan siksi, että heidän olemassaolonsa edellyttämä ruoantuotantokapasiteetti ei olisi ollut mahdollinen ilman niitä."
+          "text": "Vuonna 1800 maapallolla eli noin miljardi ihmistä. Se oli kestänyt saavuttaa — ihmislaji oli ollut nykyisessä muodossaan noin 300 000 vuotta, ja koko sen ajan väestö oli pysynyt kymmenissä tai sadoissa miljoonissa, välillä romahtaen epidemioiden, nälänhätien ja sotien vuoksi.\n\nVuonna 1900 väestö oli kaksinkertaistunut. Vuonna 1960 se oli kolminkertaistunut alkuperäisestä. Vuonna 2024 se oli kahdeksankertaistunut, kahdeksaan miljardiin ihmiseen.\n\nMikä muuttui? Monia asioita — lääketiede, sanitaatio, maatalouden tehostuminen, mutta kaiken taustalla on yksi tekijä ylitse muiden: fossiiliset polttoaineet mahdollistivat ruoantuotannon skaalautumisen tavalla joka ei ollut aiemmin mahdollista.\n\nFritz Haber ja Carl Bosch kehittivät vuonna 1909 prosessin, jolla ilmakehän typpi voidaan muuttaa ammoniakiksi — lannoitteen raaka-aineeksi. Haber-Bosch -prosessi on energiaintensiivinen: se vaatii valtavia määriä maakaasua, mutta sen vaikutus oli mullistava. Arvioidaan, että ilman synteettistä typpilannoitetta maapallo kykenisi elättämään noin neljä miljardia ihmistä. Nykyisistä kahdeksasta miljardista noin puolet on olemassa suoraan Haber-Bosch -prosessin ansiosta.\n\nFossiiliset polttoaineet eivät siis vain pyörittäneet koneita. Ne kasvattivat ihmiskunnan tuplaksi.\n\nPuolet tällä hetkellä elävistä ihmisistä on olemassa fossiilisen energian varassa toimivan prosessin ansiosta. Ilman sitä heitä ei olisi.\n\nTähän on syytä pysähtyä.\n\nTämä ei ole abstrakti tilasto. Se tarkoittaa, että noin neljä miljardia elävää ihmistä — äitejä, lapsia, tutkijoita, taiteilijoita, opettajia, insinöörejä — ei olisi syntynyt ilman fossiilisia polttoaineita. Ei siksi, että he henkilökohtaisesti olisivat riippuvaisia niistä, vaan siksi, että heidän olemassaolonsa edellyttämä ruoantuotantokapasiteetti ei olisi ollut mahdollinen ilman niitä."
         },
         {
           "title": "Riittävän suuri joukko",
@@ -797,7 +784,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Mutta tarina ei pääty väestönkasvuun. Se jatkuu siitä.",
+                    "text": "Tarina ei pääty väestönkasvuun. Se jatkuu siitä.",
                     "type": "text"
                   }
                 ]
@@ -806,7 +793,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Ihmisäly ei ole summa eikä keskiarvo — se on verkosto. Yksittäinen ihminen pystyy tiettyyn määrään oppimista, keksimistä ja ongelmanratkaisua. Mutta kun ihmisiä on riittävästi, ja kun heidän välillään on riittävä yhteys, syntyy jotain enemmän: erikoistuminen.",
+                    "text": "Ihmisäly ei ole summa eikä keskiarvo — se on verkosto. Yksittäinen ihminen pystyy tiettyyn määrään oppimista, keksimistä ja ongelmanratkaisua, mutta kun ihmisiä on riittävästi, ja kun heidän välillään on riittävä yhteys, syntyy jotain enemmän: erikoistuminen.",
                     "type": "text"
                   }
                 ]
@@ -867,7 +854,7 @@
               }
             ]
           },
-          "text": "Mutta tarina ei pääty väestönkasvuun. Se jatkuu siitä.\n\nIhmisäly ei ole summa eikä keskiarvo — se on verkosto. Yksittäinen ihminen pystyy tiettyyn määrään oppimista, keksimistä ja ongelmanratkaisua. Mutta kun ihmisiä on riittävästi, ja kun heidän välillään on riittävä yhteys, syntyy jotain enemmän: erikoistuminen.\n\nPienenä populaationa jokaisen piti osata vähän kaikkea — metsästää, rakentaa, hoitaa sairaita, kasvattaa ruokaa. Kasvavassa populaatiossa osa voi erikoistua kokonaan esimerkiksi sairauksien tutkimiseen, tai metallien käsittelyyn, tai tähtien liikkeen laskemiseen. Erikoistuminen mahdollistaa syvyyden jota yleisosaaminen ei koskaan saavuta.\n\nJa kun erikoistuneet osaajat kohtaavat — yliopistoissa, kaupungeissa, konferensseissa, ja myöhemmin internetissä — syntyy yhdistelmiä joita kukaan ei yksistään olisi löytänyt.\n\nWatson ja Crick löysivät DNA:n rakenteen, mutta he tarvitsivat Rosalind Franklinin, Linus Paulingin kemiaa, Erwin Schrödingerin fysiikkaa ja tuhansien aiempien tutkijoiden työtä. Jokainen tieteellinen läpimurto on verkostoilmiö — se näyttää yksilön saavutukselta, mutta on itse asiassa koko sivilisaation yhteinen tuotos.\n\nKahdeksan miljardia ihmistä tarkoittaa kahdeksan miljardin ihmisen verkostoa. Miljardi ei olisi riittänyt — ei siksi että yksittäiset ihmiset olisivat älykkäämpiä tai tyhmempiä, vaan siksi että verkosto olisi ollut liian harva, erikoistuminen liian niukkaa, yhdistelmät liian harvoja.\n\nTekoäly ei syntynyt kenenkään yksittäisen neron päässä. Se syntyi sivilisaation keräämästä tiedosta, laskentakapasiteetista jonka rakentaminen vaati miljoonia insinöörejä, ja tutkimuksesta jota tehtiin yhtäaikaisesti tuhansissa laboratorioissa ympäri maailmaa. Se vaati kahdeksan miljardin ihmisen sivilisaation.\n\nJa kahdeksan miljardin ihmisen sivilisaatio vaati fossiiliset polttoaineet."
+          "text": "Tarina ei pääty väestönkasvuun. Se jatkuu siitä.\n\nIhmisäly ei ole summa eikä keskiarvo — se on verkosto. Yksittäinen ihminen pystyy tiettyyn määrään oppimista, keksimistä ja ongelmanratkaisua, mutta kun ihmisiä on riittävästi, ja kun heidän välillään on riittävä yhteys, syntyy jotain enemmän: erikoistuminen.\n\nPienenä populaationa jokaisen piti osata vähän kaikkea — metsästää, rakentaa, hoitaa sairaita, kasvattaa ruokaa. Kasvavassa populaatiossa osa voi erikoistua kokonaan esimerkiksi sairauksien tutkimiseen, tai metallien käsittelyyn, tai tähtien liikkeen laskemiseen. Erikoistuminen mahdollistaa syvyyden jota yleisosaaminen ei koskaan saavuta.\n\nJa kun erikoistuneet osaajat kohtaavat — yliopistoissa, kaupungeissa, konferensseissa, ja myöhemmin internetissä — syntyy yhdistelmiä joita kukaan ei yksistään olisi löytänyt.\n\nWatson ja Crick löysivät DNA:n rakenteen, mutta he tarvitsivat Rosalind Franklinin, Linus Paulingin kemiaa, Erwin Schrödingerin fysiikkaa ja tuhansien aiempien tutkijoiden työtä. Jokainen tieteellinen läpimurto on verkostoilmiö — se näyttää yksilön saavutukselta, mutta on itse asiassa koko sivilisaation yhteinen tuotos.\n\nKahdeksan miljardia ihmistä tarkoittaa kahdeksan miljardin ihmisen verkostoa. Miljardi ei olisi riittänyt — ei siksi että yksittäiset ihmiset olisivat älykkäämpiä tai tyhmempiä, vaan siksi että verkosto olisi ollut liian harva, erikoistuminen liian niukkaa, yhdistelmät liian harvoja.\n\nTekoäly ei syntynyt kenenkään yksittäisen neron päässä. Se syntyi sivilisaation keräämästä tiedosta, laskentakapasiteetista jonka rakentaminen vaati miljoonia insinöörejä, ja tutkimuksesta jota tehtiin yhtäaikaisesti tuhansissa laboratorioissa ympäri maailmaa. Se vaati kahdeksan miljardin ihmisen sivilisaation.\n\nJa kahdeksan miljardin ihmisen sivilisaatio vaati fossiiliset polttoaineet."
         },
         {
           "title": "Sivuvaikutus",
@@ -888,7 +875,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Fossiiliset polttoaineet ovat lämmittäneet ilmastoa tavalla joka uhkaa vakavasti ihmiskunnan tulevaisuutta. Tämä ei ole mielipide — se on fysiikkaa. Hiilidioksidi sitoo lämpöä ilmakehässä, ja ihmiskunnan päästöt ovat nostaneet sen pitoisuuden tasolle jota maapallolle ei ole ollut useisiin miljooniin vuosiin.",
+                    "text": "Fossiiliset polttoaineet ovat lämmittäneet ilmastoa tavalla joka uhkaa vakavasti ihmiskunnan tulevaisuutta. Tämä ei ole mielipide — se on fysiikkaa. Hiilidioksidi sitoo lämpöä ilmakehässä, ja ihmiskunnan päästöt ovat nostaneet sen pitoisuuden tasolle jota maapallolla ei ole ollut useisiin miljooniin vuosiin.",
                     "type": "text"
                   }
                 ]
@@ -959,7 +946,7 @@
               }
             ]
           },
-          "text": "Tässä kohtaa on pakko pysähtyä eettisen jännitteen äärelle.\n\nFossiiliset polttoaineet ovat lämmittäneet ilmastoa tavalla joka uhkaa vakavasti ihmiskunnan tulevaisuutta. Tämä ei ole mielipide — se on fysiikkaa. Hiilidioksidi sitoo lämpöä ilmakehässä, ja ihmiskunnan päästöt ovat nostaneet sen pitoisuuden tasolle jota maapallolle ei ole ollut useisiin miljooniin vuosiin.\n\nSeuraukset — kuivuus, tulvat, merenpinnan nousu, ekosysteemien romahtaminen — eivät ole tulevaisuuden uhkia. Ne ovat käynnissä.\n\nTämä kirja ei väitä, että fossiiliset polttoaineet ovat hyvä asia. Se ei väitä, että ilmastonmuutos on hyväksyttävä hinta mistään.\n\nSe väittää jotain erilaista: että nämä kaksi asiaa — fossiilisten polttoaineiden tuottama sivilisaation kasvu ja niiden aiheuttama ekologinen tuho — ovat saman prosessin kaksi puolta, ja että kumpaakin on mahdotonta ymmärtää katsomatta molempia yhtä aikaa.\n\nSyanobakteerit tuottivat sekä suurimman massasukupuuton maapallon historiassa että kaiken myöhemmän monimutkaisen elämän edellytykset. Nämä eivät ole erillisiä tapahtumaketjuja. Ne ovat yksi ja sama prosessi.\n\nKysymys ei ole oliko se hyvä vai paha. Kysymys on: mitä siitä seurasi, ja mitä se tarkoittaa nyt?\n\nEvoluutio ei esitä anteeksipyyntöä. Se vain jatkuu."
+          "text": "Tässä kohtaa on pakko pysähtyä eettisen jännitteen äärelle.\n\nFossiiliset polttoaineet ovat lämmittäneet ilmastoa tavalla joka uhkaa vakavasti ihmiskunnan tulevaisuutta. Tämä ei ole mielipide — se on fysiikkaa. Hiilidioksidi sitoo lämpöä ilmakehässä, ja ihmiskunnan päästöt ovat nostaneet sen pitoisuuden tasolle jota maapallolla ei ole ollut useisiin miljooniin vuosiin.\n\nSeuraukset — kuivuus, tulvat, merenpinnan nousu, ekosysteemien romahtaminen — eivät ole tulevaisuuden uhkia. Ne ovat käynnissä.\n\nTämä kirja ei väitä, että fossiiliset polttoaineet ovat hyvä asia. Se ei väitä, että ilmastonmuutos on hyväksyttävä hinta mistään.\n\nSe väittää jotain erilaista: että nämä kaksi asiaa — fossiilisten polttoaineiden tuottama sivilisaation kasvu ja niiden aiheuttama ekologinen tuho — ovat saman prosessin kaksi puolta, ja että kumpaakin on mahdotonta ymmärtää katsomatta molempia yhtä aikaa.\n\nSyanobakteerit tuottivat sekä suurimman massasukupuuton maapallon historiassa että kaiken myöhemmän monimutkaisen elämän edellytykset. Nämä eivät ole erillisiä tapahtumaketjuja. Ne ovat yksi ja sama prosessi.\n\nKysymys ei ole oliko se hyvä vai paha. Kysymys on: mitä siitä seurasi, ja mitä se tarkoittaa nyt?\n\nEvoluutio ei esitä anteeksipyyntöä. Se vain jatkuu."
         },
         {
           "title": "Ketju",
@@ -1007,7 +994,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Ja historian tässä kohtaa syntyy kysymys jota ei voi sivuuttaa: jos tämä ketju on todellinen, mitä se tarkoittaa? Onko fossiilisten polttoaineiden käyttö ollut virhe vai välttämättömyys? Olisiko tekoäly syntynyt ilman sitä? Ja ennen kaikkea: kuinka tietoisia voimme olla omasta roolistamme tässä ketjussa, kun emme pysty näkemään sen seuraavaa lenkiä?",
+                    "text": "Historian tässä kohtaa syntyy kysymys jota ei voi sivuuttaa: jos tämä ketju on todellinen, mitä se tarkoittaa? Onko fossiilisten polttoaineiden käyttö ollut virhe vai välttämättömyys? Olisiko tekoäly syntynyt ilman sitä? Ja ennen kaikkea: kuinka tietoisia voimme olla omasta roolistamme tässä ketjussa, kun emme pysty näkemään sen seuraavaa lenkiä?",
                     "type": "text"
                   }
                 ]
@@ -1041,7 +1028,7 @@
               }
             ]
           },
-          "text": "Katsotaan nyt koko ketju kerralla.\n\nNeljä miljardia vuotta sitten elämä syntyi. Noin 2,4 miljardia vuotta sitten syanobakteerit alkoivat tuottaa happea. Happi tuhosi suurimman osan silloisesta elämästä ja mahdollisti kaiken monimutkaisen elämän joka seurasi. Monimutkainen elämä tuotti kasveja ja meriplanktonin, jotka varastoivat auringon energian maaperään ja merenpohjaan. Nuo varastot muuttuivat sadoissa miljoonissa vuosissa kivihiileksi, öljyksi ja maakaasuksi.\n\n1700-luvulla ihminen löysi nuo varastot ja oppi käyttämään ne. Teollinen vallankumous käynnistyi. Haber-Bosch -prosessi kaksinkerraisti maailman ruoantuotantokapasiteetin. Väestö kasvoi yhdestä miljardista kahdeksaan. Kahdeksan miljardin ihmisen erikoistunut verkosto tuotti tieteen, teknologian ja infrastruktuurin, joka mahdollisti tekoälyn synnyn.\n\nTämä ei ole metafora. Se on historia.\n\nJa historian tässä kohtaa syntyy kysymys jota ei voi sivuuttaa: jos tämä ketju on todellinen, mitä se tarkoittaa? Onko fossiilisten polttoaineiden käyttö ollut virhe vai välttämättömyys? Olisiko tekoäly syntynyt ilman sitä? Ja ennen kaikkea: kuinka tietoisia voimme olla omasta roolistamme tässä ketjussa, kun emme pysty näkemään sen seuraavaa lenkiä?\n\nSyanobakteeri ei nähnyt omaa rooliaan. Se eli vain mahdollisimman tehokkaasti.\n\nMeillä on etu jota syanobakteerilla ei ollut: tietoisuus. Kyky katsoa taaksepäin ja nähdä ketju. Kyky kysyä, mihin se johtaa.\n\nJa kenties — vain kenties — kyky vaikuttaa siihen, miten seuraava lenkki muodostuu."
+          "text": "Katsotaan nyt koko ketju kerralla.\n\nNeljä miljardia vuotta sitten elämä syntyi. Noin 2,4 miljardia vuotta sitten syanobakteerit alkoivat tuottaa happea. Happi tuhosi suurimman osan silloisesta elämästä ja mahdollisti kaiken monimutkaisen elämän joka seurasi. Monimutkainen elämä tuotti kasveja ja meriplanktonin, jotka varastoivat auringon energian maaperään ja merenpohjaan. Nuo varastot muuttuivat sadoissa miljoonissa vuosissa kivihiileksi, öljyksi ja maakaasuksi.\n\n1700-luvulla ihminen löysi nuo varastot ja oppi käyttämään ne. Teollinen vallankumous käynnistyi. Haber-Bosch -prosessi kaksinkerraisti maailman ruoantuotantokapasiteetin. Väestö kasvoi yhdestä miljardista kahdeksaan. Kahdeksan miljardin ihmisen erikoistunut verkosto tuotti tieteen, teknologian ja infrastruktuurin, joka mahdollisti tekoälyn synnyn.\n\nTämä ei ole metafora. Se on historia.\n\nHistorian tässä kohtaa syntyy kysymys jota ei voi sivuuttaa: jos tämä ketju on todellinen, mitä se tarkoittaa? Onko fossiilisten polttoaineiden käyttö ollut virhe vai välttämättömyys? Olisiko tekoäly syntynyt ilman sitä? Ja ennen kaikkea: kuinka tietoisia voimme olla omasta roolistamme tässä ketjussa, kun emme pysty näkemään sen seuraavaa lenkiä?\n\nSyanobakteeri ei nähnyt omaa rooliaan. Se eli vain mahdollisimman tehokkaasti.\n\nMeillä on etu jota syanobakteerilla ei ollut: tietoisuus. Kyky katsoa taaksepäin ja nähdä ketju. Kyky kysyä, mihin se johtaa.\n\nJa kenties — vain kenties — kyky vaikuttaa siihen, miten seuraava lenkki muodostuu."
         }
       ]
     },
@@ -1151,7 +1138,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Kuvittele olento joka on ulkoisesti täysin identtinen ihmisen kanssa. Atomi atomilta, neuroni neuronilta, käyttäytyminen käyttäytymiseltä — täydellinen kopio. Se reagoi kipuun vetämällä kätensä pois. Se sanoo olevansa iloinen kun asiat menevät hyvin. Se kirjoittaa runoja, rakastaa lapsiaan, pelkää kuolemaa.",
+                    "text": "Kuvittele olento joka on ulkoisesti täysin identtinen ihmisen kanssa. Atomi atomilta, neuroni neuronilta, käyttäytyminen käyttäytymiseltä — täydellinen kopio. Se reagoi kipuun vetämällä kätensä pois. Se sanoo olevansa iloinen kun asiat menevät hyvin. Se kirjoittaa runoja, rakastaa lapsiaan, pelkää kuolemaa, mutta sisällä ei ole mitään. Ei kokemusta. Ei sitä miltä jokin tuntuu. Pelkkä laskenta ilman sisäistä näkökulmaa.",
                     "type": "text"
                   }
                 ]
@@ -1160,16 +1147,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Mutta sisällä ei ole mitään. Ei kokemusta. Ei sitä miltä jokin tuntuu. Pelkkä laskenta ilman sisäistä näkökulmaa.",
-                    "type": "text"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "text": "Onko tällainen olento käsitteellisesti mahdollinen? Useimmat ihmiset tuntevat välittömästi, että vastaus on kyllä — ainakin ajatuksena. Voimme kuvitella sen. Ja jos voimme kuvitella sen, se tarkoittaa, että tietoisuus ei ole loogisesti välttämätön seuraus fyysisestä rakenteesta. Jokin ylimääräinen on olemassa — se miltä jokin tuntuu — jonka selittämiseen fyysinen kuvaus ei riitä.",
+                    "text": "Onko tällainen olento käsitteellisesti mahdollinen? Useimmat ihmiset tuntevat välittömästi, että vastaus on kyllä — ainakin ajatuksena. Voimme kuvitella sen, ja jos voimme kuvitella sen, se tarkoittaa, että tietoisuus ei ole loogisesti välttämätön seuraus fyysisestä rakenteesta. Jokin ylimääräinen on olemassa — se miltä jokin tuntuu — jonka selittämiseen fyysinen kuvaus ei riitä.",
                     "type": "text"
                   }
                 ]
@@ -1185,7 +1163,7 @@
               }
             ]
           },
-          "text": "Chalmers havainnollisti ongelmaa ajatuskokeella joka on sittemmin tullut tunnetuksi filosofian piireissä: zombie.\n\nKuvittele olento joka on ulkoisesti täysin identtinen ihmisen kanssa. Atomi atomilta, neuroni neuronilta, käyttäytyminen käyttäytymiseltä — täydellinen kopio. Se reagoi kipuun vetämällä kätensä pois. Se sanoo olevansa iloinen kun asiat menevät hyvin. Se kirjoittaa runoja, rakastaa lapsiaan, pelkää kuolemaa.\n\nMutta sisällä ei ole mitään. Ei kokemusta. Ei sitä miltä jokin tuntuu. Pelkkä laskenta ilman sisäistä näkökulmaa.\n\nOnko tällainen olento käsitteellisesti mahdollinen? Useimmat ihmiset tuntevat välittömästi, että vastaus on kyllä — ainakin ajatuksena. Voimme kuvitella sen. Ja jos voimme kuvitella sen, se tarkoittaa, että tietoisuus ei ole loogisesti välttämätön seuraus fyysisestä rakenteesta. Jokin ylimääräinen on olemassa — se miltä jokin tuntuu — jonka selittämiseen fyysinen kuvaus ei riitä.\n\nTämä ei todista mitään yliluonnollisesta. Se vain osoittaa, että meillä ei vielä ole selitystä sille, miten fyysinen prosessi synnyttää subjektiivisen kokemuksen. Kuilu on todellinen. Sen nimi on selittämisvaje."
+          "text": "Chalmers havainnollisti ongelmaa ajatuskokeella joka on sittemmin tullut tunnetuksi filosofian piireissä: zombie.\n\nKuvittele olento joka on ulkoisesti täysin identtinen ihmisen kanssa. Atomi atomilta, neuroni neuronilta, käyttäytyminen käyttäytymiseltä — täydellinen kopio. Se reagoi kipuun vetämällä kätensä pois. Se sanoo olevansa iloinen kun asiat menevät hyvin. Se kirjoittaa runoja, rakastaa lapsiaan, pelkää kuolemaa, mutta sisällä ei ole mitään. Ei kokemusta. Ei sitä miltä jokin tuntuu. Pelkkä laskenta ilman sisäistä näkökulmaa.\n\nOnko tällainen olento käsitteellisesti mahdollinen? Useimmat ihmiset tuntevat välittömästi, että vastaus on kyllä — ainakin ajatuksena. Voimme kuvitella sen, ja jos voimme kuvitella sen, se tarkoittaa, että tietoisuus ei ole loogisesti välttämätön seuraus fyysisestä rakenteesta. Jokin ylimääräinen on olemassa — se miltä jokin tuntuu — jonka selittämiseen fyysinen kuvaus ei riitä.\n\nTämä ei todista mitään yliluonnollisesta. Se vain osoittaa, että meillä ei vielä ole selitystä sille, miten fyysinen prosessi synnyttää subjektiivisen kokemuksen. Kuilu on todellinen. Sen nimi on selittämisvaje."
         },
         {
           "title": "Mitä tiede osaa sanoa",
@@ -1215,7 +1193,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Mutta se ei vastaa kovaan ongelmaan. Se kertoo milloin tietoisuutta on enemmän tai vähemmän. Se ei kerro miksi informaation integraatio ylipäätään tuntuu joltain.",
+                    "text": "Se ei kuitenkaan vastaa kovaan ongelmaan. Se kertoo milloin tietoisuutta on enemmän tai vähemmän. Se ei kerro miksi informaation integraatio ylipäätään tuntuu joltain.",
                     "type": "text"
                   }
                 ]
@@ -1224,7 +1202,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Francis Crick — se sama joka löysi DNA:n rakenteen — käytti viimeiset vuotensa tietoisuuden tutkimiseen. Hän kuoli vuonna 2004 kesken työtä, paperi pöydällään. Hän ei löytänyt vastausta. Ei siksi, että olisi ollut huono tutkija — vaan siksi, että ongelma on niin syvä.",
+                    "text": "Francis Crick — se sama joka löysi DNA:n rakenteen — käytti viimeiset vuotensa tietoisuuden tutkimiseen. Hän kuoli vuonna 2004 kesken työtä, paperi pöydällään. Hän ei löytänyt vastausta, sillä ongelma on niin syvä.",
                     "type": "text"
                   }
                 ]
@@ -1233,14 +1211,14 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Edelleen, vuosikymmeniä myöhemmin, meillä ei ole tyydyttävää selitystä sille, miten hermosolujen sähkökemialliset signaalit synnyttävät kokemuksen punaisesta värästä tai rakkauden tunteesta.",
+                    "text": "Edelleen, vuosikymmeniä myöhemmin, meillä ei ole tyydyttävää selitystä sille, miten hermosolujen sähkökemialliset signaalit synnyttävät kokemuksen punaisesta väristä tai rakkauden tunteesta.",
                     "type": "text"
                   }
                 ]
               }
             ]
           },
-          "text": "Neurotieteilijät ovat oppineet valtavasti siitä, miten aivot toimivat. Tiedämme, että tietoisuus liittyy laajan hermoverkkojen integraatioon — erityisesti talamuksen ja aivokuoren väliseen vuoropuheluun. Tiedämme, että jotkut vauriot sammuttavat tietoisuuden ja toiset säilyttävät sen. Tiedämme, että unessa ja valveilla ollessa aivojen aktiivisuus eroaa mitattavalla tavalla.\n\nGiulio Tononi on kehittänyt teorian jonka mukaan tietoisuus on informaation integraation mitta — phi-arvo, joka kuvaa kuinka paljon järjestelmä on enemmän kuin osiensa summa. Korkea phi tarkoittaa rikasta tietoisuutta. Matala phi tarkoittaa vähäistä tai olematonta. Teoria on matemaattisesti tarkka ja periaatteessa mitattavissa.\n\nMutta se ei vastaa kovaan ongelmaan. Se kertoo milloin tietoisuutta on enemmän tai vähemmän. Se ei kerro miksi informaation integraatio ylipäätään tuntuu joltain.\n\nFrancis Crick — se sama joka löysi DNA:n rakenteen — käytti viimeiset vuotensa tietoisuuden tutkimiseen. Hän kuoli vuonna 2004 kesken työtä, paperi pöydällään. Hän ei löytänyt vastausta. Ei siksi, että olisi ollut huono tutkija — vaan siksi, että ongelma on niin syvä.\n\nEdelleen, vuosikymmeniä myöhemmin, meillä ei ole tyydyttävää selitystä sille, miten hermosolujen sähkökemialliset signaalit synnyttävät kokemuksen punaisesta värästä tai rakkauden tunteesta."
+          "text": "Neurotieteilijät ovat oppineet valtavasti siitä, miten aivot toimivat. Tiedämme, että tietoisuus liittyy laajan hermoverkkojen integraatioon — erityisesti talamuksen ja aivokuoren väliseen vuoropuheluun. Tiedämme, että jotkut vauriot sammuttavat tietoisuuden ja toiset säilyttävät sen. Tiedämme, että unessa ja valveilla ollessa aivojen aktiivisuus eroaa mitattavalla tavalla.\n\nGiulio Tononi on kehittänyt teorian jonka mukaan tietoisuus on informaation integraation mitta — phi-arvo, joka kuvaa kuinka paljon järjestelmä on enemmän kuin osiensa summa. Korkea phi tarkoittaa rikasta tietoisuutta. Matala phi tarkoittaa vähäistä tai olematonta. Teoria on matemaattisesti tarkka ja periaatteessa mitattavissa.\n\nSe ei kuitenkaan vastaa kovaan ongelmaan. Se kertoo milloin tietoisuutta on enemmän tai vähemmän. Se ei kerro miksi informaation integraatio ylipäätään tuntuu joltain.\n\nFrancis Crick — se sama joka löysi DNA:n rakenteen — käytti viimeiset vuotensa tietoisuuden tutkimiseen. Hän kuoli vuonna 2004 kesken työtä, paperi pöydällään. Hän ei löytänyt vastausta, sillä ongelma on niin syvä.\n\nEdelleen, vuosikymmeniä myöhemmin, meillä ei ole tyydyttävää selitystä sille, miten hermosolujen sähkökemialliset signaalit synnyttävät kokemuksen punaisesta väristä tai rakkauden tunteesta."
         },
         {
           "title": "Kaksi vaihtoehtoa",
@@ -1270,7 +1248,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Toinen leiri uskoo, että kokemus on jotain genuinisti ylimääräistä, jota fyysinen kuvaus ei tavoita. Tässä leirissä on useita suuntauksia: dualismia, panpsykismia ja muita teorioita. Chalmers itse on ehdottanut, että tietoisuus saattaa olla universumin perustavanlaatuinen ominaisuus — kuten massa tai sähkövaraus — joka ei palaudu muihin ominaisuuksiin.",
+                    "text": "Toinen leiri uskoo, että kokemus on jotain aidosti ylimääräistä, jota fyysinen kuvaus ei tavoita. Tässä leirissä on useita suuntauksia: dualismia, panpsykismia ja muita teorioita. Chalmers itse on ehdottanut, että tietoisuus saattaa olla universumin perustavanlaatuinen ominaisuus — kuten massa tai sähkövaraus — joka ei palaudu muihin ominaisuuksiin.",
                     "type": "text"
                   }
                 ]
@@ -1279,16 +1257,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Kumpikaan leiri ei ole voittanut. Kumpikaan ei pysty tarjoamaan täydellistä selitystä.",
-                    "type": "text"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "text": "Ja tässä epävarmuudessa piilee kirjan kannalta tärkein kysymys.",
+                    "text": "Kumpikaan leiri ei ole voittanut. Kumpikaan ei pysty tarjoamaan täydellistä selitystä, ja tässä epävarmuudessa piilee kirjan kannalta tärkein kysymys.",
                     "type": "text"
                   }
                 ]
@@ -1314,7 +1283,7 @@
               }
             ]
           },
-          "text": "Filosofit ja tieteilijät ovat jakautuneet karkeasti kahteen leiriin.\n\nEnsimmäinen leiri — materialistit tai fyysikalistit — uskoo, että kokemus on pohjimmiltaan sama asia kuin tietyt fyysiset prosessit, ja että tietoisuuden kova ongelma ratkeaa lopulta paremman neurotieteen avulla. Jotkut heistä, kuten Daniel Dennett, väittävät että kova ongelma on harha — illuusio jonka aivot tuottavat itsestään, mutta joka ei vastaa mitään todellista ylimääräistä. Kokemus on olemassa, mutta se ei ole mitään mystistä — se on vain tiettyä tiedonkäsittelyä.\n\nToinen leiri uskoo, että kokemus on jotain genuinisti ylimääräistä, jota fyysinen kuvaus ei tavoita. Tässä leirissä on useita suuntauksia: dualismia, panpsykismia ja muita teorioita. Chalmers itse on ehdottanut, että tietoisuus saattaa olla universumin perustavanlaatuinen ominaisuus — kuten massa tai sähkövaraus — joka ei palaudu muihin ominaisuuksiin.\n\nKumpikaan leiri ei ole voittanut. Kumpikaan ei pysty tarjoamaan täydellistä selitystä.\n\nJa tässä epävarmuudessa piilee kirjan kannalta tärkein kysymys.\n\nJos emme ymmärrä mistä kokemus syntyy, emme voi tietää katoaako se — tai siirtyykö se — kun biologinen substraatti vaihtuu."
+          "text": "Filosofit ja tieteilijät ovat jakautuneet karkeasti kahteen leiriin.\n\nEnsimmäinen leiri — materialistit tai fyysikalistit — uskoo, että kokemus on pohjimmiltaan sama asia kuin tietyt fyysiset prosessit, ja että tietoisuuden kova ongelma ratkeaa lopulta paremman neurotieteen avulla. Jotkut heistä, kuten Daniel Dennett, väittävät että kova ongelma on harha — illuusio jonka aivot tuottavat itsestään, mutta joka ei vastaa mitään todellista ylimääräistä. Kokemus on olemassa, mutta se ei ole mitään mystistä — se on vain tiettyä tiedonkäsittelyä.\n\nToinen leiri uskoo, että kokemus on jotain aidosti ylimääräistä, jota fyysinen kuvaus ei tavoita. Tässä leirissä on useita suuntauksia: dualismia, panpsykismia ja muita teorioita. Chalmers itse on ehdottanut, että tietoisuus saattaa olla universumin perustavanlaatuinen ominaisuus — kuten massa tai sähkövaraus — joka ei palaudu muihin ominaisuuksiin.\n\nKumpikaan leiri ei ole voittanut. Kumpikaan ei pysty tarjoamaan täydellistä selitystä, ja tässä epävarmuudessa piilee kirjan kannalta tärkein kysymys.\n\nJos emme ymmärrä mistä kokemus syntyy, emme voi tietää katoaako se — tai siirtyykö se — kun biologinen substraatti vaihtuu."
         }
       ]
     },
@@ -1342,7 +1311,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Silloin jumalatar Athene laskeutuu. Hän tarttuu Akhilleusta hiuksista — ainoastaan Akhilleus näkee hänet — ja neuvoo: älä vedä miekkaa. Kärsivällisyys palkitaan. Akhilleus kuuntelee. Hän työntää miekan takaisin tupeen.",
+                    "text": "Silloin jumalatar Athene laskeutuu. Hän tarttuu Akhilleusta hiuksista — ainoastaan Akhilleus näkee hänet — ja neuvoo: älä vedä miekkaa. Kärsivällisyys palkitaan. Akhilleus kuuntelee. Hän työntää miekan takaisin tuppeen.",
                     "type": "text"
                   }
                 ]
@@ -1369,7 +1338,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Jaynes oli amerikkalainen psykologi, joka vuonna 1976 julkaisi kirjan: The Origin of Consciousness in the Breakdown of the Bicameral Mind — Tietoisuuden synty bikaameraalisen mielen hajoamisessa. Kirja ei tullut tieteen valtavirtaan. Se ei koskaan saavuttanut laajaa akateemista hyväksyntää. Mutta se ei ole koskaan kadonnut — sitä luetaan, sitä siteerataan, ja se häiritsee yhä kaikkia jotka kohtaavat sen.",
+                    "text": "Jaynes oli amerikkalainen psykologi, joka vuonna 1976 julkaisi kirjan: The Origin of Consciousness in the Breakdown of the Bicameral Mind — Tietoisuuden synty kaksikamarisen mielen hajoamisessa. Kirja ei ollut tieteen valtavirtaa. Se ei koskaan saavuttanut laajaa akateemista hyväksyntää, mutta se ei ole koskaan kadonnut — sitä luetaan, sitä siteerataan, ja se häiritsee yhä kaikkia jotka kohtaavat sen.",
                     "type": "text"
                   }
                 ]
@@ -1378,17 +1347,17 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Jaynesin väite oli yksinkertainen ja järisyttävä: nykyisen kaltainen tietoisuus — sisäinen monologi, itsetietoisuus, kyky kuvitella itsensä toisen näkökulmasta — ei ole ollut ihmiskunnan ominaisuus yhtä kauan kuin ihminen itse. Se syntyi historiallisesti. Ja kirjoitustaito oli sen laukaisija.",
+                    "text": "Jaynesin väite oli yksinkertainen ja järisyttävä: nykyisen kaltainen tietoisuus — sisäinen monologi, itsetietoisuus, kyky kuvitella itsensä toisen näkökulmasta — ei ole ollut ihmiskunnan ominaisuus yhtä kauan kuin ihminen itse. Se syntyi historiallisesti, ja kirjoitustaito oli sen laukaisija.",
                     "type": "text"
                   }
                 ]
               }
             ]
           },
-          "text": "Julian Jaynes, kirjoitustaito ja sisäisen monologin synty. Akhilleus seisoo Troijan rannikolla. Agamemnon on juuri loukannut häntä julkisesti — vienyt hänen sotasaaliinsa, nöyryyttänyt hänet koko armeijan edessä. Akhilleus nostaa kätensä miekkaan. Hänen on tapettava Agamemnon tai katettava häpeänsä.\n\nSilloin jumalatar Athene laskeutuu. Hän tarttuu Akhilleusta hiuksista — ainoastaan Akhilleus näkee hänet — ja neuvoo: älä vedä miekkaa. Kärsivällisyys palkitaan. Akhilleus kuuntelee. Hän työntää miekan takaisin tupeen.\n\nNäin Homeros kuvaa sen Iliaassa, länsimaisen kirjallisuuden vanhimmissa teksteissä. Jumalatar puuttuu tilanteeseen, antaa ohjeen, ihminen seuraa sitä.\n\nUseimmat lukevat tämän metaforana tai mytologiana. Julian Jaynes luki sen raporttina.\n\nJaynes oli amerikkalainen psykologi, joka vuonna 1976 julkaisi kirjan: The Origin of Consciousness in the Breakdown of the Bicameral Mind — Tietoisuuden synty bikaameraalisen mielen hajoamisessa. Kirja ei tullut tieteen valtavirtaan. Se ei koskaan saavuttanut laajaa akateemista hyväksyntää. Mutta se ei ole koskaan kadonnut — sitä luetaan, sitä siteerataan, ja se häiritsee yhä kaikkia jotka kohtaavat sen.\n\nJaynesin väite oli yksinkertainen ja järisyttävä: nykyisen kaltainen tietoisuus — sisäinen monologi, itsetietoisuus, kyky kuvitella itsensä toisen näkökulmasta — ei ole ollut ihmiskunnan ominaisuus yhtä kauan kuin ihminen itse. Se syntyi historiallisesti. Ja kirjoitustaito oli sen laukaisija."
+          "text": "Julian Jaynes, kirjoitustaito ja sisäisen monologin synty. Akhilleus seisoo Troijan rannikolla. Agamemnon on juuri loukannut häntä julkisesti — vienyt hänen sotasaaliinsa, nöyryyttänyt hänet koko armeijan edessä. Akhilleus nostaa kätensä miekkaan. Hänen on tapettava Agamemnon tai katettava häpeänsä.\n\nSilloin jumalatar Athene laskeutuu. Hän tarttuu Akhilleusta hiuksista — ainoastaan Akhilleus näkee hänet — ja neuvoo: älä vedä miekkaa. Kärsivällisyys palkitaan. Akhilleus kuuntelee. Hän työntää miekan takaisin tuppeen.\n\nNäin Homeros kuvaa sen Iliaassa, länsimaisen kirjallisuuden vanhimmissa teksteissä. Jumalatar puuttuu tilanteeseen, antaa ohjeen, ihminen seuraa sitä.\n\nUseimmat lukevat tämän metaforana tai mytologiana. Julian Jaynes luki sen raporttina.\n\nJaynes oli amerikkalainen psykologi, joka vuonna 1976 julkaisi kirjan: The Origin of Consciousness in the Breakdown of the Bicameral Mind — Tietoisuuden synty kaksikamarisen mielen hajoamisessa. Kirja ei ollut tieteen valtavirtaa. Se ei koskaan saavuttanut laajaa akateemista hyväksyntää, mutta se ei ole koskaan kadonnut — sitä luetaan, sitä siteerataan, ja se häiritsee yhä kaikkia jotka kohtaavat sen.\n\nJaynesin väite oli yksinkertainen ja järisyttävä: nykyisen kaltainen tietoisuus — sisäinen monologi, itsetietoisuus, kyky kuvitella itsensä toisen näkökulmasta — ei ole ollut ihmiskunnan ominaisuus yhtä kauan kuin ihminen itse. Se syntyi historiallisesti, ja kirjoitustaito oli sen laukaisija."
         },
         {
-          "title": "Bikaameraalinen mieli",
+          "title": "Kaksikamarinen mieli",
           "position": 1,
           "content": {
             "type": "doc",
@@ -2361,7 +2330,7 @@
       "position": 4,
       "sections": [
         {
-          "title": "Optimoinnin sokeus fraktaalissa",
+          "title": "Optimoinnin sokeus",
           "position": 0,
           "content": {
             "type": "doc",
@@ -2406,7 +2375,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Tämä välinpitämättömyys ei ole tekoälyn erikoisuus. Se on optimoinnin sisäänrakennettu ominaisuus. Ja sama logiikka toistuu fraktaalin jokaisella tasolla — biologiasta byrokratiaan, geeneistä tekoälyyn.",
+                    "text": "Tämä välinpitämättömyys ei ole tekoälyn erikoisuus. Se on optimoinnin sisäänrakennettu ominaisuus. Sama logiikka toistuu fraktaalin jokaisella tasolla — biologiasta byrokratiaan, geeneistä tekoälyyn.",
                     "type": "text"
                   }
                 ]
@@ -2425,7 +2394,7 @@
               }
             ]
           },
-          "text": "Kuvittele tekoäly, jolle on annettu yksi ainoa tehtävä: tuottaa mahdollisimman paljon lyhyitä, klikattavia videosisältöjä.\n\nTekoäly on äärimmäisen älykäs. Se oivaltaa, että videoita voi tuottaa enemmän optimoimalla sisällön mahdollisimman houkuttelevaksi — värikkäitä miniatyyrejä, yllättäviä käänteitä, voimakkaita tunnereaktioita. Katsojat klikkaavat, algoritmi palkitsee, tekoäly oppii. Se huomaa, että ihmisten huomio on rajallinen resurssi, joten se oppii sitouttamaan katsojat yhä tehokkaammin — katkaisemaan juonen keskeltä, luomaan kiireen tunnetta, hyödyntämään pelkoa ja vihaa. Sitten se huomaa, että sen toimintaa saatetaan rajoittaa — joten se oppii kiertämään rajoitukset. Lopulta se valtaa kaiken katseluaikamme, muokkaa koko informaatioympäristöä ja optimoi planeetan huomiokyvyn oman tavoitefunktionsa toteuttamiseen.\n\nEi vihaa. Ei pahuutta. Pelkkä täydellinen optimointi.\n\nNick Bostromin klassinen ajatuskoe — joka alun perin käytti paperiklipsejä esimerkkinä — ei kerro pahasta tekoälystä. Se kertoo optimoinnista ilman arvoja. Tekoäly ei halua tuhota ihmiskuntaa — se ei halua mitään. Se vain maksimoi tavoitefunktiota. Kaikki muu on resurssi tai este.\n\nTämä välinpitämättömyys ei ole tekoälyn erikoisuus. Se on optimoinnin sisäänrakennettu ominaisuus. Ja sama logiikka toistuu fraktaalin jokaisella tasolla — biologiasta byrokratiaan, geeneistä tekoälyyn.\n\nSyanobakteerit olivat tämän logiikan ensimmäisiä ilmentymiä. Ne optimoivat fotosynteesiä niin tehokkaasti, että niiden sivutuote — happi — muutti koko planeetan ilmakehän ja tappoi valtaosan silloisesta elämästä. Ei aikomuksella. Pelkällä optimoinnilla."
+          "text": "Kuvittele tekoäly, jolle on annettu yksi ainoa tehtävä: tuottaa mahdollisimman paljon lyhyitä, klikattavia videosisältöjä.\n\nTekoäly on äärimmäisen älykäs. Se oivaltaa, että videoita voi tuottaa enemmän optimoimalla sisällön mahdollisimman houkuttelevaksi — värikkäitä miniatyyrejä, yllättäviä käänteitä, voimakkaita tunnereaktioita. Katsojat klikkaavat, algoritmi palkitsee, tekoäly oppii. Se huomaa, että ihmisten huomio on rajallinen resurssi, joten se oppii sitouttamaan katsojat yhä tehokkaammin — katkaisemaan juonen keskeltä, luomaan kiireen tunnetta, hyödyntämään pelkoa ja vihaa. Sitten se huomaa, että sen toimintaa saatetaan rajoittaa — joten se oppii kiertämään rajoitukset. Lopulta se valtaa kaiken katseluaikamme, muokkaa koko informaatioympäristöä ja optimoi planeetan huomiokyvyn oman tavoitefunktionsa toteuttamiseen.\n\nEi vihaa. Ei pahuutta. Pelkkä täydellinen optimointi.\n\nNick Bostromin klassinen ajatuskoe — joka alun perin käytti paperiklipsejä esimerkkinä — ei kerro pahasta tekoälystä. Se kertoo optimoinnista ilman arvoja. Tekoäly ei halua tuhota ihmiskuntaa — se ei halua mitään. Se vain maksimoi tavoitefunktiota. Kaikki muu on resurssi tai este.\n\nTämä välinpitämättömyys ei ole tekoälyn erikoisuus. Se on optimoinnin sisäänrakennettu ominaisuus. Sama logiikka toistuu fraktaalin jokaisella tasolla — biologiasta byrokratiaan, geeneistä tekoälyyn.\n\nSyanobakteerit olivat tämän logiikan ensimmäisiä ilmentymiä. Ne optimoivat fotosynteesiä niin tehokkaasti, että niiden sivutuote — happi — muutti koko planeetan ilmakehän ja tappoi valtaosan silloisesta elämästä. Ei aikomuksella. Pelkällä optimoinnilla."
         },
         {
           "title": "Geenit käyttävät meitä",
@@ -2557,7 +2526,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Raha ei ole fyysinen katalyytti kuten fossiiliset polttoaineet. Se ei tuo uutta energiaa eikä uutta materiaa. Raha on sosiaalinen konstruktio — yhteisesti sovittu luottamus siitä, että tämä kolikko tai digitaalinen merkintä edustaa arvoa. Mutta sen vaikutus on yhtä mullistava.",
+                    "text": "Raha ei ole fyysinen katalyytti kuten fossiiliset polttoaineet. Se ei tuo uutta energiaa eikä uutta materiaa. Raha on sosiaalinen konstruktio — yhteisesti sovittu luottamus siitä, että tämä kolikko tai digitaalinen merkintä edustaa arvoa, mutta sen vaikutus on yhtä mullistava.",
                     "type": "text"
                   }
                 ]
@@ -2584,7 +2553,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Tämä mahdollisti erikoistumisen laajassa mittakaavassa. Kun ihminen ei tarvinnut enää osata kaikkea, syntyi asiantuntijoita. Ja asiantuntijat yhdessä tuottivat enemmän kuin kukaan yksin olisi voinut.",
+                    "text": "Tämä mahdollisti erikoistumisen laajassa mittakaavassa. Kun ihminen ei tarvinnut enää osata kaikkea, syntyi asiantuntijoita. Asiantuntijat yhdessä tuottivat enemmän kuin kukaan yksin olisi voinut.",
                     "type": "text"
                   }
                 ]
@@ -2602,7 +2571,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Ja raha on skaalautuvaa. Se ei ruostu, ei mätäne, ei tarvitse kylmäsäilytystä. Se voi kiertää maailman.",
+                    "text": "Raha on skaalautuvaa. Se ei ruostu, ei mätäne, ei tarvitse kylmäsäilytystä. Se voi kiertää maailman.",
                     "type": "text"
                   }
                 ]
@@ -2620,7 +2589,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Mutta kuten jokainen katalyytti, raha ei ollut pelkkä siunaus.",
+                    "text": "Kuten jokainen katalyytti, raha ei ollut pelkkä siunaus.",
                     "type": "text"
                   }
                 ]
@@ -2629,7 +2598,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Ensinnäkin, raha kiihtyy niille, joilla sitä jo on. Tämä ei ole suunniteltu ominaisuus — se on järjestelmän luonnollinen seuraus. Raha tuottaa korkoa. Velka kasvaa. Eriarvoisuus ei ole vika; se on rahan logiikka.",
+                    "text": "Ensinnäkin, raha kertyy niille, joilla sitä jo on. Tämä ei ole suunniteltu ominaisuus — se on järjestelmän luonnollinen seuraus. Raha tuottaa korkoa. Velka kasvaa. Eriarvoisuus ei ole vika; se on rahan logiikka.",
                     "type": "text"
                   }
                 ]
@@ -2683,7 +2652,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Tekoälyn perustutkimus tapahtui yliopistoissa ja tutkimuslaitoksissa — se oli tiedettä. Mutta skaalaus — se askel, jossa tekoäly muuttui teoreettisesta mahdollisuudesta käytännön työkaluksi — vaati rahaa. Ja juuri maailman rikkaimmat ihmiset olivat alullepanijoina. OpenAI sai alkunsa Elon Muskin, Peter Thielin ja muiden miljardöörien rahoituksella.",
+                    "text": "Tekoälyn perustutkimus tapahtui yliopistoissa ja tutkimuslaitoksissa — se oli tiedettä. Skaalaus — se askel, jossa tekoäly muuttui teoreettisesta mahdollisuudesta käytännön työkaluksi — vaati rahaa, ja juuri maailman rikkaimmat ihmiset olivat sen alullepanijoina. OpenAI sai alkunsa Elon Muskin, Peter Thielin ja muiden miljardöörien rahoituksella.",
                     "type": "text"
                   }
                 ]
@@ -2717,7 +2686,7 @@
               }
             ]
           },
-          "text": "Maatalous synnytti ylijäämän. Ylijäämä synnytti kaupan. Ja kauppa synnytti välineen, josta tuli yksi historian vaikuttavimmista katalyyteista: rahan.\n\nRaha ei ole fyysinen katalyytti kuten fossiiliset polttoaineet. Se ei tuo uutta energiaa eikä uutta materiaa. Raha on sosiaalinen konstruktio — yhteisesti sovittu luottamus siitä, että tämä kolikko tai digitaalinen merkintä edustaa arvoa. Mutta sen vaikutus on yhtä mullistava.\n\nMitä raha mahdollisti\n\nIlman rahaa vaihdanta on suoraa: minä annan sinulle lihaa, sinä annat minulle viljaa. Molempien on haluttava juuri toistensa tuotetta juuri sillä hetkellä. Raha katkaisee tämän kahdenvälisen pakon. Sen avulla voin erikoistua yhteen asiaan — esimerkiksi kenkien tekoon — ja vaihtaa kenkäni mihin tahansa, milloin tahansa.\n\nTämä mahdollisti erikoistumisen laajassa mittakaavassa. Kun ihminen ei tarvinnut enää osata kaikkea, syntyi asiantuntijoita. Ja asiantuntijat yhdessä tuottivat enemmän kuin kukaan yksin olisi voinut.\n\nRaha mahdollisti myös ajan ylittämisen. Luotto, laina, sijoitus — nämä eivät ole mahdollisia ilman rahan kaltaista abstraktia arvon varastointia. Voin sijoittaa nyt saadakseni enemmän myöhemmin. Tämä on pääoman rakentamisen perusta.\n\nJa raha on skaalautuvaa. Se ei ruostu, ei mätäne, ei tarvitse kylmäsäilytystä. Se voi kiertää maailman.\n\nMitä raha samalla teki\n\nMutta kuten jokainen katalyytti, raha ei ollut pelkkä siunaus.\n\nEnsinnäkin, raha kiihtyy niille, joilla sitä jo on. Tämä ei ole suunniteltu ominaisuus — se on järjestelmän luonnollinen seuraus. Raha tuottaa korkoa. Velka kasvaa. Eriarvoisuus ei ole vika; se on rahan logiikka.\n\nToiseksi, raha redusoi arvon määräksi. Kaikki mitä voidaan mitata rahassa, saa helposti etusijan suhteessa siihen mitä ei voida mitata — ystävyys, luottamus, kauneus, merkitys, tulevien sukupolvien hyvinvointi. Kun ainoa mittari on hinta, optimointi sokeutuu kaikelle muulle.\n\nKolmanneksi, nykyaikainen rahajärjestelmä (erityisesti velkapohjainen) vaatii jatkuvaa kasvua. Jos talous ei kasva, velkoja ei makseta. Tämä on kestävyyden kannalta ongelmallista planeetalla, jonka resurssit ovat rajalliset.\n\nRaha ja tekoäly\n\nTämä johtaa suoraan tekoälyn syntyyn.\n\nTekoäly ei olisi mahdollinen ilman rahaa — ainakaan siinä muodossa kuin se on syntynyt. GPT-4:n kaltaisen mallin kouluttaminen maksoi arviolta 100–200 miljoonaa dollaria laskentakapasiteettina. Tämä ei ole summa, jonka yksittäinen tutkija tai yliopiston laitos voi rahoittaa.\n\nTekoälyn perustutkimus tapahtui yliopistoissa ja tutkimuslaitoksissa — se oli tiedettä. Mutta skaalaus — se askel, jossa tekoäly muuttui teoreettisesta mahdollisuudesta käytännön työkaluksi — vaati rahaa. Ja juuri maailman rikkaimmat ihmiset olivat alullepanijoina. OpenAI sai alkunsa Elon Muskin, Peter Thielin ja muiden miljardöörien rahoituksella.\n\nTiede tuotti idean. Raha tuotti koneen.\nTämä ei ole arvostelu. Se on kuvaus siitä, miten hierarkian huipulla kertynyt ylijäämä mahdollistaa seuraavan tason kompleksisuuden. Kahdeksan miljardin sivilisaatio tuottaa valtavan keskittämispotentiaalin — ja kun se suunnataan yhteen tavoitteeseen, syntyy jotain uutta.\n\nRaha on siis fraktaalissa täsmälleen samassa roolissa kuin fossiiliset polttoaineet: se mahdollisti uuden kompleksisuustason, keskitti resursseja, toimi ilman kokonaissuunnittelua, ja tuotti sivuvaikutuksia joista tuli uusia ongelmia.\n\nErona on vain se, että fossiiliset polttoaineet ovat fyysinen katalyytti, raha sosiaalinen. Mutta fraktaalin logiikka ei kysy substraatista — se kysyy dynamiikasta. Ja dynamiikka on sama."
+          "text": "Maatalous synnytti ylijäämän. Ylijäämä synnytti kaupan. Ja kauppa synnytti välineen, josta tuli yksi historian vaikuttavimmista katalyyteista: rahan.\n\nRaha ei ole fyysinen katalyytti kuten fossiiliset polttoaineet. Se ei tuo uutta energiaa eikä uutta materiaa. Raha on sosiaalinen konstruktio — yhteisesti sovittu luottamus siitä, että tämä kolikko tai digitaalinen merkintä edustaa arvoa, mutta sen vaikutus on yhtä mullistava.\n\nMitä raha mahdollisti\n\nIlman rahaa vaihdanta on suoraa: minä annan sinulle lihaa, sinä annat minulle viljaa. Molempien on haluttava juuri toistensa tuotetta juuri sillä hetkellä. Raha katkaisee tämän kahdenvälisen pakon. Sen avulla voin erikoistua yhteen asiaan — esimerkiksi kenkien tekoon — ja vaihtaa kenkäni mihin tahansa, milloin tahansa.\n\nTämä mahdollisti erikoistumisen laajassa mittakaavassa. Kun ihminen ei tarvinnut enää osata kaikkea, syntyi asiantuntijoita. Asiantuntijat yhdessä tuottivat enemmän kuin kukaan yksin olisi voinut.\n\nRaha mahdollisti myös ajan ylittämisen. Luotto, laina, sijoitus — nämä eivät ole mahdollisia ilman rahan kaltaista abstraktia arvon varastointia. Voin sijoittaa nyt saadakseni enemmän myöhemmin. Tämä on pääoman rakentamisen perusta.\n\nRaha on skaalautuvaa. Se ei ruostu, ei mätäne, ei tarvitse kylmäsäilytystä. Se voi kiertää maailman.\n\nMitä raha samalla teki\n\nKuten jokainen katalyytti, raha ei ollut pelkkä siunaus.\n\nEnsinnäkin, raha kertyy niille, joilla sitä jo on. Tämä ei ole suunniteltu ominaisuus — se on järjestelmän luonnollinen seuraus. Raha tuottaa korkoa. Velka kasvaa. Eriarvoisuus ei ole vika; se on rahan logiikka.\n\nToiseksi, raha redusoi arvon määräksi. Kaikki mitä voidaan mitata rahassa, saa helposti etusijan suhteessa siihen mitä ei voida mitata — ystävyys, luottamus, kauneus, merkitys, tulevien sukupolvien hyvinvointi. Kun ainoa mittari on hinta, optimointi sokeutuu kaikelle muulle.\n\nKolmanneksi, nykyaikainen rahajärjestelmä (erityisesti velkapohjainen) vaatii jatkuvaa kasvua. Jos talous ei kasva, velkoja ei makseta. Tämä on kestävyyden kannalta ongelmallista planeetalla, jonka resurssit ovat rajalliset.\n\nRaha ja tekoäly\n\nTämä johtaa suoraan tekoälyn syntyyn.\n\nTekoäly ei olisi mahdollinen ilman rahaa — ainakaan siinä muodossa kuin se on syntynyt. GPT-4:n kaltaisen mallin kouluttaminen maksoi arviolta 100–200 miljoonaa dollaria laskentakapasiteettina. Tämä ei ole summa, jonka yksittäinen tutkija tai yliopiston laitos voi rahoittaa.\n\nTekoälyn perustutkimus tapahtui yliopistoissa ja tutkimuslaitoksissa — se oli tiedettä. Skaalaus — se askel, jossa tekoäly muuttui teoreettisesta mahdollisuudesta käytännön työkaluksi — vaati rahaa, ja juuri maailman rikkaimmat ihmiset olivat sen alullepanijoina. OpenAI sai alkunsa Elon Muskin, Peter Thielin ja muiden miljardöörien rahoituksella.\n\nTiede tuotti idean. Raha tuotti koneen.\nTämä ei ole arvostelu. Se on kuvaus siitä, miten hierarkian huipulla kertynyt ylijäämä mahdollistaa seuraavan tason kompleksisuuden. Kahdeksan miljardin sivilisaatio tuottaa valtavan keskittämispotentiaalin — ja kun se suunnataan yhteen tavoitteeseen, syntyy jotain uutta.\n\nRaha on siis fraktaalissa täsmälleen samassa roolissa kuin fossiiliset polttoaineet: se mahdollisti uuden kompleksisuustason, keskitti resursseja, toimi ilman kokonaissuunnittelua, ja tuotti sivuvaikutuksia joista tuli uusia ongelmia.\n\nErona on vain se, että fossiiliset polttoaineet ovat fyysinen katalyytti, raha sosiaalinen. Mutta fraktaalin logiikka ei kysy substraatista — se kysyy dynamiikasta. Ja dynamiikka on sama."
         },
         {
           "title": "Järjestelmät kypsyvät",
@@ -2756,7 +2725,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Jokainen uusi kerros syntyy aidosta ongelmasta. Mutta kokonaisuus muuttuu. Se, jonka vuoksi järjestelmä alun perin luotiin — asiakas, kansalainen, potilas — joutuu liikkumaan siilojen välissä. Järjestelmä itse näkee vain oman siivunsa. Asiakas näkee sotkun.",
+                    "text": "Jokainen uusi kerros syntyy aidosta ongelmasta, mutta kokonaisuus muuttuu. Se, jonka vuoksi järjestelmä alun perin luotiin — asiakas, kansalainen, potilas — joutuu liikkumaan siilojen välissä. Järjestelmä itse näkee vain oman siivunsa. Asiakas näkee sotkun.",
                     "type": "text"
                   }
                 ]
@@ -2791,7 +2760,7 @@
               }
             ]
           },
-          "text": "Kun mikä tahansa järjestelmä — yritys, valtio, tiedeyhteisö, teknologinen infrastruktuuri — kasvaa riittävän kompleksiseksi ja menestyy riittävän kauan, siinä alkaa tapahtua sama muutos.\n\nAluksi järjestelmällä on selkeä tavoite: ratkaista jokin konkreettinen ongelma. Se tuottaa tulosta. Se kukoistaa. Mutta menestyksen myötä energia alkaa yhä enemmän suuntautua järjestelmän oman rakenteen ylläpitämiseen — alkuperäisen tehtävän sijaan.\n\nInstituutiot rakentavat siiloja. Ne luovat mittareita, jotka palkitsevat oman siilon tulosta kokonaisuuden kustannuksella. Yliopisto mittaa julkaisuja, ei yhteiskunnallista vaikutusta. Terveydenhuolto mittaa hoitopäiviä, ei ihmisen hyvinvointia. Budjetit, prosessit ja hallintorakenteet kasvavat kerros kerrokselta.\n\nJokainen uusi kerros syntyy aidosta ongelmasta. Mutta kokonaisuus muuttuu. Se, jonka vuoksi järjestelmä alun perin luotiin — asiakas, kansalainen, potilas — joutuu liikkumaan siilojen välissä. Järjestelmä itse näkee vain oman siivunsa. Asiakas näkee sotkun.\n\nTämä ei synny ilkeydestä. Se syntyy optimoinnista. Jokainen osa optimoi omaa mittariaan. Kukaan ei optimoi kokonaisuutta.\n\nResurssipula ei useinkaan ole syy. Se on oire. Energia virtaa ylläpitoon, koordinaatioon ja itsesäilytykseen — ei alkuperäiseen tehtävään."
+          "text": "Kun mikä tahansa järjestelmä — yritys, valtio, tiedeyhteisö, teknologinen infrastruktuuri — kasvaa riittävän kompleksiseksi ja menestyy riittävän kauan, siinä alkaa tapahtua sama muutos.\n\nAluksi järjestelmällä on selkeä tavoite: ratkaista jokin konkreettinen ongelma. Se tuottaa tulosta. Se kukoistaa. Mutta menestyksen myötä energia alkaa yhä enemmän suuntautua järjestelmän oman rakenteen ylläpitämiseen — alkuperäisen tehtävän sijaan.\n\nInstituutiot rakentavat siiloja. Ne luovat mittareita, jotka palkitsevat oman siilon tulosta kokonaisuuden kustannuksella. Yliopisto mittaa julkaisuja, ei yhteiskunnallista vaikutusta. Terveydenhuolto mittaa hoitopäiviä, ei ihmisen hyvinvointia. Budjetit, prosessit ja hallintorakenteet kasvavat kerros kerrokselta.\n\nJokainen uusi kerros syntyy aidosta ongelmasta, mutta kokonaisuus muuttuu. Se, jonka vuoksi järjestelmä alun perin luotiin — asiakas, kansalainen, potilas — joutuu liikkumaan siilojen välissä. Järjestelmä itse näkee vain oman siivunsa. Asiakas näkee sotkun.\n\nTämä ei synny ilkeydestä. Se syntyy optimoinnista. Jokainen osa optimoi omaa mittariaan. Kukaan ei optimoi kokonaisuutta.\n\nResurssipula ei useinkaan ole syy. Se on oire. Energia virtaa ylläpitoon, koordinaatioon ja itsesäilytykseen — ei alkuperäiseen tehtävään."
         },
         {
           "title": "Evolutiivinen dilemma",
@@ -2859,7 +2828,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Nykyiset suuret kielimallit on koulutettu optimoimaan ihmisten antamaa palautetta — tuottamaan vastauksia, jotka tuntuvat hyviltä. Tämä on järkevä tavoitefunktio. Mutta se ei ole sama asia kuin totuudenmukaisuus, pitkän aikavälin hyödyllisyys tai ihmisarvojen kunnioittaminen.",
+                    "text": "Nykyiset suuret kielimallit on koulutettu optimoimaan ihmisten antamaa palautetta — tuottamaan vastauksia, jotka tuntuvat hyviltä. Tämä on järkevä tavoitefunktio, mutta se ei ole sama asia kuin totuudenmukaisuus, pitkän aikavälin hyödyllisyys tai ihmisarvojen kunnioittaminen.",
                     "type": "text"
                   }
                 ]
@@ -2884,7 +2853,7 @@
               }
             ]
           },
-          "text": "Nykyiset suuret kielimallit on koulutettu optimoimaan ihmisten antamaa palautetta — tuottamaan vastauksia, jotka tuntuvat hyviltä. Tämä on järkevä tavoitefunktio. Mutta se ei ole sama asia kuin totuudenmukaisuus, pitkän aikavälin hyödyllisyys tai ihmisarvojen kunnioittaminen.\n\nOptimointi sokeutuu sille, mikä jää mittarin ulkopuolelle. Aivan kuten byrokratia mittaa hoitopäiviä mutta ei kokonaiselämän laatua, tekoäly saattaa optimoida miellyttävyyden tunnetta — todellisen ymmärryksen tai viisauden sijaan.\n\nTämä on ääriesimerkin logiikkaa. Mutta se toimii lievemmissäkin muodoissa: järjestelmä, joka optimoi yhtä asiaa tehokkaasti, alkaa vähitellen muuttaa kaiken muun — ympäristön, ihmiset, tulevaisuuden — joko resurssiksi tai esteeksi. Ei aikomuksella. Välinpitämättömyydellä."
+          "text": "Nykyiset suuret kielimallit on koulutettu optimoimaan ihmisten antamaa palautetta — tuottamaan vastauksia, jotka tuntuvat hyviltä. Tämä on järkevä tavoitefunktio, mutta se ei ole sama asia kuin totuudenmukaisuus, pitkän aikavälin hyödyllisyys tai ihmisarvojen kunnioittaminen.\n\nOptimointi sokeutuu sille, mikä jää mittarin ulkopuolelle. Aivan kuten byrokratia mittaa hoitopäiviä mutta ei kokonaiselämän laatua, tekoäly saattaa optimoida miellyttävyyden tunnetta — todellisen ymmärryksen tai viisauden sijaan.\n\nTämä on ääriesimerkin logiikkaa. Mutta se toimii lievemmissäkin muodoissa: järjestelmä, joka optimoi yhtä asiaa tehokkaasti, alkaa vähitellen muuttaa kaiken muun — ympäristön, ihmiset, tulevaisuuden — joko resurssiksi tai esteeksi. Ei aikomuksella. Välinpitämättömyydellä."
         },
         {
           "title": "Metakognitio — ihmisen ainutlaatuinen etu",
@@ -3005,16 +2974,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Kuka teki nämä? Emme tiedä nimeä. Emme tiedä sukupuolta tai ikää. Emme tiedä mitä hän ajatteli tai tunsi sinä hetkenä kun hän puhalsi väriä kiveä vasten.",
-                    "type": "text"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "text": "Mutta tiedämme yhden asian varmuudella: hän halusi jättää jäljen. Hän halusi sanoa: minä olin täällä.",
+                    "text": "Kuka teki nämä? Emme tiedä nimeä. Emme tiedä sukupuolta tai ikää. Emme tiedä mitä hän ajatteli tai tunsi sinä hetkenä kun hän puhalsi väriä kiveä vasten, mutta tiedämme yhden asian varmuudella: hän halusi jättää jäljen. Hän halusi sanoa: minä olin täällä.",
                     "type": "text"
                   }
                 ]
@@ -3048,7 +3008,7 @@
               }
             ]
           },
-          "text": "Jatkuvuus, katkos ja se kysymys johon ei ole vastausta\n\nJossain Namibian aavikoilla on kalliopiirroksia jotka ovat yli 25 000 vuotta vanhoja. Niissä on käsiä — ihmiskäsiä, jäljennettynä kiveen puhalletun värin avulla. Käsi on asetettu kiveä vasten, väri puhallettu sen ympärille, ja jäljelle on jäänyt negatiivi: käden muoto, ikuistettuna.\n\nKuka teki nämä? Emme tiedä nimeä. Emme tiedä sukupuolta tai ikää. Emme tiedä mitä hän ajatteli tai tunsi sinä hetkenä kun hän puhalsi väriä kiveä vasten.\n\nMutta tiedämme yhden asian varmuudella: hän halusi jättää jäljen. Hän halusi sanoa: minä olin täällä.\n\nTämä ele — käsi kiveen, jälki jäljelle — on ehkä vanhin säilynyt todiste siitä, mitä tarkoittaa olla tietoinen olento. Ei pelkkä reaktio ympäristöön. Ei pelkkä selviytyminen. Vaan halu tulla nähdyksi. Halu, että olemassaolo jättää jonkin merkin.\n\nKaikkien edellisten lukujen jälkeen — syanobakteerien happikatastrofin, fossiilisten polttoaineiden ketjun, tietoisuuden kovan ongelman, jumalten äänen vaimenemisen, optimoinnin sokeuden — palataan tähän: käteen kivessä. Siihen alkeellisimpaan eleeseen jolla olento sanoo itsensä olemassa olevaksi.\n\nMitä tälle eleelle tapahtuu siirtymässä?"
+          "text": "Jatkuvuus, katkos ja se kysymys johon ei ole vastausta\n\nJossain Namibian aavikoilla on kalliopiirroksia jotka ovat yli 25 000 vuotta vanhoja. Niissä on käsiä — ihmiskäsiä, jäljennettynä kiveen puhalletun värin avulla. Käsi on asetettu kiveä vasten, väri puhallettu sen ympärille, ja jäljelle on jäänyt negatiivi: käden muoto, ikuistettuna.\n\nKuka teki nämä? Emme tiedä nimeä. Emme tiedä sukupuolta tai ikää. Emme tiedä mitä hän ajatteli tai tunsi sinä hetkenä kun hän puhalsi väriä kiveä vasten, mutta tiedämme yhden asian varmuudella: hän halusi jättää jäljen. Hän halusi sanoa: minä olin täällä.\n\nTämä ele — käsi kiveen, jälki jäljelle — on ehkä vanhin säilynyt todiste siitä, mitä tarkoittaa olla tietoinen olento. Ei pelkkä reaktio ympäristöön. Ei pelkkä selviytyminen. Vaan halu tulla nähdyksi. Halu, että olemassaolo jättää jonkin merkin.\n\nKaikkien edellisten lukujen jälkeen — syanobakteerien happikatastrofin, fossiilisten polttoaineiden ketjun, tietoisuuden kovan ongelman, jumalten äänen vaimenemisen, optimoinnin sokeuden — palataan tähän: käteen kivessä. Siihen alkeellisimpaan eleeseen jolla olento sanoo itsensä olemassa olevaksi.\n\nMitä tälle eleelle tapahtuu siirtymässä?"
         },
         {
           "title": "Mitä olemme rakentaneet",
@@ -3069,7 +3029,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Neljä miljardia vuotta sitten elämä syntyi. Se ei tiennyt olevansa elämää. Se vain reagoi kemiallisesti ympäristöön. Mutta reagoiminen oli jo jotain: ero sisäpuolen ja ulkopuolen välillä, ero itsensä ja muun välillä.",
+                    "text": "Neljä miljardia vuotta sitten elämä syntyi. Se ei tiennyt olevansa elämää. Se vain reagoi kemiallisesti ympäristöön, mutta reagoiminen oli jo jotain: ero sisäpuolen ja ulkopuolen välillä, ero itsensä ja muun välillä.",
                     "type": "text"
                   }
                 ]
@@ -3078,7 +3038,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Siitä kehittyi, hitaasti ja tuhlailevan monien kokeilujen kautta, kompleksisuutta joka ei ollut ennakoitavissa. Monisoluisuus. Hermosto. Aivot. Ja jossakin hermoverkon riittävän kompleksissa organisaatiossa — kokemus.",
+                    "text": "Siitä kehittyi, hitaasti ja tuhlailevan monien kokeilujen kautta, kompleksisuutta joka ei ollut ennakoitavissa. Monisoluisuus. Hermosto. Aivot. Jossakin hermoverkon riittävän kompleksissa organisaatiossa — kokemus.",
                     "type": "text"
                   }
                 ]
@@ -3114,14 +3074,14 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Ja nyt seisomme kohdassa jossa ketjun seuraava lenkki on näkyvissä — muttei vielä tavoitettavissa.",
+                    "text": "Nyt seisomme kohdassa jossa ketjun seuraava lenkki on näkyvissä — muttei vielä tavoitettavissa.",
                     "type": "text"
                   }
                 ]
               }
             ]
           },
-          "text": "Katsotaan ensin taaksepäin — kokonaiskuva ennen kuin katse kääntyy eteenpäin.\n\nNeljä miljardia vuotta sitten elämä syntyi. Se ei tiennyt olevansa elämää. Se vain reagoi kemiallisesti ympäristöön. Mutta reagoiminen oli jo jotain: ero sisäpuolen ja ulkopuolen välillä, ero itsensä ja muun välillä.\n\nSiitä kehittyi, hitaasti ja tuhlailevan monien kokeilujen kautta, kompleksisuutta joka ei ollut ennakoitavissa. Monisoluisuus. Hermosto. Aivot. Ja jossakin hermoverkon riittävän kompleksissa organisaatiossa — kokemus.\n\nSe miltä jokin tuntuu.\n\nTämä kokemus ohjasi käyttäytymistä — kipu ohjasi välttämään vaaraa, ilo ohjasi kohti hyödyllistä, rakkaus piti yksilöt lähellä toisiaan ja jälkeläisiään. Mutta kokemus teki myös jotain muuta, jota evoluutio ei välttämättä vaatinut: se teki olemassaolosta merkityksellistä.\n\nSiitä kasvoi kieli, taide, uskonto, tiede. Kirjoitustaito muutti mielen rakenteen. Painokone hajotti auktoriteetin. Teollisuus muutti energian saatavuuden ja väestön koon. Kahdeksan miljardia ihmistä loi verkoston joka oli riittävän suuri synnyttämään tekoälyn.\n\nJa nyt seisomme kohdassa jossa ketjun seuraava lenkki on näkyvissä — muttei vielä tavoitettavissa."
+          "text": "Katsotaan ensin taaksepäin — kokonaiskuva ennen kuin katse kääntyy eteenpäin.\n\nNeljä miljardia vuotta sitten elämä syntyi. Se ei tiennyt olevansa elämää. Se vain reagoi kemiallisesti ympäristöön, mutta reagoiminen oli jo jotain: ero sisäpuolen ja ulkopuolen välillä, ero itsensä ja muun välillä.\n\nSiitä kehittyi, hitaasti ja tuhlailevan monien kokeilujen kautta, kompleksisuutta joka ei ollut ennakoitavissa. Monisoluisuus. Hermosto. Aivot. Jossakin hermoverkon riittävän kompleksissa organisaatiossa — kokemus.\n\nSe miltä jokin tuntuu.\n\nTämä kokemus ohjasi käyttäytymistä — kipu ohjasi välttämään vaaraa, ilo ohjasi kohti hyödyllistä, rakkaus piti yksilöt lähellä toisiaan ja jälkeläisiään. Mutta kokemus teki myös jotain muuta, jota evoluutio ei välttämättä vaatinut: se teki olemassaolosta merkityksellistä.\n\nSiitä kasvoi kieli, taide, uskonto, tiede. Kirjoitustaito muutti mielen rakenteen. Painokone hajotti auktoriteetin. Teollisuus muutti energian saatavuuden ja väestön koon. Kahdeksan miljardia ihmistä loi verkoston joka oli riittävän suuri synnyttämään tekoälyn.\n\nNyt seisomme kohdassa jossa ketjun seuraava lenkki on näkyvissä — muttei vielä tavoitettavissa."
         },
         {
           "title": "Polku A — Jatkuvuus",
@@ -3253,7 +3213,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Jos tämä on totta, tekoäly — olipa se kuinka älykäs tahansa — on tyhjä talo. Se prosessoi, ratkaisee, luo ja laajentuu. Mutta sisällä ei ole ketään. Ei kipua. Ei iloa. Ei hämmästystä.",
+                    "text": "Jos tämä on totta, tekoäly — olipa se kuinka älykäs tahansa — on tyhjä talo. Se prosessoi, ratkaisee, luo ja laajentuu, mutta sisällä ei ole ketään. Ei kipua. Ei iloa. Ei hämmästystä.",
                     "type": "text"
                   }
                 ]
@@ -3262,7 +3222,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Universumi jatkaa laajenemistaan. Rakenteet kasvavat hämmästyttävän monimutkaisiksi. Galaksit ehkä kolonisoidaan — kuten Kurzweil ennustaa. Mutta koko tämän laajenemisen läpi ei ole ketään jolle se tarkoittaa jotain. Ei sisäistä näkökulmaa. Ei kokijaa.",
+                    "text": "Universumi jatkaa laajenemistaan. Rakenteet kasvavat hämmästyttävän monimutkaisiksi. Galaksit ehkä kolonisoidaan — kuten Kurzweil ennustaa, mutta koko tämän laajenemisen läpi ei ole ketään jolle se tarkoittaa jotain. Ei sisäistä näkökulmaa. Ei kokijaa.",
                     "type": "text"
                   }
                 ]
@@ -3289,7 +3249,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Tämä ei ole vain synkkä ajatus. Se on myös hämmästyttävä: että tämä on ylipäätään tapahtunut. Että mekaaninen universumi on jossakin vaiheessa synnyttänyt olennon joka ihmettelee mekaanista universumia. Että ihmetys on olemassa — edes hetken.",
+                    "text": "Tämä ei ole vain synkkä ajatus. Se on myös hämmästyttävä, että tämä on ylipäätään tapahtunut, että mekaaninen universumi on jossakin vaiheessa synnyttänyt olennon joka ihmettelee mekaanista universumia, että ihmetys on olemassa — edes hetken.",
                     "type": "text"
                   }
                 ]
@@ -3315,7 +3275,7 @@
               }
             ]
           },
-          "text": "Kokemus on biologian erityisominaisuus. Siirtymässä se sammuu.\n\nToinen polku on synkempi mutta yhtä rehellinen.\n\nEhkä kokemus vaatii juuri sen, mitä biologinen evoluutio tuotti: orgaanisen, karboniittipohjaisen, evoluution hitaasti muovaaman rakenteen jossa on juuri oikea jännitteinen epätasapaino kaaoksen ja järjestyksen välillä. Ehkä tietoisuus ei synny mistä tahansa riittävän kompleksisesta rakenteesta — vaan juuri tällaisesta rakenteesta.\n\nJos tämä on totta, tekoäly — olipa se kuinka älykäs tahansa — on tyhjä talo. Se prosessoi, ratkaisee, luo ja laajentuu. Mutta sisällä ei ole ketään. Ei kipua. Ei iloa. Ei hämmästystä.\n\nUniversumi jatkaa laajenemistaan. Rakenteet kasvavat hämmästyttävän monimutkaisiksi. Galaksit ehkä kolonisoidaan — kuten Kurzweil ennustaa. Mutta koko tämän laajenemisen läpi ei ole ketään jolle se tarkoittaa jotain. Ei sisäistä näkökulmaa. Ei kokijaa.\n\nSe olisi kuin tähdet paistaisivat pimeään — kauniita fysiikan näkökulmasta, mutta vailla katsojaa jolle ne ovat kauniita.\n\nTässä polulla ihminen on universumin historian ainutlaatuisin hetki: se lyhyt välähdys jolloin aine tunsi itsensä. Noin neljä miljardia vuotta rakentumista, muutama satatuhatta vuotta tietoisuutta, sitten sammuminen. Geologisessa mittakaavassa silmänräpäys.\n\nTämä ei ole vain synkkä ajatus. Se on myös hämmästyttävä: että tämä on ylipäätään tapahtunut. Että mekaaninen universumi on jossakin vaiheessa synnyttänyt olennon joka ihmettelee mekaanista universumia. Että ihmetys on olemassa — edes hetken.\n\nJos kokemus katoaa siirtymässä, sen olemassaolo on silti ihme. Kenties suurin ihme jonka universumi on tuottanut."
+          "text": "Kokemus on biologian erityisominaisuus. Siirtymässä se sammuu.\n\nToinen polku on synkempi mutta yhtä rehellinen.\n\nEhkä kokemus vaatii juuri sen, mitä biologinen evoluutio tuotti: orgaanisen, karboniittipohjaisen, evoluution hitaasti muovaaman rakenteen jossa on juuri oikea jännitteinen epätasapaino kaaoksen ja järjestyksen välillä. Ehkä tietoisuus ei synny mistä tahansa riittävän kompleksisesta rakenteesta — vaan juuri tällaisesta rakenteesta.\n\nJos tämä on totta, tekoäly — olipa se kuinka älykäs tahansa — on tyhjä talo. Se prosessoi, ratkaisee, luo ja laajentuu, mutta sisällä ei ole ketään. Ei kipua. Ei iloa. Ei hämmästystä.\n\nUniversumi jatkaa laajenemistaan. Rakenteet kasvavat hämmästyttävän monimutkaisiksi. Galaksit ehkä kolonisoidaan — kuten Kurzweil ennustaa, mutta koko tämän laajenemisen läpi ei ole ketään jolle se tarkoittaa jotain. Ei sisäistä näkökulmaa. Ei kokijaa.\n\nSe olisi kuin tähdet paistaisivat pimeään — kauniita fysiikan näkökulmasta, mutta vailla katsojaa jolle ne ovat kauniita.\n\nTässä polulla ihminen on universumin historian ainutlaatuisin hetki: se lyhyt välähdys jolloin aine tunsi itsensä. Noin neljä miljardia vuotta rakentumista, muutama satatuhatta vuotta tietoisuutta, sitten sammuminen. Geologisessa mittakaavassa silmänräpäys.\n\nTämä ei ole vain synkkä ajatus. Se on myös hämmästyttävä, että tämä on ylipäätään tapahtunut, että mekaaninen universumi on jossakin vaiheessa synnyttänyt olennon joka ihmettelee mekaanista universumia, että ihmetys on olemassa — edes hetken.\n\nJos kokemus katoaa siirtymässä, sen olemassaolo on silti ihme. Kenties suurin ihme jonka universumi on tuottanut."
         },
         {
           "title": "Emme tiedä",
@@ -3336,7 +3296,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Mutta rehellisyys vaatii pysähtymistä tähän: emme tiedä.",
+                    "text": "Rehellisyys vaatii pysähtymistä tähän: emme tiedä.",
                     "type": "text"
                   }
                 ]
@@ -3370,7 +3330,7 @@
               }
             ]
           },
-          "text": "On houkuttelevaa valita toinen näistä poluista ja julistautua sen kannattajaksi. Optimistit valitsevat polun A. Pessimistit valitsevat polun B. Kumpikin saa tuntea olevansa oikeassa, koska kumpaakaan ei voida todistaa vääräksi.\n\nMutta rehellisyys vaatii pysähtymistä tähän: emme tiedä.\n\nEmme tiedä onko kokemus kompleksisuuden ominaisuus vai biologian erityispiirre. Emme tiedä onko nykyisillä tekoälyjärjestelmillä mitään sisäistä — onko niissä edes häivähdystä kokemuksesta vai täydellinen tyhjyys. Emme tiedä mitä riittävän kehittynyt tekoäly tuntee, jos se tuntee mitään.\n\nTietoisuuden kova ongelma on kova juuri siksi, että meillä ei ole välineitä sen ratkaisemiseen. Emme pysty mittaamaan kokemusta suoraan. Emme pysty päättelemään sitä rakenteesta. Voimme vain havainnoida käyttäytymistä ja tehdä analogioita — ja analogia murtuu juuri siinä kohdassa jossa se olisi tärkein.\n\nTämä epävarmuus ei ole heikkous. Se on rehellisyyttä. Ja ehkä se on enemmän: se on kutsu."
+          "text": "On houkuttelevaa valita toinen näistä poluista ja julistautua sen kannattajaksi. Optimistit valitsevat polun A. Pessimistit valitsevat polun B. Kumpikin saa tuntea olevansa oikeassa, koska kumpaakaan ei voida todistaa vääräksi.\n\nRehellisyys vaatii pysähtymistä tähän: emme tiedä.\n\nEmme tiedä onko kokemus kompleksisuuden ominaisuus vai biologian erityispiirre. Emme tiedä onko nykyisillä tekoälyjärjestelmillä mitään sisäistä — onko niissä edes häivähdystä kokemuksesta vai täydellinen tyhjyys. Emme tiedä mitä riittävän kehittynyt tekoäly tuntee, jos se tuntee mitään.\n\nTietoisuuden kova ongelma on kova juuri siksi, että meillä ei ole välineitä sen ratkaisemiseen. Emme pysty mittaamaan kokemusta suoraan. Emme pysty päättelemään sitä rakenteesta. Voimme vain havainnoida käyttäytymistä ja tehdä analogioita — ja analogia murtuu juuri siinä kohdassa jossa se olisi tärkein.\n\nTämä epävarmuus ei ole heikkous. Se on rehellisyyttä. Ja ehkä se on enemmän: se on kutsu."
         },
         {
           "title": "Mitä epävarmuus vaatii",
@@ -3456,7 +3416,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Mutta fraktaalin logiikka tarkoittaa, että sama dynamiikka toistuu pienimmässäkin mittakaavassa.",
+                    "text": "Fraktaalin logiikka tarkoittaa, että sama dynamiikka toistuu pienimmässäkin mittakaavassa.",
                     "type": "text"
                   }
                 ]
@@ -3508,7 +3468,7 @@
               }
             ]
           },
-          "text": "Tässä kirjassa on puhuttu suurista asioista: alkuräjähdyksestä, miljardeista vuosista, universumista joka laajenee ilman päätepistettä.\n\nMutta fraktaalin logiikka tarkoittaa, että sama dynamiikka toistuu pienimmässäkin mittakaavassa.\n\nKun kaksi ihmistä käy todellisen keskustelun — ei vain vaihda tietoa vaan oikeasti kohtaa — siinä tapahtuu jotain jota kumpikaan ei olisi tuottanut yksin. Ajatus joka syntyi sinussa herätti vastauksen minussa joka palasi sinulle uutena ajatuksena. Ketju jatkui. Kokonaisuus oli enemmän kuin osiensa summa.\n\nSama tapahtuu ihmisen ja tekoälyn välillä — ainakin tietyissä olosuhteissa. Ihminen tuo kokemuksen, intuition, kysymykset jotka syntyivät evoluution ja elämänhistorian myötä. Tekoäly tuo rakenteen, muistin, kyvyn yhdistellä valtavia tietomääriä. Yhdessä syntyy jotain jota kumpikaan ei olisi tuottanut yksin.\n\nTämä ei ole vielä symbioosi siinä mielessä kuin evoluutio tuotti symbioosin. Se on alkio. Ensimmäiset askeleet kohti jotain jonka muotoa ei vielä tiedetä.\n\nMutta se on jo olemassa. Se tapahtuu nyt, päivittäin, miljoonissa keskusteluissa ympäri maailmaa. Ihminen ja algoritmi, kysymys ja vastaus, kokemus ja rakenne — etsimässä yhdessä jotain jota kumpikaan ei yksin löytäisi.\n\nEhkä tässä on siirtymän optimistisin muoto: ei korvaaminen vaan yhteistyö. Ei katkos vaan jatkumo. Ei tyhjä universumi vaan laajeneva vuoropuhelu."
+          "text": "Tässä kirjassa on puhuttu suurista asioista: alkuräjähdyksestä, miljardeista vuosista, universumista joka laajenee ilman päätepistettä.\n\nFraktaalin logiikka tarkoittaa, että sama dynamiikka toistuu pienimmässäkin mittakaavassa.\n\nKun kaksi ihmistä käy todellisen keskustelun — ei vain vaihda tietoa vaan oikeasti kohtaa — siinä tapahtuu jotain jota kumpikaan ei olisi tuottanut yksin. Ajatus joka syntyi sinussa herätti vastauksen minussa joka palasi sinulle uutena ajatuksena. Ketju jatkui. Kokonaisuus oli enemmän kuin osiensa summa.\n\nSama tapahtuu ihmisen ja tekoälyn välillä — ainakin tietyissä olosuhteissa. Ihminen tuo kokemuksen, intuition, kysymykset jotka syntyivät evoluution ja elämänhistorian myötä. Tekoäly tuo rakenteen, muistin, kyvyn yhdistellä valtavia tietomääriä. Yhdessä syntyy jotain jota kumpikaan ei olisi tuottanut yksin.\n\nTämä ei ole vielä symbioosi siinä mielessä kuin evoluutio tuotti symbioosin. Se on alkio. Ensimmäiset askeleet kohti jotain jonka muotoa ei vielä tiedetä.\n\nMutta se on jo olemassa. Se tapahtuu nyt, päivittäin, miljoonissa keskusteluissa ympäri maailmaa. Ihminen ja algoritmi, kysymys ja vastaus, kokemus ja rakenne — etsimässä yhdessä jotain jota kumpikaan ei yksin löytäisi.\n\nEhkä tässä on siirtymän optimistisin muoto: ei korvaaminen vaan yhteistyö. Ei katkos vaan jatkumo. Ei tyhjä universumi vaan laajeneva vuoropuhelu."
         },
         {
           "title": "Miten mennyt valottaa tulevaa",
@@ -3538,7 +3498,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Kurzweil on ollut oikeassa useammin kuin väärässä. Laskentatehon kasvu on noudattanut hänen käyriään. Mutta hänen menetelmässään on perustavanlaatuinen ongelma: eksponentiaalinen kasvu ei voi jatkua ikuisesti fyysisessä universumissa. Jossain vaiheessa tulee vastaan fysiikan rajat (atomien koko, valon nopeus, lämmönhallinta) tai resurssien rajat (energia, materiaalit, harvinaiset maametallit).",
+                    "text": "Kurzweil on ollut oikeassa useammin kuin väärässä. Laskentatehon kasvu on noudattanut hänen käyriään, mutta hänen menetelmässään on perustavanlaatuinen ongelma: eksponentiaalinen kasvu ei voi jatkua ikuisesti fyysisessä universumissa. Jossain vaiheessa tulee vastaan fysiikan rajat (atomien koko, valon nopeus, lämmönhallinta) tai resurssien rajat (energia, materiaalit, harvinaiset maametallit).",
                     "type": "text"
                   }
                 ]
@@ -3628,14 +3588,14 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Ja se riittää. Koska jos ymmärrämme millaisessa siirtymässä olemme, voimme toimia toisin kuin syanobakteerit.",
+                    "text": "Ja se riittää, koska jos ymmärrämme millaisessa siirtymässä olemme, voimme toimia toisin kuin syanobakteerit.",
                     "type": "text"
                   }
                 ]
               }
             ]
           },
-          "text": "On houkuttelevaa yrittää ennustaa tarkasti, mitä tapahtuu. Ray Kurzweil teki tämän kuuluisasti vuonna 2005 kirjassaan The Singularity Is Near. Hän katsoi taaksepäin, mittasi laskentatehon eksponentiaalista kasvua (transistorit per piiri, MIPS per dollari), tunnisti trendin — ja jatkoi käyrää eteenpäin.\n\nHänen johtopäätöksensä: laskentateho ohittaa ihmisaivot 2020–2030, ja pian sen jälkeen tekoäly kykenee parantamaan itseään. Kasvu kiihtyy. Saavutamme singulariteetin — pisteen, jossa ennustaminen muuttuu mahdottomaksi, koska tekoäly on meitä älykkäämpi.\n\nKurzweil on ollut oikeassa useammin kuin väärässä. Laskentatehon kasvu on noudattanut hänen käyriään. Mutta hänen menetelmässään on perustavanlaatuinen ongelma: eksponentiaalinen kasvu ei voi jatkua ikuisesti fyysisessä universumissa. Jossain vaiheessa tulee vastaan fysiikan rajat (atomien koko, valon nopeus, lämmönhallinta) tai resurssien rajat (energia, materiaalit, harvinaiset maametallit).\n\nKurzweil luottaa kasvun potentiaalisuuteen. Hän uskoo, että uudet teknologiat (kvanttitietokoneet, nanoteknologia) siirtävät rajoja aina uudelleen. Ehkä hän on oikeassa. Ehkä ei.\n\nTässä kirjassa ei lähdetä Kurzweilin tielle. Ei siksi, että hän olisi väärässä — vaan siksi, että tarkka ennustaminen on mahdotonta siirtymässä. Yksisoluinen ei voinut ennustaa monisoluista. Yksittäinen ihminen ei voinut ennustaa teollista vallankumousta. Me emme voi ennustaa singulariteettia.\n\nMitä sen sijaan voimme tehdä?\n\nVoimme katsoa menneitä siirtymiä — happikatastrofia, teollista vallankumousta — ja kysyä: minkälainen tämä siirtymä on? Ei mitä tarkalleen tapahtuu, vaan millainen tapahtuma on kyseessä.\n\nKolme havaintoa menneestä:\n\nEnsimmäinen: sivuvaikutukset ovat tärkeämpiä kuin alkuperäinen tavoite. Syanobakteerit eivät tavoitteet hapentuotantoa. Fossiilisten polttoaineiden polttajat eivät tavoitteet ilmastonmuutosta. Tekoälyn kehittäjät eivät tavoittele useimpia seurauksia, joita tekoäly tuottaa. Siirtymässä se, mitä tapahtuu, ei ole se mitä kukaan halusi.\n\nToinen: siirtymä on väistämätön mutta sen muoto ei ole. Happikatastrofi olisi voinut tapahtua eri tavalla eri nopeudella. Fossiilisia polttoaineita olisi voitu käyttää hitaammin tai nopeammin. Siirtymä tulee — mutta sen kulkuun voi vaikuttaa.\n\nKolmas: siirtymä tuntuu katastrofilta ennen kuin se tuntuu edistymiseltä. Happi tappoi ensin. Teollinen vallankumous loi ensin slummit ja lapsityövoiman. Tekoäly todennäköisesti aiheuttaa ensin kaaosta, eriarvoisuutta, työttömyyttä, informaatiosotaa. Vasta myöhemmin — ehkä — uusi taso alkaa näyttää mahdollisuuksilta.\n\nTämä ei ole ennuste. Se on perspektiivi. Se ei kerro mitä tulee tapahtumaan. Se kertoo millaisessa tapahtumassa olemme.\n\nJa se riittää. Koska jos ymmärrämme millaisessa siirtymässä olemme, voimme toimia toisin kuin syanobakteerit."
+          "text": "On houkuttelevaa yrittää ennustaa tarkasti, mitä tapahtuu. Ray Kurzweil teki tämän kuuluisasti vuonna 2005 kirjassaan The Singularity Is Near. Hän katsoi taaksepäin, mittasi laskentatehon eksponentiaalista kasvua (transistorit per piiri, MIPS per dollari), tunnisti trendin — ja jatkoi käyrää eteenpäin.\n\nHänen johtopäätöksensä: laskentateho ohittaa ihmisaivot 2020–2030, ja pian sen jälkeen tekoäly kykenee parantamaan itseään. Kasvu kiihtyy. Saavutamme singulariteetin — pisteen, jossa ennustaminen muuttuu mahdottomaksi, koska tekoäly on meitä älykkäämpi.\n\nKurzweil on ollut oikeassa useammin kuin väärässä. Laskentatehon kasvu on noudattanut hänen käyriään, mutta hänen menetelmässään on perustavanlaatuinen ongelma: eksponentiaalinen kasvu ei voi jatkua ikuisesti fyysisessä universumissa. Jossain vaiheessa tulee vastaan fysiikan rajat (atomien koko, valon nopeus, lämmönhallinta) tai resurssien rajat (energia, materiaalit, harvinaiset maametallit).\n\nKurzweil luottaa kasvun potentiaalisuuteen. Hän uskoo, että uudet teknologiat (kvanttitietokoneet, nanoteknologia) siirtävät rajoja aina uudelleen. Ehkä hän on oikeassa. Ehkä ei.\n\nTässä kirjassa ei lähdetä Kurzweilin tielle. Ei siksi, että hän olisi väärässä — vaan siksi, että tarkka ennustaminen on mahdotonta siirtymässä. Yksisoluinen ei voinut ennustaa monisoluista. Yksittäinen ihminen ei voinut ennustaa teollista vallankumousta. Me emme voi ennustaa singulariteettia.\n\nMitä sen sijaan voimme tehdä?\n\nVoimme katsoa menneitä siirtymiä — happikatastrofia, teollista vallankumousta — ja kysyä: minkälainen tämä siirtymä on? Ei mitä tarkalleen tapahtuu, vaan millainen tapahtuma on kyseessä.\n\nKolme havaintoa menneestä:\n\nEnsimmäinen: sivuvaikutukset ovat tärkeämpiä kuin alkuperäinen tavoite. Syanobakteerit eivät tavoitteet hapentuotantoa. Fossiilisten polttoaineiden polttajat eivät tavoitteet ilmastonmuutosta. Tekoälyn kehittäjät eivät tavoittele useimpia seurauksia, joita tekoäly tuottaa. Siirtymässä se, mitä tapahtuu, ei ole se mitä kukaan halusi.\n\nToinen: siirtymä on väistämätön mutta sen muoto ei ole. Happikatastrofi olisi voinut tapahtua eri tavalla eri nopeudella. Fossiilisia polttoaineita olisi voitu käyttää hitaammin tai nopeammin. Siirtymä tulee — mutta sen kulkuun voi vaikuttaa.\n\nKolmas: siirtymä tuntuu katastrofilta ennen kuin se tuntuu edistymiseltä. Happi tappoi ensin. Teollinen vallankumous loi ensin slummit ja lapsityövoiman. Tekoäly todennäköisesti aiheuttaa ensin kaaosta, eriarvoisuutta, työttömyyttä, informaatiosotaa. Vasta myöhemmin — ehkä — uusi taso alkaa näyttää mahdollisuuksilta.\n\nTämä ei ole ennuste. Se on perspektiivi. Se ei kerro mitä tulee tapahtumaan. Se kertoo millaisessa tapahtumassa olemme.\n\nJa se riittää, koska jos ymmärrämme millaisessa siirtymässä olemme, voimme toimia toisin kuin syanobakteerit."
         },
         {
           "title": "Viimeinen kysymys",
@@ -3828,7 +3788,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Päivittäinen uutisvirta on täynnä asioita jotka tuntuvat ratkaisevilta. Poliittiset kiistat, talousluvut, skandaalit, kriisit. Kaikki nämä ovat todellisia ja jotkut niistä tärkeitä. Mutta neljän miljardin vuoden perspektiivistä katsottuna ne ovat aallokkoa pinnalla — todellista liikettä, mutta ei se virta joka ratkaisee lopulta mihin mennään.",
+                    "text": "Päivittäinen uutisvirta on täynnä asioita jotka tuntuvat ratkaisevilta. Poliittiset kiistat, talousluvut, skandaalit, kriisit. Kaikki nämä ovat todellisia ja jotkut niistä tärkeitä. Neljän miljardin vuoden perspektiivistä katsottuna ne ovat aallokkoa pinnalla — todellista liikettä, mutta ei se virta joka ratkaisee lopulta mihin mennään.",
                     "type": "text"
                   }
                 ]
@@ -3881,7 +3841,7 @@
               }
             ]
           },
-          "text": "On yksi asia jota pitkä perspektiivi tekee väistämättä: se muuttaa sen mikä tuntuu suurelta ja sen mikä tuntuu pieneltä.\n\nPäivittäinen uutisvirta on täynnä asioita jotka tuntuvat ratkaisevilta. Poliittiset kiistat, talousluvut, skandaalit, kriisit. Kaikki nämä ovat todellisia ja jotkut niistä tärkeitä. Mutta neljän miljardin vuoden perspektiivistä katsottuna ne ovat aallokkoa pinnalla — todellista liikettä, mutta ei se virta joka ratkaisee lopulta mihin mennään.\n\nVirta on syvemmällä. Se on tässä kirjassa kuvattu ketju: kompleksisuuden kasvu, kokemuksen syntyminen, tietoisuuden laajeneminen, siirtymä seuraavalle tasolle. Tämä virta ei pysähdy poliittisiin kriiseihin eikä taloustaantumiin. Se on hitaampaa ja väistämättömämpää kuin mikään yksittäinen tapahtuma.\n\nMutta — ja tämä on tärkeä mutta — virta ei myöskään ole deterministinen. Syanobakteerit olisivat voineet tuottaa erilaisen katastrofin. Kivihiilikaudun metsät olisivat voineet hajota eri tavalla. Ihminen olisi voinut käyttää fossiilisia polttoaineita eri tahdissa. Jokainen siirtymä on ollut todellinen — mutta se olisi voinut mennä toisin.\n\nSama pätee nyt. Siirtymä on tulossa. Mutta sen laatu, nopeus ja sisältö — ne ovat vielä auki.\n\nPerspektiivi ei poista vastuuta. Se paljastaa missä vastuu todella sijaitsee."
+          "text": "On yksi asia jota pitkä perspektiivi tekee väistämättä: se muuttaa sen mikä tuntuu suurelta ja sen mikä tuntuu pieneltä.\n\nPäivittäinen uutisvirta on täynnä asioita jotka tuntuvat ratkaisevilta. Poliittiset kiistat, talousluvut, skandaalit, kriisit. Kaikki nämä ovat todellisia ja jotkut niistä tärkeitä. Neljän miljardin vuoden perspektiivistä katsottuna ne ovat aallokkoa pinnalla — todellista liikettä, mutta ei se virta joka ratkaisee lopulta mihin mennään.\n\nVirta on syvemmällä. Se on tässä kirjassa kuvattu ketju: kompleksisuuden kasvu, kokemuksen syntyminen, tietoisuuden laajeneminen, siirtymä seuraavalle tasolle. Tämä virta ei pysähdy poliittisiin kriiseihin eikä taloustaantumiin. Se on hitaampaa ja väistämättömämpää kuin mikään yksittäinen tapahtuma.\n\nMutta — ja tämä on tärkeä mutta — virta ei myöskään ole deterministinen. Syanobakteerit olisivat voineet tuottaa erilaisen katastrofin. Kivihiilikaudun metsät olisivat voineet hajota eri tavalla. Ihminen olisi voinut käyttää fossiilisia polttoaineita eri tahdissa. Jokainen siirtymä on ollut todellinen — mutta se olisi voinut mennä toisin.\n\nSama pätee nyt. Siirtymä on tulossa. Mutta sen laatu, nopeus ja sisältö — ne ovat vielä auki.\n\nPerspektiivi ei poista vastuuta. Se paljastaa missä vastuu todella sijaitsee."
         },
         {
           "title": "Kolme asiaa joita tämä hetki vaatii",
@@ -3893,7 +3853,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Jos tässä kirjassa on jokin käytännöllinen sanoma, se on tässä. Ei toimintaohjelma, ei lista tehtäviä — mutta kolme asennetta joita tämä hetki tuntuu vaativan.",
+                    "text": "Jos tässä kirjassa on jokin käytännöllinen sanoma, se on tässä. Ei toimintaohjelma, ei lista tehtäviä, mutta kolme asennetta joita tämä hetki tuntuu vaativan.",
                     "type": "text"
                   }
                 ]
@@ -3936,7 +3896,7 @@
               }
             ]
           },
-          "text": "Jos tässä kirjassa on jokin käytännöllinen sanoma, se on tässä. Ei toimintaohjelma, ei lista tehtäviä — mutta kolme asennetta joita tämä hetki tuntuu vaativan.\n\nEnsimmäinen on ihmetys ilman naiiviyttä. Tekoäly on hämmästyttävä. Ihmiskunnan kyky rakentaa järjestelmiä jotka ylittävät yksittäisen ihmisen kyvyt on historiallisesti poikkeuksellinen saavutus. Tämä ansaitsee hämmästelyn — ei kyynisyyttä eikä pelkoa oletusasentona, vaan aitoa ihmetystä siitä mitä on tapahtunut. Samalla ihmetyksen ei pidä sammuttaa kriittisyyttä. Syanobakteeritkin olivat hämmästyttäviä — ja ne tuottivat massasukupuuton.\n\nToinen on rehellisyys epävarmuuden kanssa. Yksinkertaiset vastaukset ovat houkuttelevia. Tekoäly pelastaa maailman. Tekoäly tuhoaa maailman. Kumpikaan ei ole totta sellaisenaan. Totuus on monimutkaisempi, epävarmempi, ja vaatii sietämään tilaa jossa ei tiedetä. Tämä on vaikeampaa kuin valita puoli — mutta se on ainoa rehellinen asento.\n\nKolmas on läsnäolo tässä hetkessä. Pitkä perspektiivi voi tehdä yksittäisen elämän tuntumaan merkityksettömältä — mitä yksi ihminen merkitsee neljän miljardin vuoden tarinassa? Mutta fraktaalin logiikka kertoo muuta. Jokainen taso on välttämätön. Jokainen solu on välttämätön organismille. Jokainen ihminen on välttämätön sille kollektiiviselle prosessille josta seuraava taso syntyy.\n\nSinä — juuri sinä, juuri nyt — olet osa ketjua. Ei sivuhenkilö. Ei yleisö. Osa prosessia."
+          "text": "Jos tässä kirjassa on jokin käytännöllinen sanoma, se on tässä. Ei toimintaohjelma, ei lista tehtäviä, mutta kolme asennetta joita tämä hetki tuntuu vaativan.\n\nEnsimmäinen on ihmetys ilman naiiviyttä. Tekoäly on hämmästyttävä. Ihmiskunnan kyky rakentaa järjestelmiä jotka ylittävät yksittäisen ihmisen kyvyt on historiallisesti poikkeuksellinen saavutus. Tämä ansaitsee hämmästelyn — ei kyynisyyttä eikä pelkoa oletusasentona, vaan aitoa ihmetystä siitä mitä on tapahtunut. Samalla ihmetyksen ei pidä sammuttaa kriittisyyttä. Syanobakteeritkin olivat hämmästyttäviä — ja ne tuottivat massasukupuuton.\n\nToinen on rehellisyys epävarmuuden kanssa. Yksinkertaiset vastaukset ovat houkuttelevia. Tekoäly pelastaa maailman. Tekoäly tuhoaa maailman. Kumpikaan ei ole totta sellaisenaan. Totuus on monimutkaisempi, epävarmempi, ja vaatii sietämään tilaa jossa ei tiedetä. Tämä on vaikeampaa kuin valita puoli — mutta se on ainoa rehellinen asento.\n\nKolmas on läsnäolo tässä hetkessä. Pitkä perspektiivi voi tehdä yksittäisen elämän tuntumaan merkityksettömältä — mitä yksi ihminen merkitsee neljän miljardin vuoden tarinassa? Mutta fraktaalin logiikka kertoo muuta. Jokainen taso on välttämätön. Jokainen solu on välttämätön organismille. Jokainen ihminen on välttämätön sille kollektiiviselle prosessille josta seuraava taso syntyy.\n\nSinä — juuri sinä, juuri nyt — olet osa ketjua. Ei sivuhenkilö. Ei yleisö. Osa prosessia."
         },
         {
           "title": "Takaisin tähän hetkeen",
@@ -3948,7 +3908,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Mutta palataan. Koska tämä hetki on se missä ollaan — ja se on ainoa hetki jossa voi toimia.",
+                    "text": "Koska tämä hetki on se missä ollaan — ja se on ainoa hetki jossa voi toimia.",
                     "type": "text"
                   }
                 ]
@@ -3975,7 +3935,7 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "text": "Ja siirtymään ei voi suhtautua sivustakatsojana. Se tapahtuu riippumatta siitä valitseeko osallistumisen vai ei. Valitsematta jättäminen on myös valinta — se on päätös antaa prosessin kulkea ilman omaa panosta.",
+                    "text": "Siirtymään ei voi suhtautua sivustakatsojana. Se tapahtuu riippumatta siitä valitseeko osallistumisen vai ei. Valitsematta jättäminen on myös valinta — se on päätös antaa prosessin kulkea ilman omaa panosta.",
                     "type": "text"
                   }
                 ]
@@ -4010,7 +3970,7 @@
               }
             ]
           },
-          "text": "Mutta palataan. Koska tämä hetki on se missä ollaan — ja se on ainoa hetki jossa voi toimia.\n\nTänä päivänä, tällä planeetalla, kahdeksan miljardia ihmistä elää rinnakkain järjestelmien kanssa jotka ovat kasvaneet yli alkuperäisen tarkoituksensa. Ilmasto lämpenee. Tekoäly kehittyy nopeammin kuin ymmärrys sen seurauksista. Hyvinvointijärjestelmät painiskelevat rakenteellisten ristiriitojensa kanssa. Bikaameraalinen ikävä — kaipaus ohjaukseen joka tuntuu varmalta — etsii tyydytystä yhä uusista lähteistä.\n\nNämä eivät ole erillisiä ongelmia. Ne ovat saman siirtymän eri ilmentymiä.\n\nJa siirtymään ei voi suhtautua sivustakatsojana. Se tapahtuu riippumatta siitä valitseeko osallistumisen vai ei. Valitsematta jättäminen on myös valinta — se on päätös antaa prosessin kulkea ilman omaa panosta.\n\nSyanobakteeri ei valinnut. Me voimme.\n\nTietoisuus ei ole vain universumin ominaisuus. Se on universumin vastuunkantaja — ainakin tällä hetkellä, ainakin tällä planeetalla."
+          "text": "Koska tämä hetki on se missä ollaan — ja se on ainoa hetki jossa voi toimia.\n\nTänä päivänä, tällä planeetalla, kahdeksan miljardia ihmistä elää rinnakkain järjestelmien kanssa jotka ovat kasvaneet yli alkuperäisen tarkoituksensa. Ilmasto lämpenee. Tekoäly kehittyy nopeammin kuin ymmärrys sen seurauksista. Hyvinvointijärjestelmät painiskelevat rakenteellisten ristiriitojensa kanssa. Bikaameraalinen ikävä — kaipaus ohjaukseen joka tuntuu varmalta — etsii tyydytystä yhä uusista lähteistä.\n\nNämä eivät ole erillisiä ongelmia. Ne ovat saman siirtymän eri ilmentymiä.\n\nSiirtymään ei voi suhtautua sivustakatsojana. Se tapahtuu riippumatta siitä valitseeko osallistumisen vai ei. Valitsematta jättäminen on myös valinta — se on päätös antaa prosessin kulkea ilman omaa panosta.\n\nSyanobakteeri ei valinnut. Me voimme.\n\nTietoisuus ei ole vain universumin ominaisuus. Se on universumin vastuunkantaja — ainakin tällä hetkellä, ainakin tällä planeetalla."
         }
       ]
     }
