@@ -267,27 +267,26 @@
 
       async function home() {
         setStatus("Ladataan…");
-        const books = await select("books", "?select=*&order=position.asc");
-        app.innerHTML = `<section class="hero"><h1>Kirjasto</h1><p>Harri Käyhkön julkaisemat tekstit – luettavissa verkossa.</p></section><section class="grid">${books.map((b) => `<a class="card" href="#/books/${esc(b.slug)}"><h2>${esc(b.title)}</h2><p class="muted small">${esc(b.author)}</p>${b.description ? `<p>${esc(b.description)}</p>` : ""}</a>`).join("") || `<p class="muted">Ei vielä kirjoja.</p>`}</section>`;
+        const books = await cachedSelect("books", "?select=*&order=position.asc");
+        paint(`<section class="hero"><h1>Kirjasto</h1><p>Harri Käyhkön julkaisemat tekstit – luettavissa verkossa.</p></section><section class="grid">${books.map((b) => `<a class="card" href="#/books/${esc(b.slug)}"><h2>${esc(b.title)}</h2><p class="muted small">${esc(b.author)}</p>${b.description ? `<p>${esc(b.description)}</p>` : ""}</a>`).join("") || `<p class="muted">Ei vielä kirjoja.</p>`}</section>`);
       }
       async function book(slug) {
         setStatus("Ladataan…");
-        const books = await select("books", `?select=*&slug=${eq(slug)}&limit=1`);
+        const books = await cachedSelect("books", `?select=*&slug=${eq(slug)}&limit=1`);
         const currentBook = books[0];
         if (!currentBook) return setError("Kirjaa ei löytynyt.");
-        const chapters = await select("chapters", `?select=*&book_id=${eq(currentBook.id)}&order=position.asc`);
-        app.innerHTML = `<a class="back" href="#/">← Kirjat</a><h1 class="book-title">${esc(currentBook.title)}</h1><p class="muted">${esc(currentBook.author)}</p>${currentBook.description ? `<p class="reader">${esc(currentBook.description)}</p>` : ""}<h2 style="margin-top:48px;font-size:32px">Sisällysluettelo</h2><ol class="toc">${chapters.map((c, i) => `<li><a href="#/books/${esc(slug)}/${esc(c.slug)}"><span class="num">${String(i + 1).padStart(2, "0")}</span><span style="font-family:Instrument Serif,Georgia,serif;font-size:22px">${esc(c.title)}</span></a></li>`).join("") || `<li class="muted">Ei vielä lukuja.</li>`}</ol>`;
+        const chapters = await cachedSelect("chapters", `?select=*&book_id=${eq(currentBook.id)}&order=position.asc`);
+        paint(`<a class="back" href="#/">← Kirjat</a><h1 class="book-title">${esc(currentBook.title)}</h1><p class="muted">${esc(currentBook.author)}</p>${currentBook.description ? `<p class="reader">${esc(currentBook.description)}</p>` : ""}<h2 style="margin-top:48px;font-size:32px">Sisällysluettelo</h2><ol class="toc">${chapters.map((c, i) => `<li><a href="#/books/${esc(slug)}/${esc(c.slug)}"><span class="num">${String(i + 1).padStart(2, "0")}</span><span style="font-family:Instrument Serif,Georgia,serif;font-size:22px">${esc(c.title)}</span></a></li>`).join("") || `<li class="muted">Ei vielä lukuja.</li>`}</ol>`);
       }
       async function chapter(slug, chapterSlug) {
         setStatus("Ladataan…");
-        const books = await select("books", `?select=id,title,slug&slug=${eq(slug)}&limit=1`);
+        const books = await cachedSelect("books", `?select=id,title,slug&slug=${eq(slug)}&limit=1`);
         const currentBook = books[0];
         if (!currentBook) return setError("Kirjaa ei löytynyt.");
-        const chapters = await select("chapters", `?select=*&book_id=${eq(currentBook.id)}&slug=${eq(chapterSlug)}&limit=1`);
-        const currentChapter = chapters[0];
+        const all = await cachedSelect("chapters", `?select=*&book_id=${eq(currentBook.id)}&order=position.asc`);
+        const currentChapter = all.find((c) => c.slug === chapterSlug);
         if (!currentChapter) return setError("Lukua ei löytynyt.");
-        const sections = await select("sections", `?select=*&chapter_id=${eq(currentChapter.id)}&order=position.asc`);
-        const all = await select("chapters", `?select=slug,title,position&book_id=${eq(currentBook.id)}&order=position.asc`);
+        const sections = await cachedSelect("sections", `?select=*&chapter_id=${eq(currentChapter.id)}&order=position.asc`);
         const idx = all.findIndex((c) => c.slug === chapterSlug);
         const prev = idx > 0 ? all[idx - 1] : null;
         const next = idx >= 0 && idx < all.length - 1 ? all[idx + 1] : null;
