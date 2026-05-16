@@ -335,7 +335,8 @@
           if (!res.ok) throw new Error(data?.error || `HTTP ${res.status}`);
           btn.textContent = "Julkaistu ✓";
         } catch (e) {
-          btn.textContent = "Virhe – katso konsoli";
+          btn.textContent = e.message?.includes("GitHub-tokenilla") ? "Token-oikeus puuttuu" : "Virhe – katso konsoli";
+          alert(e.message || "JSON-julkaisu epäonnistui");
           console.error("publishBookJson", e);
         } finally {
           setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 2200);

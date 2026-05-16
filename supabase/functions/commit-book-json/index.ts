@@ -20,6 +20,17 @@ function json(body: unknown, status = 200) {
   });
 }
 
+function githubError(method: string, status: number, body: string) {
+  if (status === 403 && body.includes("Resource not accessible by personal access token")) {
+    return json({
+      error: "GitHub-tokenilla ei ole kirjoitusoikeutta repoon tilastomuuttujat/book-haven. Luo tai hyväksy organisaatiossa PAT, jossa on Repository contents: Read and write tälle repolle.",
+      detail: `GitHub ${method} ${status}: ${body}`,
+    }, 403);
+  }
+
+  return json({ error: `GitHub ${method} ${status}: ${body}` }, status >= 400 && status < 500 ? status : 502);
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
   if (req.method !== "POST") return json({ error: "Method not allowed" }, 405);
@@ -69,7 +80,7 @@ Deno.serve(async (req) => {
       sha = j.sha;
     } else if (headRes.status !== 404) {
       const t = await headRes.text();
-      return json({ error: `GitHub GET ${headRes.status}: ${t}` }, 502);
+      return githubError("GET", headRes.status, t);
     }
 
     const jsonText = JSON.stringify(content, null, 2);
@@ -87,7 +98,7 @@ Deno.serve(async (req) => {
     });
     if (!putRes.ok) {
       const t = await putRes.text();
-      return json({ error: `GitHub PUT ${putRes.status}: ${t}` }, 502);
+      return githubError("PUT", putRes.status, t);
     }
     const out = await putRes.json();
     return json({
