@@ -1,8 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
-import { RenderContent } from "@/components/RenderContent";
+import { useAuth } from "@/hooks/use-auth";
+import { InlineSection, InlineSectionTitle } from "@/components/InlineSection";
 
 export default function ChapterPage({ slug, chapterSlug }: { slug: string; chapterSlug: string }) {
+  const { isAdmin } = useAuth();
+
   const { data, isLoading, error } = useQuery({
     queryKey: ["chapter", slug, chapterSlug],
     queryFn: async () => {
@@ -28,16 +31,23 @@ export default function ChapterPage({ slug, chapterSlug }: { slug: string; chapt
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-16">
-      <a href={`#/books/${slug}`} className="text-sm text-muted-foreground hover:text-foreground">
-        ← {data.book.title}
-      </a>
+      <div className="flex items-center justify-between">
+        <a href={`#/books/${slug}`} className="text-sm text-muted-foreground hover:text-foreground">
+          ← {data.book.title}
+        </a>
+        {isAdmin && (
+          <span className="rounded-full border bg-accent/30 px-3 py-1 text-xs text-muted-foreground">
+            Muokkaustila — valitse tekstiä muotoillaksesi
+          </span>
+        )}
+      </div>
       <h1 className="mt-6 text-4xl md:text-5xl">{data.chapter.title}</h1>
 
       <div className="mt-10 space-y-12">
         {data.sections.map((s) => (
           <section key={s.id}>
-            {s.title && <h2 className="mb-4 text-2xl">{s.title}</h2>}
-            <RenderContent content={s.content} />
+            <InlineSectionTitle sectionId={s.id} initialTitle={s.title} editable={isAdmin} />
+            <InlineSection sectionId={s.id} initialContent={s.content} editable={isAdmin} />
           </section>
         ))}
       </div>
