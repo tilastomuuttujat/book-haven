@@ -73,6 +73,14 @@
       .chapter-edit { border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin: 12px 0; background: var(--bg); }
       .status { color: var(--muted); padding: 24px 0; }
       .error { color: var(--danger); }
+      [contenteditable="true"] { outline: none; }
+      [contenteditable="true"]:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); border-radius: 4px; }
+      [contenteditable="true"]:focus { background: color-mix(in srgb, var(--accent) 10%, transparent); box-shadow: 0 0 0 2px var(--accent); border-radius: 4px; }
+      .edit-badge { position: fixed; bottom: 20px; right: 20px; background: var(--accent); color: #fffdf8; padding: 10px 16px; border-radius: 999px; font-size: 13px; box-shadow: 0 6px 20px rgba(0,0,0,.15); z-index: 50; opacity: 0; transition: opacity .2s; pointer-events: none; }
+      .edit-badge.show { opacity: 1; }
+      .edit-hint { position: fixed; top: 70px; right: 20px; background: var(--card); border: 1px solid var(--accent); color: var(--accent); padding: 6px 12px; border-radius: 999px; font-size: 12px; z-index: 50; }
+      .section-add { display: block; margin: 20px 0; padding: 10px; border: 1px dashed var(--line); background: transparent; color: var(--muted); width: 100%; }
+      .section-del { float: right; margin-top: -8px; background: transparent; color: var(--danger); border-color: var(--line); padding: 4px 10px; font-size: 12px; }
       @media (max-width: 720px) {
         .bar, main, footer { width: min(100% - 32px, 980px); }
         .grid { grid-template-columns: 1fr; }
@@ -244,7 +252,48 @@
         const idx = all.findIndex((c) => c.slug === chapterSlug);
         const prev = idx > 0 ? all[idx - 1] : null;
         const next = idx >= 0 && idx < all.length - 1 ? all[idx + 1] : null;
-        app.innerHTML = `<article><a class="back" href="#/books/${esc(slug)}">← ${esc(currentBook.title)}</a><h1 class="chapter-title">${esc(currentChapter.title)}</h1><div class="reader" style="margin-top:40px">${sections.map((s) => `<section>${s.title ? `<h2>${esc(s.title)}</h2>` : ""}${renderDoc(s.content)}</section>`).join("")}</div><nav class="pager">${prev ? `<a href="#/books/${esc(slug)}/${esc(prev.slug)}">← ${esc(prev.title)}</a>` : `<span></span>`}${next ? `<a class="right" href="#/books/${esc(slug)}/${esc(next.slug)}">${esc(next.title)} →</a>` : `<span></span>`}</nav></article>`;
+        const ed = isAdmin ? ' contenteditable="true" spellcheck="false"' : "";
+        const sectionsHtml = sections.map((s) => `<section data-section-id="${esc(s.id)}">${isAdmin ? `<button class="section-del" data-del-section="${esc(s.id)}">Poista osio</button>` : ""}<h2 data-field="title"${ed} data-placeholder="Osion otsikko (valinnainen)">${esc(s.title ?? "")}</h2><div data-field="content"${ed}>${renderDoc(s.content) || (isAdmin ? "<p>Kirjoita tähän…</p>" : "")}</div></section>`).join("");
+        app.innerHTML = `<article><a class="back" href="#/books/${esc(slug)}">← ${esc(currentBook.title)}</a><h1 class="chapter-title" data-chapter-title${ed}>${esc(currentChapter.title)}</h1><div class="reader" id="reader" style="margin-top:40px">${sectionsHtml}</div>${isAdmin ? `<button class="section-add" id="addSectionBtn">+ Lisää osio</button>` : ""}<nav class="pager">${prev ? `<a href="#/books/${esc(slug)}/${esc(prev.slug)}">← ${esc(prev.title)}</a>` : `<span></span>`}${next ? `<a class="right" href="#/books/${esc(slug)}/${esc(next.slug)}">${esc(next.title)} →</a>` : `<span></span>`}</nav></article>${isAdmin ? `<div class="edit-hint">Muokkaustila — klikkaa tekstiä</div><div class="edit-badge" id="editBadge">Tallennetaan…</div>` : ""}`;
+        if (!isAdmin) return;
+        const badge = document.getElementById("editBadge");
+        const flash = (text, ok = true) => { badge.textContent = text; badge.style.background = ok ? "var(--accent)" : "var(--danger)"; badge.classList.add("show"); clearTimeout(flash._t); flash._t = setTimeout(() => badge.classList.remove("show"), 1400); };
+        const htmlToDoc = (el) => {
+          const text = (el.innerText || "").replace(/\u00a0/g, " ");
+          return textToDoc(text);
+        };
+        const saveSection = async (sectionEl) => {
+          const sectionId = sectionEl.dataset.sectionId;
+          const titleEl = sectionEl.querySelector('[data-field="title"]');
+          const contentEl = sectionEl.querySelector('[data-field="content"]');
+          flash("Tallennetaan…");
+          try {
+            await update("sections", `?id=${eq(sectionId)}`, { title: (titleEl.innerText || "").trim() || null, content: htmlToDoc(contentEl) });
+            flash("Tallennettu ✓");
+          } catch (error) { flash(error.message, false); }
+        };
+        document.querySelectorAll('#reader section').forEach((sectionEl) => {
+          sectionEl.querySelectorAll('[contenteditable="true"]').forEach((el) => {
+            el.addEventListener("blur", () => saveSection(sectionEl));
+          });
+        });
+        const titleEl = document.querySelector('[data-chapter-title]');
+        if (titleEl) titleEl.addEventListener("blur", async () => {
+          flash("Tallennetaan…");
+          try {
+            await update("chapters", `?id=${eq(currentChapter.id)}`, { title: (titleEl.innerText || "").trim() || currentChapter.title });
+            flash("Tallennettu ✓");
+          } catch (error) { flash(error.message, false); }
+        });
+        document.querySelectorAll('[data-del-section]').forEach((b) => b.onclick = async (e) => {
+          e.preventDefault();
+          if (!confirm("Poistetaanko osio?")) return;
+          try { await remove("sections", `?id=${eq(b.dataset.delSection)}`); route(); } catch (error) { flash(error.message, false); }
+        });
+        const addBtn = document.getElementById("addSectionBtn");
+        if (addBtn) addBtn.onclick = async () => {
+          try { await insert("sections", { chapter_id: currentChapter.id, title: null, content: textToDoc(""), position: sections.length }); route(); } catch (error) { flash(error.message, false); }
+        };
       }
       function login() {
         app.innerHTML = `<section class="form"><h1 style="font-size:40px">Kirjaudu sisään</h1><p class="muted">Vain admin voi muokata sisältöä.</p><form id="loginForm" class="panel"><div class="field"><label>Sähköposti</label><input id="email" type="email" autocomplete="email" required></div><div class="field"><label>Salasana</label><input id="password" type="password" autocomplete="current-password" required></div><button id="loginButton" type="submit">Kirjaudu</button><p id="loginMsg" class="error"></p></form></section>`;
