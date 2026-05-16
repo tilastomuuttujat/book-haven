@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { withQueryTimeout } from "@/lib/query-timeout";
 import { useState } from "react";
 import { toast } from "sonner";
 import { Plus, Pencil } from "lucide-react";
@@ -18,7 +19,7 @@ export default function AdminIndex() {
   const { data: books } = useQuery({
     queryKey: ["admin-books"],
     queryFn: async () => {
-      const { data, error } = await supabase.from("books").select("*").order("position");
+      const { data, error } = await withQueryTimeout(supabase.from("books").select("*").order("position"));
       if (error) throw error;
       return data;
     },
