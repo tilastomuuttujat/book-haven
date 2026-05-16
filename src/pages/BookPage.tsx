@@ -30,7 +30,6 @@ export default function BookPage({ slug }: { slug: string }) {
         {data.chapters.map((c, i) => (
           <li key={c.id}>
             <a
-              to={`/books/${slug}/${c.slug}`}
               href={`#/books/${slug}/${c.slug}`}
               className="flex items-baseline gap-3 rounded px-2 py-2 hover:bg-secondary"
             >
